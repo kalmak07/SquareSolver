@@ -2,48 +2,59 @@
 
 const short countDataInTest = 7;
 
-double matrixTests[][countDataInTest] = {
-//  №   A,  B,  C,  count,  x1Res,  x2Res
-    {0, 0, 0,  0,  infRoot,    0,  0},
-    {1, 1, 0,  1,  noRoot,     0,  0},
-    {2, 1e-20,  1e-20,  1e-20,  infRoot,    0,  0}
+struct testData {
+    char testName[20];
+    short testNumber;
+    double aTest;
+    double bTest;
+    double cTest;
+    short countRes;
+    double x1Res;
+    double x2Res;
 };
 
-enum TestsConst {
-    TestNumber = 0,
-    aTest = 1,
-    bTest = 2,
-    cTest = 3,
-    countRes = 4,
-    x1Res = 5,
-    x2Res = 6,
+struct testData Tests[] {
+    {"infRoots",    0,  0, 0,  0,  infRoot,    0,  0},
+    {"1",   1,    1, 0,  1,  noRoot,     0,  0},
+    {"1",   2,    1e-20,  1e-20,  1e-20,  infRoot,    0,  0},
+    {"1",   3,    0,  2,  1,  oneRoot,    -0.5,  0}
 };
 
 void TestSolver() {
     bool  errUnitTest = false;
-    unsigned int countTests = sizeof(matrixTests) / sizeof(matrixTests[0][0]) / countDataInTest;
+    unsigned int countTests = sizeof(Tests) / sizeof(Tests[0]);
+    short countGoodTests = countTests;
 
-    for(unsigned int i = 0; i < countTests; i++) {
+    for (unsigned int i = 0; i < countTests; i++) {
         double x1Test = 0, x2Test = 0, countRootTest = 0;
 
-        countRootTest = solveRoot(matrixTests[i][aTest],
-                                matrixTests[i][bTest],
-                                matrixTests[i][cTest],
+        countRootTest = solveRoot(Tests[i].aTest,
+                                Tests[i].bTest,
+                                Tests[i].cTest,
                                 &x1Test, &x2Test);
 
-        if (!(isRavno(countRootTest, matrixTests[i][countRes]) &&
-        isRavno(x1Test, matrixTests[i][x1Res]) &&
-        isRavno(x2Test, matrixTests[i][x2Res]))) {
-            printf("Error in test #%lg\n", matrixTests[i][TestNumber]);
-            printf("Input: A: %lf B: %lf C: %lf\n", matrixTests[i][aTest], matrixTests[i][bTest], matrixTests[i][cTest]);
-            printf("Ouput: CountRoots: %lg x1: %lf, x2: %lf, Expected output: CountRoots: %lg x1: %lf, x2: %lf\n", countRootTest, x1Test, x2Test, matrixTests[i][countRes], matrixTests[i][x1Res], matrixTests[i][x2Res]);
+        if (!(isRavno(countRootTest, Tests[i].countRes) &&
+        isRavno(x1Test, Tests[i].x1Res) &&
+        isRavno(x2Test, Tests[i].x2Res))) {
+            setColor(RED, BG_BLACK);
+
+            printf("Error in test #%hi, name test: %s\n", Tests[i].testNumber, Tests[i].testName);
+            printf("Input: A: %lf B: %lf C: %lf\n", Tests[i].aTest, Tests[i].bTest, Tests[i].cTest);
+            printf("Ouput: CountRoots: %lg x1: %lf, x2: %lf, Expected output: CountRoots: %hi x1: %lf, x2: %lf\n", countRootTest, x1Test, x2Test, Tests[i].countRes, Tests[i].x1Res, Tests[i].x2Res);
             printf("----------------------------------------------------------\n");
             errUnitTest = true;
+            countGoodTests --;
         }
 
     }
 
+    if (countGoodTests == countTests) setColor(GREEN, BG_BLACK);
+    else setColor(YELLOW, BG_BLACK);
+
+    printf("Ok %u/%u Unit tests\n", countGoodTests, countTests);
+
+    setColor(WHITE, BG_BLACK);
+
     assert(!errUnitTest);
 
-    printf("Ok %u Unit tests\n", countTests);
 }

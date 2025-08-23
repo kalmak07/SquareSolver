@@ -2,11 +2,15 @@
 #include "consts.h"
 
 int main(void) {
-    printf("quadratic equation solver v0.22\n");
+    setColor(YELLOW, BG_BLACK);
+
+    printf("quadratic equation solver v0.23\n");
 
     #ifdef _DEBUG
         TestSolver();
     #endif
+
+    setColor(WHITE, BG_BLACK);
 
     printf("------------------------------\n");
     printf("indicate coefficients A, B, C:\n");
@@ -18,6 +22,8 @@ int main(void) {
         short result = solveRoot(a, b, c, &x1, &x2);
         conclusion(result, x1, x2);
     }
+
+    setColor(WHITE, BG_BLACK);
 
     return 0;
 }

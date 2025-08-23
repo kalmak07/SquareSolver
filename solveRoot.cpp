@@ -8,18 +8,22 @@ bool isZero(double x) {
     return (fabs(x) < eps);
 }
 
+short solveLineRoot(double b, double c, double * x1) {
+    if (isRavno(b, 0)) {
+        if (isRavno(c, 0)) return infRoot;
+        else return noRoot;
+    }
+
+    else {
+        *x1 = -c / b;
+        if (isZero(*x1)) *x1 = 0;
+        return oneRoot;
+    }
+}
+
 short solveRoot(double a, double b, double c, double * x1, double * x2) {
     if (isRavno(a, 0)) {
-        if (isRavno(b, 0)) {
-            if (isRavno(c, 0)) return infRoot;
-            else return noRoot;
-        }
-
-        else {
-            *x1 = -c / b;
-            if (isZero(*x1)) *x1 = 0;
-            return oneRoot;
-        }
+        return solveLineRoot(b, c, x1);
     }
 
     double d = NAN, sqd = NAN;
