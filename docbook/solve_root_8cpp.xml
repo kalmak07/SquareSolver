@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_solve_root_8cpp" xml:lang="en-US">
+<title>solveRoot.cpp File Reference</title>
+<indexterm><primary>solveRoot.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;MySqrEquation.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_solve_root_8cpp_1aab686ba65e0281b74d30841c2eae5667">isRavno</link> (double a, double b)</para>
+
+<para>Compares two numbers. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_solve_root_8cpp_1aa183967a7a915749e9800658481403e8">isZero</link> (double x)</para>
+
+<para>Compares numbers with zero. </para>
+</listitem>
+            <listitem><para>short <link linkend="_solve_root_8cpp_1af3222f7c92ef73b804e5ee180655321f">solveLineRoot</link> (double b, double c, double *x1)</para>
+
+<para>Solve linear equations ax^2 + bx + c = 0. </para>
+</listitem>
+            <listitem><para>short <link linkend="_solve_root_8cpp_1a0a5f0682bcb7948f315b84134029c99e">solveRoot</link> (double a, double b, double c, double *x1, double *x2)</para>
+
+<para>Solve square equations ax^2 + bx + c = 0. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_solve_root_8cpp_1aab686ba65e0281b74d30841c2eae5667"/><section>
+    <title>isRavno()</title>
+<indexterm><primary>isRavno</primary><secondary>solveRoot.cpp</secondary></indexterm>
+<indexterm><primary>solveRoot.cpp</primary><secondary>isRavno</secondary></indexterm>
+<para><computeroutput>bool isRavno (double a, double b)</computeroutput></para><para>
+
+<para>Compares two numbers. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>a</entry><entry>
+<para>Thirst compared number </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>b</entry><entry>
+<para>Second compared number</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>Note</title>
+
+<para>Compares two numbers. The accuracy is determined by the const eps. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Check number on type double. </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_solve_root_8cpp_source_1l00013">13</link> of file <link linkend="_solve_root_8cpp_source">solveRoot.cpp</link>.</para>
+</section>
+<anchor xml:id="_solve_root_8cpp_1aa183967a7a915749e9800658481403e8"/><section>
+    <title>isZero()</title>
+<indexterm><primary>isZero</primary><secondary>solveRoot.cpp</secondary></indexterm>
+<indexterm><primary>solveRoot.cpp</primary><secondary>isZero</secondary></indexterm>
+<para><computeroutput>bool isZero (double x)</computeroutput></para><para>
+
+<para>Compares numbers with zero. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>x</entry><entry>
+<para>Compared number</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>Note</title>
+
+<para>Compares number with zero. The accuracy is determined by the const eps. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Check number on type double. </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_solve_root_8cpp_source_1l00026">26</link> of file <link linkend="_solve_root_8cpp_source">solveRoot.cpp</link>.</para>
+</section>
+<anchor xml:id="_solve_root_8cpp_1af3222f7c92ef73b804e5ee180655321f"/><section>
+    <title>solveLineRoot()</title>
+<indexterm><primary>solveLineRoot</primary><secondary>solveRoot.cpp</secondary></indexterm>
+<indexterm><primary>solveRoot.cpp</primary><secondary>solveLineRoot</secondary></indexterm>
+<para><computeroutput>short solveLineRoot (double b, double c, double * x1)</computeroutput></para><para>
+
+<para>Solve linear equations ax^2 + bx + c = 0. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>b</entry><entry>
+<para>Coefficient at x </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>c</entry><entry>
+<para>Free member </para>
+</entry>
+                            </row>
+                            <row>
+<entry>out</entry><entry>x1</entry><entry>
+<para>Pointer to the first root </para>
+</entry>
+                            </row>
+                            <row>
+<entry>out</entry><entry>x2</entry><entry>
+<para>Pointer to the second root </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>short count of real roots:<itemizedlist>
+<listitem>
+<para>0: no roots</para>
+</listitem><listitem>
+<para>1: one root</para>
+</listitem><listitem>
+<para>-1: infinity roots</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<note><title>Note</title>
+
+<para>To work with complex roots and linear equations, use a different function. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Check pointers for NULL before using them </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_solve_root_8cpp_source_1l00046">46</link> of file <link linkend="_solve_root_8cpp_source">solveRoot.cpp</link>.</para>
+</section>
+<anchor xml:id="_solve_root_8cpp_1a0a5f0682bcb7948f315b84134029c99e"/><section>
+    <title>solveRoot()</title>
+<indexterm><primary>solveRoot</primary><secondary>solveRoot.cpp</secondary></indexterm>
+<indexterm><primary>solveRoot.cpp</primary><secondary>solveRoot</secondary></indexterm>
+<para><computeroutput>short solveRoot (double a, double b, double c, double * x1, double * x2)</computeroutput></para><para>
+
+<para>Solve square equations ax^2 + bx + c = 0. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>a</entry><entry>
+<para>Coefficient at x^2 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>b</entry><entry>
+<para>Coefficient at x </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>c</entry><entry>
+<para>Free member </para>
+</entry>
+                            </row>
+                            <row>
+<entry>out</entry><entry>x1</entry><entry>
+<para>Pointer to the first root </para>
+</entry>
+                            </row>
+                            <row>
+<entry>out</entry><entry>x2</entry><entry>
+<para>Pointer to the second root </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>short count of real roots:<itemizedlist>
+<listitem>
+<para>0: no roots</para>
+</listitem><listitem>
+<para>1: one root</para>
+</listitem><listitem>
+<para>2: two roots</para>
+</listitem><listitem>
+<para>-1: infinity roots</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<note><title>Note</title>
+
+<para>To work with complex roots, use a different function. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Check pointers for NULL before using them </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_solve_root_8cpp_source_1l00077">77</link> of file <link linkend="_solve_root_8cpp_source">solveRoot.cpp</link>.</para>
+</section>
+</section>
+</section>

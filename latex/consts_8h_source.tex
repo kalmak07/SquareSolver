@@ -1,60 +1,60 @@
 \doxysection{consts.\+h}
-\hypertarget{consts_8h_source}{}\label{consts_8h_source}
+\hypertarget{consts_8h_source}{}\label{consts_8h_source}\mbox{\hyperlink{consts_8h}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONSTS\_H}}
-\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONSTS\_H}}
-\DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{keyword}{enum}\ Roots\ \{}
-\DoxyCodeLine{00005\ \ \ \ \ noRoot\ =\ 0,}
-\DoxyCodeLine{00006\ \ \ \ \ oneRoot\ =\ 1,}
-\DoxyCodeLine{00007\ \ \ \ \ twoRoot\ =\ 2,}
-\DoxyCodeLine{00008\ \ \ \ \ infRoot\ =\ -\/1}
-\DoxyCodeLine{00009\ \};}
-\DoxyCodeLine{00010\ }
-\DoxyCodeLine{00011\ \textcolor{keyword}{enum}\ ConsoleColors\{}
-\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ Базовые\ цвета\ текста}}
-\DoxyCodeLine{00013\ \ \ \ \ BLACK\ \ \ \ \ \ \ \ \ =\ 0,\ \ \ \textcolor{comment}{//\ Чёрный}}
-\DoxyCodeLine{00014\ \ \ \ \ DARK\_BLUE\ \ \ \ \ =\ 1,\ \ \ \textcolor{comment}{//\ Тёмно-\/синий}}
-\DoxyCodeLine{00015\ \ \ \ \ DARK\_GREEN\ \ \ \ =\ 2,\ \ \ \textcolor{comment}{//\ Тёмно-\/зелёный}}
-\DoxyCodeLine{00016\ \ \ \ \ DARK\_CYAN\ \ \ \ \ =\ 3,\ \ \ \textcolor{comment}{//\ Тёмно-\/бирюзовый}}
-\DoxyCodeLine{00017\ \ \ \ \ DARK\_RED\ \ \ \ \ \ =\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/красный}}
-\DoxyCodeLine{00018\ \ \ \ \ DARK\_MAGENTA\ \ =\ 5,\ \ \ \textcolor{comment}{//\ Тёмно-\/пурпурный}}
-\DoxyCodeLine{00019\ \ \ \ \ DARK\_YELLOW\ \ \ =\ 6,\ \ \ \textcolor{comment}{//\ Тёмно-\/желтый\ (коричневый)}}
-\DoxyCodeLine{00020\ \ \ \ \ LIGHT\_GRAY\ \ \ \ =\ 7,\ \ \ \textcolor{comment}{//\ Светло-\/серый\ (стандартный)}}
-\DoxyCodeLine{00021\ \ \ \ \ DARK\_GRAY\ \ \ \ \ =\ 8,\ \ \ \textcolor{comment}{//\ Тёмно-\/серый}}
-\DoxyCodeLine{00022\ }
-\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Яркие\ цвета\ текста}}
-\DoxyCodeLine{00024\ \ \ \ \ BLUE\ \ \ \ \ \ \ \ \ \ =\ 9,\ \ \ \textcolor{comment}{//\ Синий}}
-\DoxyCodeLine{00025\ \ \ \ \ GREEN\ \ \ \ \ \ \ \ \ =\ 10,\ \ \textcolor{comment}{//\ Зелёный}}
-\DoxyCodeLine{00026\ \ \ \ \ CYAN\ \ \ \ \ \ \ \ \ \ =\ 11,\ \ \textcolor{comment}{//\ Бирюзовый}}
-\DoxyCodeLine{00027\ \ \ \ \ RED\ \ \ \ \ \ \ \ \ \ \ =\ 12,\ \ \textcolor{comment}{//\ Красный}}
-\DoxyCodeLine{00028\ \ \ \ \ MAGENTA\ \ \ \ \ \ \ =\ 13,\ \ \textcolor{comment}{//\ Пурпурный}}
-\DoxyCodeLine{00029\ \ \ \ \ YELLOW\ \ \ \ \ \ \ \ =\ 14,\ \ \textcolor{comment}{//\ Жёлтый}}
-\DoxyCodeLine{00030\ \ \ \ \ WHITE\ \ \ \ \ \ \ \ \ =\ 15,\ \ \textcolor{comment}{//\ Белый}}
-\DoxyCodeLine{00031\ }
-\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ Цвета\ фона\ (получаются\ путем\ сдвига\ на\ 4\ бита)}}
-\DoxyCodeLine{00033\ \ \ \ \ BG\_BLACK\ \ \ \ \ \ \ \ \ =\ 0\ <<\ 4,\ \ \ \textcolor{comment}{//\ Чёрный\ фон}}
-\DoxyCodeLine{00034\ \ \ \ \ BG\_DARK\_BLUE\ \ \ \ \ =\ 1\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/синий\ фон}}
-\DoxyCodeLine{00035\ \ \ \ \ BG\_DARK\_GREEN\ \ \ \ =\ 2\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/зелёный\ фон}}
-\DoxyCodeLine{00036\ \ \ \ \ BG\_DARK\_CYAN\ \ \ \ \ =\ 3\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/бирюзовый\ фон}}
-\DoxyCodeLine{00037\ \ \ \ \ BG\_DARK\_RED\ \ \ \ \ \ =\ 4\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/красный\ фон}}
-\DoxyCodeLine{00038\ \ \ \ \ BG\_DARK\_MAGENTA\ \ =\ 5\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/пурпурный\ фон}}
-\DoxyCodeLine{00039\ \ \ \ \ BG\_DARK\_YELLOW\ \ \ =\ 6\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/желтый\ фон}}
-\DoxyCodeLine{00040\ \ \ \ \ BG\_LIGHT\_GRAY\ \ \ \ =\ 7\ <<\ 4,\ \ \ \textcolor{comment}{//\ Светло-\/серый\ фон}}
-\DoxyCodeLine{00041\ \ \ \ \ BG\_DARK\_GRAY\ \ \ \ \ =\ 8\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/серый\ фон}}
-\DoxyCodeLine{00042\ \ \ \ \ BG\_BLUE\ \ \ \ \ \ \ \ \ \ =\ 9\ <<\ 4,\ \ \ \textcolor{comment}{//\ Синий\ фон}}
-\DoxyCodeLine{00043\ \ \ \ \ BG\_GREEN\ \ \ \ \ \ \ \ \ =\ 10\ <<\ 4,\ \ \textcolor{comment}{//\ Зелёный\ фон}}
-\DoxyCodeLine{00044\ \ \ \ \ BG\_CYAN\ \ \ \ \ \ \ \ \ \ =\ 11\ <<\ 4,\ \ \textcolor{comment}{//\ Бирюзовый\ фон}}
-\DoxyCodeLine{00045\ \ \ \ \ BG\_RED\ \ \ \ \ \ \ \ \ \ \ =\ 12\ <<\ 4,\ \ \textcolor{comment}{//\ Красный\ фон}}
-\DoxyCodeLine{00046\ \ \ \ \ BG\_MAGENTA\ \ \ \ \ \ \ =\ 13\ <<\ 4,\ \ \textcolor{comment}{//\ Пурпурный\ фон}}
-\DoxyCodeLine{00047\ \ \ \ \ BG\_YELLOW\ \ \ \ \ \ \ \ =\ 14\ <<\ 4,\ \ \textcolor{comment}{//\ Жёлтый\ фон}}
-\DoxyCodeLine{00048\ \ \ \ \ BG\_WHITE\ \ \ \ \ \ \ \ \ =\ 15\ <<\ 4\ \ \ \textcolor{comment}{//\ Белый\ фон}}
-\DoxyCodeLine{00049\ \};}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ attempts\ =\ 10;}
-\DoxyCodeLine{00052\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ eps\ =\ 1e-\/8;}
-\DoxyCodeLine{00053\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{short}\ errInput\ =\ -\/1;}
-\DoxyCodeLine{00054\ }
-\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ CONSTS\_H}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ CONSTS\_H}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00004}\mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692a}{00004}}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692a}{Roots}}\ \{}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00005}\mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1}{00005}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1}{noRoot}}\ =\ 0,}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00006}\mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb}{00006}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb}{oneRoot}}\ =\ 1,}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00007}\mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e}{00007}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e}{twoRoot}}\ =\ 2,}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00008}\mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb}{00008}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb}{infRoot}}\ =\ -\/1}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00009}00009\ \};}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00011}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7}{00011}}\ \textcolor{keyword}{enum}\ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7}{ConsoleColors}}\{}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00012}00012\ \ \ \ \ \textcolor{comment}{//\ Базовые\ цвета\ текста}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00013}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7af77fb67151d0c18d397069ad8c271ba3}{00013}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7af77fb67151d0c18d397069ad8c271ba3}{BLACK}}\ \ \ \ \ \ \ \ \ =\ 0,\ \ \ \textcolor{comment}{//\ Чёрный}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00014}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a99d38b5651ed7ae79da0b244e9777229}{00014}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a99d38b5651ed7ae79da0b244e9777229}{DARK\_BLUE}}\ \ \ \ \ =\ 1,\ \ \ \textcolor{comment}{//\ Тёмно-\/синий}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00015}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a97c5bc9dd320290cc0d0e7ef80fea302}{00015}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a97c5bc9dd320290cc0d0e7ef80fea302}{DARK\_GREEN}}\ \ \ \ =\ 2,\ \ \ \textcolor{comment}{//\ Тёмно-\/зелёный}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00016}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a0ebfbf54268289a1c46091ea75046e43}{00016}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a0ebfbf54268289a1c46091ea75046e43}{DARK\_CYAN}}\ \ \ \ \ =\ 3,\ \ \ \textcolor{comment}{//\ Тёмно-\/бирюзовый}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00017}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a50442fe9bbe07098248777e909de8ed0}{00017}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a50442fe9bbe07098248777e909de8ed0}{DARK\_RED}}\ \ \ \ \ \ =\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/красный}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00018}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7adb11a246cbfe4a338d8334b2966e7f2b}{00018}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7adb11a246cbfe4a338d8334b2966e7f2b}{DARK\_MAGENTA}}\ \ =\ 5,\ \ \ \textcolor{comment}{//\ Тёмно-\/пурпурный}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00019}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a316a5bcecbac096583db416862ba567c}{00019}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a316a5bcecbac096583db416862ba567c}{DARK\_YELLOW}}\ \ \ =\ 6,\ \ \ \textcolor{comment}{//\ Тёмно-\/желтый\ (коричневый)}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00020}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a82a1f4f015ad85784e8c8671b7338433}{00020}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a82a1f4f015ad85784e8c8671b7338433}{LIGHT\_GRAY}}\ \ \ \ =\ 7,\ \ \ \textcolor{comment}{//\ Светло-\/серый\ (стандартный)}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00021}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a656c37aed4a972689007d4c9ce88f425}{00021}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a656c37aed4a972689007d4c9ce88f425}{DARK\_GRAY}}\ \ \ \ \ =\ 8,\ \ \ \textcolor{comment}{//\ Тёмно-\/серый}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00023}00023\ \ \ \ \ \textcolor{comment}{//\ Яркие\ цвета\ текста}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00024}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a35d6719cb4d7577c031b3d79057a1b79}{00024}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a35d6719cb4d7577c031b3d79057a1b79}{BLUE}}\ \ \ \ \ \ \ \ \ \ =\ 9,\ \ \ \textcolor{comment}{//\ Синий}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00025}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7aa60bd322f93178d68184e30e162571ca}{00025}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7aa60bd322f93178d68184e30e162571ca}{GREEN}}\ \ \ \ \ \ \ \ \ =\ 10,\ \ \textcolor{comment}{//\ Зелёный}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00026}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7aafe71cad474c15ce63b300c470eef8cc}{00026}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7aafe71cad474c15ce63b300c470eef8cc}{CYAN}}\ \ \ \ \ \ \ \ \ \ =\ 11,\ \ \textcolor{comment}{//\ Бирюзовый}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00027}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88}{00027}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88}{RED}}\ \ \ \ \ \ \ \ \ \ \ =\ 12,\ \ \textcolor{comment}{//\ Красный}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00028}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a56926c820ad72d0977e7ee44d9916e62}{00028}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a56926c820ad72d0977e7ee44d9916e62}{MAGENTA}}\ \ \ \ \ \ \ =\ 13,\ \ \textcolor{comment}{//\ Пурпурный}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00029}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7ae735a848bf82163a19236ead1c3ef2d2}{00029}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7ae735a848bf82163a19236ead1c3ef2d2}{YELLOW}}\ \ \ \ \ \ \ \ =\ 14,\ \ \textcolor{comment}{//\ Жёлтый}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00030}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50}{00030}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50}{WHITE}}\ \ \ \ \ \ \ \ \ =\ 15,\ \ \textcolor{comment}{//\ Белый}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00032}00032\ \ \ \ \ \textcolor{comment}{//\ Цвета\ фона\ (получаются\ путем\ сдвига\ на\ 4\ бита)}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00033}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57}{00033}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57}{BG\_BLACK}}\ \ \ \ \ \ \ \ \ =\ 0\ <<\ 4,\ \ \ \textcolor{comment}{//\ Чёрный\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00034}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7ab377625fb158e7ea6d4301ccb2320857}{00034}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7ab377625fb158e7ea6d4301ccb2320857}{BG\_DARK\_BLUE}}\ \ \ \ \ =\ 1\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/синий\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00035}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a2a19914ca66d11fabf07226d44da77fc}{00035}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a2a19914ca66d11fabf07226d44da77fc}{BG\_DARK\_GREEN}}\ \ \ \ =\ 2\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/зелёный\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00036}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7ab8067f35f87872943edb42e87cf2cf99}{00036}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7ab8067f35f87872943edb42e87cf2cf99}{BG\_DARK\_CYAN}}\ \ \ \ \ =\ 3\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/бирюзовый\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00037}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a300d26832fc5e160679c7dfdbe8f895e}{00037}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a300d26832fc5e160679c7dfdbe8f895e}{BG\_DARK\_RED}}\ \ \ \ \ \ =\ 4\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/красный\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00038}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7afec3a992dfae4c7cec0f5a58b541d7eb}{00038}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7afec3a992dfae4c7cec0f5a58b541d7eb}{BG\_DARK\_MAGENTA}}\ \ =\ 5\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/пурпурный\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00039}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a220fd141c901d9f5fdbaab0988bea1d9}{00039}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a220fd141c901d9f5fdbaab0988bea1d9}{BG\_DARK\_YELLOW}}\ \ \ =\ 6\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/желтый\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00040}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a22eaabcccaf7bce0ca49cfed51250759}{00040}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a22eaabcccaf7bce0ca49cfed51250759}{BG\_LIGHT\_GRAY}}\ \ \ \ =\ 7\ <<\ 4,\ \ \ \textcolor{comment}{//\ Светло-\/серый\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00041}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7aa8f430dda7ef10328134bf48cd7f4fd4}{00041}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7aa8f430dda7ef10328134bf48cd7f4fd4}{BG\_DARK\_GRAY}}\ \ \ \ \ =\ 8\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/серый\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00042}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a9ef352990ea099ae830a329fe0e3f8a8}{00042}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a9ef352990ea099ae830a329fe0e3f8a8}{BG\_BLUE}}\ \ \ \ \ \ \ \ \ \ =\ 9\ <<\ 4,\ \ \ \textcolor{comment}{//\ Синий\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00043}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a23ec75818e963eb7df7b8688a1b7b1ea}{00043}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a23ec75818e963eb7df7b8688a1b7b1ea}{BG\_GREEN}}\ \ \ \ \ \ \ \ \ =\ 10\ <<\ 4,\ \ \textcolor{comment}{//\ Зелёный\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00044}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a93c40c8386036f57d2a0496a562b7365}{00044}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a93c40c8386036f57d2a0496a562b7365}{BG\_CYAN}}\ \ \ \ \ \ \ \ \ \ =\ 11\ <<\ 4,\ \ \textcolor{comment}{//\ Бирюзовый\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00045}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a2ff597ee3a5eafbc85d4762a6fa5dd91}{00045}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a2ff597ee3a5eafbc85d4762a6fa5dd91}{BG\_RED}}\ \ \ \ \ \ \ \ \ \ \ =\ 12\ <<\ 4,\ \ \textcolor{comment}{//\ Красный\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00046}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7ace3a751d65c8857e4e50039addcbc48f}{00046}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7ace3a751d65c8857e4e50039addcbc48f}{BG\_MAGENTA}}\ \ \ \ \ \ \ =\ 13\ <<\ 4,\ \ \textcolor{comment}{//\ Пурпурный\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00047}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7adc16c75fa1b6ca460dae363706307c43}{00047}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7adc16c75fa1b6ca460dae363706307c43}{BG\_YELLOW}}\ \ \ \ \ \ \ \ =\ 14\ <<\ 4,\ \ \textcolor{comment}{//\ Жёлтый\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00048}\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7aecc0ff952194921d53813a10bfe2b4d6}{00048}}\ \ \ \ \ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7aecc0ff952194921d53813a10bfe2b4d6}{BG\_WHITE}}\ \ \ \ \ \ \ \ \ =\ 15\ <<\ 4\ \ \ \textcolor{comment}{//\ Белый\ фон}}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00049}00049\ \};}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00051}\mbox{\hyperlink{consts_8h_a89698dbed193356a0b30f69a364928ca}{00051}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{consts_8h_a89698dbed193356a0b30f69a364928ca}{attempts}}\ =\ 10;}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00052}\mbox{\hyperlink{consts_8h_a3d8c24629d725b9ef8c238cf27c9b158}{00052}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{consts_8h_a3d8c24629d725b9ef8c238cf27c9b158}{eps}}\ =\ 1e-\/8;}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00053}\mbox{\hyperlink{consts_8h_a4dfde99194d0a2a07eb912a8149a4c73}{00053}}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{consts_8h_a4dfde99194d0a2a07eb912a8149a4c73}{errInput}}\ =\ -\/1;}
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{consts_8h_source_l00055}00055\ \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__unit_test_solver_old_8cpp" xml:lang="en-US">
+<title>UnitTestSolverOld.cpp File Reference</title>
+<indexterm><primary>UnitTestSolverOld.cpp</primary></indexterm>
+<simplesect>
+    <title>Enumerations    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264c">TestsConst</link> { <?linebreak?><link linkend="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264ca4aa38c4b42b7edf61dfde0e1da5e03dd">TestNumber</link> = 0
+, <link linkend="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264ca6c74183aebb177586093d667d1b08961">aTest</link> = 1
+, <link linkend="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264ca88541aba6e6f8d4d5af52c69e33b3808">bTest</link> = 2
+, <link linkend="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264ca73352e7ce53ca9c3daac7b3c92a9b379">cTest</link> = 3
+, <?linebreak?><link linkend="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264cafbcaec0ef03c910191b7cfbc518663d3">countRes</link> = 4
+, <link linkend="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264ca004ab95104837739e9541317150e676f">x1Res</link> = 5
+, <link linkend="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264cab474875e53ef4ba9550b3c51ded9da56">x2Res</link> = 6
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="__unit_test_solver_old_8cpp_1a4e1f36be4bc6249fda70570aacc235bd">TestSolver</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>const short <link linkend="__unit_test_solver_old_8cpp_1a0f894e7e9e730cefef008a0ab8c32a46">countDataInTest</link> = 7</para>
+</listitem>
+            <listitem><para>double <link linkend="__unit_test_solver_old_8cpp_1adc7214df44129e83e44fe21ec3b84343">matrixTests</link> [][<link linkend="__unit_test_solver_8cpp_1a0f894e7e9e730cefef008a0ab8c32a46">countDataInTest</link>]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Enumeration Type Documentation</title>
+<anchor xml:id="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264c"/><section>
+    <title>TestsConst</title>
+<indexterm><primary>TestsConst</primary><secondary>UnitTestSolverOld.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolverOld.cpp</primary><secondary>TestsConst</secondary></indexterm>
+<para><computeroutput>enum <link linkend="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264c">TestsConst</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>TestNumber</primary><secondary>UnitTestSolverOld.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolverOld.cpp</primary><secondary>TestNumber</secondary></indexterm>
+<anchor xml:id="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264ca4aa38c4b42b7edf61dfde0e1da5e03dd"/>TestNumber</entry><entry></entry></row><row><entry><indexterm><primary>aTest</primary><secondary>UnitTestSolverOld.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolverOld.cpp</primary><secondary>aTest</secondary></indexterm>
+<anchor xml:id="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264ca6c74183aebb177586093d667d1b08961"/>aTest</entry><entry></entry></row><row><entry><indexterm><primary>bTest</primary><secondary>UnitTestSolverOld.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolverOld.cpp</primary><secondary>bTest</secondary></indexterm>
+<anchor xml:id="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264ca88541aba6e6f8d4d5af52c69e33b3808"/>bTest</entry><entry></entry></row><row><entry><indexterm><primary>cTest</primary><secondary>UnitTestSolverOld.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolverOld.cpp</primary><secondary>cTest</secondary></indexterm>
+<anchor xml:id="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264ca73352e7ce53ca9c3daac7b3c92a9b379"/>cTest</entry><entry></entry></row><row><entry><indexterm><primary>countRes</primary><secondary>UnitTestSolverOld.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolverOld.cpp</primary><secondary>countRes</secondary></indexterm>
+<anchor xml:id="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264cafbcaec0ef03c910191b7cfbc518663d3"/>countRes</entry><entry></entry></row><row><entry><indexterm><primary>x1Res</primary><secondary>UnitTestSolverOld.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolverOld.cpp</primary><secondary>x1Res</secondary></indexterm>
+<anchor xml:id="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264ca004ab95104837739e9541317150e676f"/>x1Res</entry><entry></entry></row><row><entry><indexterm><primary>x2Res</primary><secondary>UnitTestSolverOld.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolverOld.cpp</primary><secondary>x2Res</secondary></indexterm>
+<anchor xml:id="__unit_test_solver_old_8cpp_1a2ea114946e0f7b2fba9bb2707a2d264cab474875e53ef4ba9550b3c51ded9da56"/>x2Res</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+<para>
+Definition at line <link linkend="__unit_test_solver_old_8cpp_source_1l00012">12</link> of file <link linkend="__unit_test_solver_old_8cpp_source">UnitTestSolverOld.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__unit_test_solver_old_8cpp_1a4e1f36be4bc6249fda70570aacc235bd"/><section>
+    <title>TestSolver()</title>
+<indexterm><primary>TestSolver</primary><secondary>UnitTestSolverOld.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolverOld.cpp</primary><secondary>TestSolver</secondary></indexterm>
+<para><computeroutput>void TestSolver ( )</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_old_8cpp_source_1l00022">22</link> of file <link linkend="__unit_test_solver_old_8cpp_source">UnitTestSolverOld.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="__unit_test_solver_old_8cpp_1a0f894e7e9e730cefef008a0ab8c32a46"/><section>
+    <title>countDataInTest</title>
+<indexterm><primary>countDataInTest</primary><secondary>UnitTestSolverOld.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolverOld.cpp</primary><secondary>countDataInTest</secondary></indexterm>
+<para><computeroutput>const short countDataInTest = 7</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_old_8cpp_source_1l00003">3</link> of file <link linkend="__unit_test_solver_old_8cpp_source">UnitTestSolverOld.cpp</link>.</para>
+</section>
+<anchor xml:id="__unit_test_solver_old_8cpp_1adc7214df44129e83e44fe21ec3b84343"/><section>
+    <title>matrixTests</title>
+<indexterm><primary>matrixTests</primary><secondary>UnitTestSolverOld.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolverOld.cpp</primary><secondary>matrixTests</secondary></indexterm>
+<para><computeroutput>double matrixTests[][<link linkend="__unit_test_solver_8cpp_1a0f894e7e9e730cefef008a0ab8c32a46">countDataInTest</link>]</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">=&#32;{
+
+&#32;&#32;&#32;&#32;{0,&#32;0,&#32;0,&#32;&#32;0,&#32;&#32;<link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb">infRoot</link>,&#32;&#32;&#32;&#32;0,&#32;&#32;0},
+&#32;&#32;&#32;&#32;{1,&#32;1,&#32;0,&#32;&#32;1,&#32;&#32;<link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1">noRoot</link>,&#32;&#32;&#32;&#32;&#32;0,&#32;&#32;0},
+&#32;&#32;&#32;&#32;{2,&#32;1e-20,&#32;&#32;1e-20,&#32;&#32;1e-20,&#32;&#32;<link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb">infRoot</link>,&#32;&#32;&#32;&#32;0,&#32;&#32;0}
+}
+</programlisting><para>
+Definition at line <link linkend="__unit_test_solver_old_8cpp_source_1l00005">5</link> of file <link linkend="__unit_test_solver_old_8cpp_source">UnitTestSolverOld.cpp</link>.</para>
+</section>
+</section>
+</section>

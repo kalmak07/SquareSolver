@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_input_8cpp_source" xml:lang="en-US">
+<title>input.cpp</title>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_input_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__my_sqr_equation_8h">MySqrEquation.h</link>&quot;</emphasis>
+<anchor xml:id="_input_8cpp_source_1l00002"/>00002 
+<anchor xml:id="_input_8cpp_source_1l00012"/>00012 
+<anchor xml:id="_input_8cpp_source_1l00013"/><link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">00013</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link>(<emphasis role="keywordtype">short</emphasis>&#32;textColor,&#32;<emphasis role="keywordtype">short</emphasis>&#32;bgColor)&#32;{
+<anchor xml:id="_input_8cpp_source_1l00014"/>00014 
+<anchor xml:id="_input_8cpp_source_1l00015"/>00015 &#32;&#32;&#32;&#32;assert(textColor&#32;&lt;&#32;)
+<anchor xml:id="_input_8cpp_source_1l00016"/>00016 
+<anchor xml:id="_input_8cpp_source_1l00017"/>00017 &#32;&#32;&#32;&#32;HANDLE&#32;hConsole&#32;=&#32;GetStdHandle(STD_OUTPUT_HANDLE);
+<anchor xml:id="_input_8cpp_source_1l00018"/>00018 &#32;&#32;&#32;&#32;<emphasis role="comment">//WORD&#32;attributes&#32;=&#32;textColor&#32;|&#32;bgColor;</emphasis>
+<anchor xml:id="_input_8cpp_source_1l00019"/>00019 &#32;&#32;&#32;&#32;SetConsoleTextAttribute(hConsole,&#32;(WORD)(textColor&#32;|&#32;bgColor));
+<anchor xml:id="_input_8cpp_source_1l00020"/>00020 }
+<anchor xml:id="_input_8cpp_source_1l00021"/>00021 
+<anchor xml:id="_input_8cpp_source_1l00027"/>00027 
+<anchor xml:id="_input_8cpp_source_1l00028"/><link linkend="_input_8cpp_1a22d7c3e857afba4903a76181f91ea9fb">00028</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_input_8cpp_1a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</link>()&#32;{
+<anchor xml:id="_input_8cpp_source_1l00029"/>00029 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;testBuf;
+<anchor xml:id="_input_8cpp_source_1l00030"/>00030 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>&#32;((testBuf&#32;=&#32;getchar())&#32;!=&#32;<emphasis role="charliteral">&apos;\n&apos;</emphasis>&#32;&amp;&amp;&#32;testBuf&#32;!=&#32;EOF)&#32;{&#32;}
+<anchor xml:id="_input_8cpp_source_1l00031"/>00031 }
+<anchor xml:id="_input_8cpp_source_1l00032"/>00032 
+<anchor xml:id="_input_8cpp_source_1l00044"/>00044 
+<anchor xml:id="_input_8cpp_source_1l00045"/><link linkend="_input_8cpp_1ac0deb143cdef5abadb1dabec43c67f37">00045</link> <emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_input_8cpp_1ac0deb143cdef5abadb1dabec43c67f37">input</link>(<emphasis role="keywordtype">double</emphasis>&#32;*&#32;a,&#32;<emphasis role="keywordtype">double</emphasis>&#32;*&#32;b,&#32;<emphasis role="keywordtype">double</emphasis>&#32;*&#32;c,&#32;<emphasis role="keywordtype">int</emphasis>&#32;attempt)&#32;{
+<anchor xml:id="_input_8cpp_source_1l00046"/>00046 
+<anchor xml:id="_input_8cpp_source_1l00047"/>00047 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(attempt&#32;=&#32;attempt;&#32;attempt&#32;&gt;&#32;0;&#32;attempt&#32;=&#32;attempt&#32;-&#32;1)&#32;{
+<anchor xml:id="_input_8cpp_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(scanf(<emphasis role="stringliteral">&quot;%lf&#32;%lf&#32;%lf&quot;</emphasis>,&#32;a,&#32;b,&#32;c)&#32;!=&#32;3)&#32;{
+<anchor xml:id="_input_8cpp_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link>(<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88">RED</link>,&#32;<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</link>);
+<anchor xml:id="_input_8cpp_source_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;invalid&#32;values,&#32;attempts&#32;left&#32;%i\n&quot;</emphasis>,&#32;attempt);
+<anchor xml:id="_input_8cpp_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link>(<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50">WHITE</link>,&#32;<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</link>);
+<anchor xml:id="_input_8cpp_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="_input_8cpp_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="_input_8cpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_input_8cpp_1a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</link>();
+<anchor xml:id="_input_8cpp_source_1l00055"/>00055 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_input_8cpp_source_1l00056"/>00056 
+<anchor xml:id="_input_8cpp_source_1l00057"/>00057 &#32;&#32;&#32;&#32;<link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link>(<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88">RED</link>,&#32;<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</link>);
+<anchor xml:id="_input_8cpp_source_1l00058"/>00058 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;the&#32;program&#32;is&#32;tired&quot;</emphasis>);
+<anchor xml:id="_input_8cpp_source_1l00059"/>00059 &#32;&#32;&#32;&#32;<link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link>(<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50">WHITE</link>,&#32;<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</link>);
+<anchor xml:id="_input_8cpp_source_1l00060"/>00060 
+<anchor xml:id="_input_8cpp_source_1l00061"/>00061 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="_input_8cpp_source_1l00062"/>00062 }
+<anchor xml:id="_input_8cpp_source_1l00063"/>00063 
+<anchor xml:id="_input_8cpp_source_1l00074"/>00074 
+<anchor xml:id="_input_8cpp_source_1l00075"/><link linkend="_input_8cpp_1a8b6d741c9efbf2f359bd93f3d6c7212b">00075</link> <emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_input_8cpp_1a8b6d741c9efbf2f359bd93f3d6c7212b">conclusion</link>(<emphasis role="keywordtype">short</emphasis>&#32;count,&#32;<emphasis role="keywordtype">double</emphasis>&#32;x1,&#32;<emphasis role="keywordtype">double</emphasis>&#32;x2)&#32;{
+<anchor xml:id="_input_8cpp_source_1l00076"/>00076 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>&#32;(count)&#32;{
+<anchor xml:id="_input_8cpp_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1">noRoot</link>:
+<anchor xml:id="_input_8cpp_source_1l00078"/>00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link>(<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7ae735a848bf82163a19236ead1c3ef2d2">YELLOW</link>,&#32;<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</link>);
+<anchor xml:id="_input_8cpp_source_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;No&#32;roots\n&quot;</emphasis>);
+<anchor xml:id="_input_8cpp_source_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_input_8cpp_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb">oneRoot</link>:
+<anchor xml:id="_input_8cpp_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link>(<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7aa60bd322f93178d68184e30e162571ca">GREEN</link>,&#32;<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</link>);
+<anchor xml:id="_input_8cpp_source_1l00083"/>00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;One&#32;root:\n&#32;x1&#32;=&#32;x2&#32;=&#32;%lf\n&quot;</emphasis>,&#32;x1);
+<anchor xml:id="_input_8cpp_source_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_input_8cpp_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e">twoRoot</link>:
+<anchor xml:id="_input_8cpp_source_1l00086"/>00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link>(<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7aa60bd322f93178d68184e30e162571ca">GREEN</link>,&#32;<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</link>);
+<anchor xml:id="_input_8cpp_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Two&#32;roots:\n&#32;x1&#32;=&#32;%lf\n&#32;x2&#32;=&#32;%lf\n&quot;</emphasis>,&#32;x1,&#32;x2);
+<anchor xml:id="_input_8cpp_source_1l00088"/>00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_input_8cpp_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;<link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb">infRoot</link>:
+<anchor xml:id="_input_8cpp_source_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link>(<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7ae735a848bf82163a19236ead1c3ef2d2">YELLOW</link>,&#32;<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</link>);
+<anchor xml:id="_input_8cpp_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Inf&#32;roots&quot;</emphasis>);
+<anchor xml:id="_input_8cpp_source_1l00092"/>00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_input_8cpp_source_1l00093"/>00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">default</emphasis>:
+<anchor xml:id="_input_8cpp_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link>(<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88">RED</link>,&#32;<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</link>);
+<anchor xml:id="_input_8cpp_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;Xz&quot;</emphasis>);
+<anchor xml:id="_input_8cpp_source_1l00096"/>00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+<anchor xml:id="_input_8cpp_source_1l00097"/>00097 &#32;&#32;&#32;&#32;}
+<anchor xml:id="_input_8cpp_source_1l00098"/>00098 
+<anchor xml:id="_input_8cpp_source_1l00099"/>00099 &#32;&#32;&#32;&#32;<link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link>(<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50">WHITE</link>,&#32;<link linkend="_consts_8h_1a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</link>);
+<anchor xml:id="_input_8cpp_source_1l00100"/>00100 
+<anchor xml:id="_input_8cpp_source_1l00101"/>00101 }
+</programlisting></section>

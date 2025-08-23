@@ -1,0 +1,46 @@
+var consts_8h =
+[
+    [ "ConsoleColors", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7", [
+      [ "BLACK", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7af77fb67151d0c18d397069ad8c271ba3", null ],
+      [ "DARK_BLUE", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a99d38b5651ed7ae79da0b244e9777229", null ],
+      [ "DARK_GREEN", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a97c5bc9dd320290cc0d0e7ef80fea302", null ],
+      [ "DARK_CYAN", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a0ebfbf54268289a1c46091ea75046e43", null ],
+      [ "DARK_RED", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a50442fe9bbe07098248777e909de8ed0", null ],
+      [ "DARK_MAGENTA", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7adb11a246cbfe4a338d8334b2966e7f2b", null ],
+      [ "DARK_YELLOW", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a316a5bcecbac096583db416862ba567c", null ],
+      [ "LIGHT_GRAY", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a82a1f4f015ad85784e8c8671b7338433", null ],
+      [ "DARK_GRAY", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a656c37aed4a972689007d4c9ce88f425", null ],
+      [ "BLUE", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a35d6719cb4d7577c031b3d79057a1b79", null ],
+      [ "GREEN", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aa60bd322f93178d68184e30e162571ca", null ],
+      [ "CYAN", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aafe71cad474c15ce63b300c470eef8cc", null ],
+      [ "RED", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88", null ],
+      [ "MAGENTA", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a56926c820ad72d0977e7ee44d9916e62", null ],
+      [ "YELLOW", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7ae735a848bf82163a19236ead1c3ef2d2", null ],
+      [ "WHITE", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50", null ],
+      [ "BG_BLACK", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57", null ],
+      [ "BG_DARK_BLUE", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7ab377625fb158e7ea6d4301ccb2320857", null ],
+      [ "BG_DARK_GREEN", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a2a19914ca66d11fabf07226d44da77fc", null ],
+      [ "BG_DARK_CYAN", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7ab8067f35f87872943edb42e87cf2cf99", null ],
+      [ "BG_DARK_RED", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a300d26832fc5e160679c7dfdbe8f895e", null ],
+      [ "BG_DARK_MAGENTA", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7afec3a992dfae4c7cec0f5a58b541d7eb", null ],
+      [ "BG_DARK_YELLOW", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a220fd141c901d9f5fdbaab0988bea1d9", null ],
+      [ "BG_LIGHT_GRAY", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a22eaabcccaf7bce0ca49cfed51250759", null ],
+      [ "BG_DARK_GRAY", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aa8f430dda7ef10328134bf48cd7f4fd4", null ],
+      [ "BG_BLUE", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a9ef352990ea099ae830a329fe0e3f8a8", null ],
+      [ "BG_GREEN", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a23ec75818e963eb7df7b8688a1b7b1ea", null ],
+      [ "BG_CYAN", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a93c40c8386036f57d2a0496a562b7365", null ],
+      [ "BG_RED", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a2ff597ee3a5eafbc85d4762a6fa5dd91", null ],
+      [ "BG_MAGENTA", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7ace3a751d65c8857e4e50039addcbc48f", null ],
+      [ "BG_YELLOW", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7adc16c75fa1b6ca460dae363706307c43", null ],
+      [ "BG_WHITE", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aecc0ff952194921d53813a10bfe2b4d6", null ]
+    ] ],
+    [ "Roots", "consts_8h.html#a34f6126547cfdaeca6fb82d45a97692a", [
+      [ "noRoot", "consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1", null ],
+      [ "oneRoot", "consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb", null ],
+      [ "twoRoot", "consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e", null ],
+      [ "infRoot", "consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb", null ]
+    ] ],
+    [ "attempts", "consts_8h.html#a89698dbed193356a0b30f69a364928ca", null ],
+    [ "eps", "consts_8h.html#a3d8c24629d725b9ef8c238cf27c9b158", null ],
+    [ "errInput", "consts_8h.html#a4dfde99194d0a2a07eb912a8149a4c73", null ]
+];

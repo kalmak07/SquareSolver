@@ -1,0 +1,123 @@
+\doxysection{input.\+cpp File Reference}
+\hypertarget{input_8cpp}{}\label{input_8cpp}\index{input.cpp@{input.cpp}}
+{\ttfamily \#include "{}My\+Sqr\+Equation.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{input_8cpp_aa17d11d871a4f23a2aa4633de05b8c86}{set\+Color}} (short text\+Color, short bg\+Color)
+\begin{DoxyCompactList}\small\item\em This func changes color in windows terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{input_8cpp_a22d7c3e857afba4903a76181f91ea9fb}{clear\+Input\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em This func clear input Buffer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{input_8cpp_ac0deb143cdef5abadb1dabec43c67f37}{input}} (double \texorpdfstring{$\ast$}{*}a, double \texorpdfstring{$\ast$}{*}b, double \texorpdfstring{$\ast$}{*}c, int attempt)
+\begin{DoxyCompactList}\small\item\em This func get data from terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{input_8cpp_a8b6d741c9efbf2f359bd93f3d6c7212b}{conclusion}} (short count, double x1, double x2)
+\begin{DoxyCompactList}\small\item\em This func display data on terminal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{input_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{input_8cpp_a22d7c3e857afba4903a76181f91ea9fb}\index{input.cpp@{input.cpp}!clearInputBuffer@{clearInputBuffer}}
+\index{clearInputBuffer@{clearInputBuffer}!input.cpp@{input.cpp}}
+\doxysubsubsection{\texorpdfstring{clearInputBuffer()}{clearInputBuffer()}}
+{\footnotesize\ttfamily \label{input_8cpp_a22d7c3e857afba4903a76181f91ea9fb} 
+void clear\+Input\+Buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+This func clear input Buffer. 
+
+\begin{DoxyNote}{Note}
+This func clear input Buffer. Need for correct work scanf. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+
+\Hypertarget{input_8cpp_a8b6d741c9efbf2f359bd93f3d6c7212b}\index{input.cpp@{input.cpp}!conclusion@{conclusion}}
+\index{conclusion@{conclusion}!input.cpp@{input.cpp}}
+\doxysubsubsection{\texorpdfstring{conclusion()}{conclusion()}}
+{\footnotesize\ttfamily \label{input_8cpp_a8b6d741c9efbf2f359bd93f3d6c7212b} 
+void conclusion (\begin{DoxyParamCaption}\item[{short}]{count}{, }\item[{double}]{x1}{, }\item[{double}]{x2}{}\end{DoxyParamCaption})}
+
+
+
+This func display data on terminal. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em count} & count roots equation \\
+\hline
+\mbox{\texttt{in}}  & {\em x1} & first root equation \\
+\hline
+\mbox{\texttt{in}}  & {\em x2} & second root equation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This func display data on windows terminal. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Check count on correspondence with enum \doxylink{consts_8h_a34f6126547cfdaeca6fb82d45a97692a}{Roots}. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+
+\Hypertarget{input_8cpp_ac0deb143cdef5abadb1dabec43c67f37}\index{input.cpp@{input.cpp}!input@{input}}
+\index{input@{input}!input.cpp@{input.cpp}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \label{input_8cpp_ac0deb143cdef5abadb1dabec43c67f37} 
+bool input (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{c}{, }\item[{int}]{attempt}{}\end{DoxyParamCaption})}
+
+
+
+This func get data from terminal. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{out}}  & {\em a} & Pointer to the first number \\
+\hline
+\mbox{\texttt{out}}  & {\em b} & Pointer to the second number \\
+\hline
+\mbox{\texttt{out}}  & {\em c} & Pointer to the third number \\
+\hline
+\mbox{\texttt{in}}  & {\em attempt} & count attempt on input\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This func changes color in windows terminal. Check number on correspondence windows colors. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Text color number always less 16. Background color number write in format\+: 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 4. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+
+\Hypertarget{input_8cpp_aa17d11d871a4f23a2aa4633de05b8c86}\index{input.cpp@{input.cpp}!setColor@{setColor}}
+\index{setColor@{setColor}!input.cpp@{input.cpp}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily \label{input_8cpp_aa17d11d871a4f23a2aa4633de05b8c86} 
+void set\+Color (\begin{DoxyParamCaption}\item[{short}]{text\+Color}{, }\item[{short}]{bg\+Color}{}\end{DoxyParamCaption})}
+
+
+
+This func changes color in windows terminal. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em text\+Color} & changes text color \\
+\hline
+\mbox{\texttt{in}}  & {\em bg\+Color} & changes background color\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This func changes color in windows terminal. Check number on correspondence windows colors. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Text color number always less 16. Background color number write in format\+: 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 4. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+

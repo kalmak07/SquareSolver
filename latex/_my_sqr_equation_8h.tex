@@ -1,0 +1,280 @@
+\doxysection{My\+Sqr\+Equation.\+h File Reference}
+\hypertarget{_my_sqr_equation_8h}{}\label{_my_sqr_equation_8h}\index{MySqrEquation.h@{MySqrEquation.h}}
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include "{}consts.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_my_sqr_equation_8h_aa183967a7a915749e9800658481403e8}{is\+Zero}} (double x)
+\begin{DoxyCompactList}\small\item\em Compares numbers with zero. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_my_sqr_equation_8h_aab686ba65e0281b74d30841c2eae5667}{is\+Ravno}} (double a, double b)
+\begin{DoxyCompactList}\small\item\em Compares two numbers. \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{_my_sqr_equation_8h_af3222f7c92ef73b804e5ee180655321f}{solve\+Line\+Root}} (double b, double c, double \texorpdfstring{$\ast$}{*}x1)
+\begin{DoxyCompactList}\small\item\em Solve linear equations ax\texorpdfstring{$^\wedge$}{\string^}2 + bx + c = 0. \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{_my_sqr_equation_8h_a0a5f0682bcb7948f315b84134029c99e}{solve\+Root}} (double a, double b, double c, double \texorpdfstring{$\ast$}{*}x1, double \texorpdfstring{$\ast$}{*}x2)
+\begin{DoxyCompactList}\small\item\em Solve square equations ax\texorpdfstring{$^\wedge$}{\string^}2 + bx + c = 0. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_my_sqr_equation_8h_ac0deb143cdef5abadb1dabec43c67f37}{input}} (double \texorpdfstring{$\ast$}{*}a, double \texorpdfstring{$\ast$}{*}b, double \texorpdfstring{$\ast$}{*}c, int attempt)
+\begin{DoxyCompactList}\small\item\em This func get data from terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_my_sqr_equation_8h_a8b6d741c9efbf2f359bd93f3d6c7212b}{conclusion}} (short count, double x1, double x2)
+\begin{DoxyCompactList}\small\item\em This func display data on terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_my_sqr_equation_8h_aa17d11d871a4f23a2aa4633de05b8c86}{set\+Color}} (short text\+Color, short bg\+Color)
+\begin{DoxyCompactList}\small\item\em This func changes color in windows terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_my_sqr_equation_8h_a22d7c3e857afba4903a76181f91ea9fb}{clear\+Input\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em This func clear input Buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_my_sqr_equation_8h_a4e1f36be4bc6249fda70570aacc235bd}{Test\+Solver}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{_my_sqr_equation_8h_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_my_sqr_equation_8h_a22d7c3e857afba4903a76181f91ea9fb}\index{MySqrEquation.h@{MySqrEquation.h}!clearInputBuffer@{clearInputBuffer}}
+\index{clearInputBuffer@{clearInputBuffer}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{clearInputBuffer()}{clearInputBuffer()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_a22d7c3e857afba4903a76181f91ea9fb} 
+void clear\+Input\+Buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+This func clear input Buffer. 
+
+\begin{DoxyNote}{Note}
+This func clear input Buffer. Need for correct work scanf. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+
+\Hypertarget{_my_sqr_equation_8h_a8b6d741c9efbf2f359bd93f3d6c7212b}\index{MySqrEquation.h@{MySqrEquation.h}!conclusion@{conclusion}}
+\index{conclusion@{conclusion}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{conclusion()}{conclusion()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_a8b6d741c9efbf2f359bd93f3d6c7212b} 
+void conclusion (\begin{DoxyParamCaption}\item[{short}]{count}{, }\item[{double}]{x1}{, }\item[{double}]{x2}{}\end{DoxyParamCaption})}
+
+
+
+This func display data on terminal. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em count} & count roots equation \\
+\hline
+\mbox{\texttt{in}}  & {\em x1} & first root equation \\
+\hline
+\mbox{\texttt{in}}  & {\em x2} & second root equation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This func display data on windows terminal. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Check count on correspondence with enum \doxylink{consts_8h_a34f6126547cfdaeca6fb82d45a97692a}{Roots}. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+
+\Hypertarget{_my_sqr_equation_8h_ac0deb143cdef5abadb1dabec43c67f37}\index{MySqrEquation.h@{MySqrEquation.h}!input@{input}}
+\index{input@{input}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{input()}{input()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_ac0deb143cdef5abadb1dabec43c67f37} 
+bool input (\begin{DoxyParamCaption}\item[{double \texorpdfstring{$\ast$}{*}}]{a}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{b}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{c}{, }\item[{int}]{attempt}{}\end{DoxyParamCaption})}
+
+
+
+This func get data from terminal. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{out}}  & {\em a} & Pointer to the first number \\
+\hline
+\mbox{\texttt{out}}  & {\em b} & Pointer to the second number \\
+\hline
+\mbox{\texttt{out}}  & {\em c} & Pointer to the third number \\
+\hline
+\mbox{\texttt{in}}  & {\em attempt} & count attempt on input\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This func changes color in windows terminal. Check number on correspondence windows colors. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Text color number always less 16. Background color number write in format\+: 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 4. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+
+\Hypertarget{_my_sqr_equation_8h_aab686ba65e0281b74d30841c2eae5667}\index{MySqrEquation.h@{MySqrEquation.h}!isRavno@{isRavno}}
+\index{isRavno@{isRavno}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{isRavno()}{isRavno()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_aab686ba65e0281b74d30841c2eae5667} 
+bool is\+Ravno (\begin{DoxyParamCaption}\item[{double}]{a}{, }\item[{double}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Compares two numbers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em a} & Thirst compared number \\
+\hline
+\mbox{\texttt{in}}  & {\em b} & Second compared number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Compares two numbers. The accuracy is determined by the const eps. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Check number on type double. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{solve_root_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{solve_root_8cpp_source}{solve\+Root.\+cpp}}.
+
+\Hypertarget{_my_sqr_equation_8h_aa183967a7a915749e9800658481403e8}\index{MySqrEquation.h@{MySqrEquation.h}!isZero@{isZero}}
+\index{isZero@{isZero}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{isZero()}{isZero()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_aa183967a7a915749e9800658481403e8} 
+bool is\+Zero (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Compares numbers with zero. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em x} & Compared number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Compares number with zero. The accuracy is determined by the const eps. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Check number on type double. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{solve_root_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{solve_root_8cpp_source}{solve\+Root.\+cpp}}.
+
+\Hypertarget{_my_sqr_equation_8h_aa17d11d871a4f23a2aa4633de05b8c86}\index{MySqrEquation.h@{MySqrEquation.h}!setColor@{setColor}}
+\index{setColor@{setColor}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_aa17d11d871a4f23a2aa4633de05b8c86} 
+void set\+Color (\begin{DoxyParamCaption}\item[{short}]{text\+Color}{, }\item[{short}]{bg\+Color}{}\end{DoxyParamCaption})}
+
+
+
+This func changes color in windows terminal. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em text\+Color} & changes text color \\
+\hline
+\mbox{\texttt{in}}  & {\em bg\+Color} & changes background color\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This func changes color in windows terminal. Check number on correspondence windows colors. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Text color number always less 16. Background color number write in format\+: 1 \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} 4. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+
+\Hypertarget{_my_sqr_equation_8h_af3222f7c92ef73b804e5ee180655321f}\index{MySqrEquation.h@{MySqrEquation.h}!solveLineRoot@{solveLineRoot}}
+\index{solveLineRoot@{solveLineRoot}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{solveLineRoot()}{solveLineRoot()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_af3222f7c92ef73b804e5ee180655321f} 
+short solve\+Line\+Root (\begin{DoxyParamCaption}\item[{double}]{b}{, }\item[{double}]{c}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{x1}{}\end{DoxyParamCaption})}
+
+
+
+Solve linear equations ax\texorpdfstring{$^\wedge$}{\string^}2 + bx + c = 0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em b} & Coefficient at x \\
+\hline
+\mbox{\texttt{in}}  & {\em c} & Free member \\
+\hline
+\mbox{\texttt{out}}  & {\em x1} & Pointer to the first root \\
+\hline
+\mbox{\texttt{out}}  & {\em x2} & Pointer to the second root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+short count of real roots\+:
+\begin{DoxyItemize}
+\item 0\+: no roots
+\item 1\+: one root
+\item -\/1\+: infinity roots
+\end{DoxyItemize}
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+To work with complex roots and linear equations, use a different function. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Check pointers for NULL before using them 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{solve_root_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{solve_root_8cpp_source}{solve\+Root.\+cpp}}.
+
+\Hypertarget{_my_sqr_equation_8h_a0a5f0682bcb7948f315b84134029c99e}\index{MySqrEquation.h@{MySqrEquation.h}!solveRoot@{solveRoot}}
+\index{solveRoot@{solveRoot}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{solveRoot()}{solveRoot()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_a0a5f0682bcb7948f315b84134029c99e} 
+short solve\+Root (\begin{DoxyParamCaption}\item[{double}]{a}{, }\item[{double}]{b}{, }\item[{double}]{c}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{x1}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{x2}{}\end{DoxyParamCaption})}
+
+
+
+Solve square equations ax\texorpdfstring{$^\wedge$}{\string^}2 + bx + c = 0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em a} & Coefficient at x\texorpdfstring{$^\wedge$}{\string^}2 \\
+\hline
+\mbox{\texttt{in}}  & {\em b} & Coefficient at x \\
+\hline
+\mbox{\texttt{in}}  & {\em c} & Free member \\
+\hline
+\mbox{\texttt{out}}  & {\em x1} & Pointer to the first root \\
+\hline
+\mbox{\texttt{out}}  & {\em x2} & Pointer to the second root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+short count of real roots\+:
+\begin{DoxyItemize}
+\item 0\+: no roots
+\item 1\+: one root
+\item 2\+: two roots
+\item -\/1\+: infinity roots
+\end{DoxyItemize}
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+To work with complex roots, use a different function. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Check pointers for NULL before using them 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{solve_root_8cpp_source_l00077}{77}} of file \mbox{\hyperlink{solve_root_8cpp_source}{solve\+Root.\+cpp}}.
+
+\Hypertarget{_my_sqr_equation_8h_a4e1f36be4bc6249fda70570aacc235bd}\index{MySqrEquation.h@{MySqrEquation.h}!TestSolver@{TestSolver}}
+\index{TestSolver@{TestSolver}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{TestSolver()}{TestSolver()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_a4e1f36be4bc6249fda70570aacc235bd} 
+void Test\+Solver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_unit_test_solver_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{_unit_test_solver_8cpp_source}{Unit\+Test\+Solver.\+cpp}}.
+

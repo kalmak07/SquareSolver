@@ -1,0 +1,59 @@
+\doxysection{solve\+Root.\+cpp}
+\hypertarget{solve_root_8cpp_source}{}\label{solve_root_8cpp_source}\mbox{\hyperlink{solve_root_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_my_sqr_equation_8h}{MySqrEquation.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00013}\mbox{\hyperlink{_my_sqr_equation_8h_aab686ba65e0281b74d30841c2eae5667}{00013}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{solve_root_8cpp_aab686ba65e0281b74d30841c2eae5667}{isRavno}}(\textcolor{keywordtype}{double}\ a,\ \textcolor{keywordtype}{double}\ b)\ \{}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00014}00014\ \ \ \ \ \textcolor{keywordflow}{return}\ (fabs(a-\/b)\ <\ \mbox{\hyperlink{consts_8h_a3d8c24629d725b9ef8c238cf27c9b158}{eps}});}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00015}00015\ \}}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00026}\mbox{\hyperlink{_my_sqr_equation_8h_aa183967a7a915749e9800658481403e8}{00026}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{solve_root_8cpp_aa183967a7a915749e9800658481403e8}{isZero}}(\textcolor{keywordtype}{double}\ x)\ \{}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{return}\ (fabs(x)\ <\ \mbox{\hyperlink{consts_8h_a3d8c24629d725b9ef8c238cf27c9b158}{eps}});}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00046}\mbox{\hyperlink{_my_sqr_equation_8h_af3222f7c92ef73b804e5ee180655321f}{00046}}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{solve_root_8cpp_af3222f7c92ef73b804e5ee180655321f}{solveLineRoot}}(\textcolor{keywordtype}{double}\ b,\ \textcolor{keywordtype}{double}\ c,\ \textcolor{keywordtype}{double}\ *\ x1)\ \{}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00047}00047\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{solve_root_8cpp_aab686ba65e0281b74d30841c2eae5667}{isRavno}}(b,\ 0))\ \{}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{solve_root_8cpp_aab686ba65e0281b74d30841c2eae5667}{isRavno}}(c,\ 0))\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb}{infRoot}};}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1}{noRoot}};}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00050}00050\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ *x1\ =\ -\/c\ /\ b;}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{solve_root_8cpp_aa183967a7a915749e9800658481403e8}{isZero}}(*x1))\ *x1\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb}{oneRoot}};}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00056}00056\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00057}00057\ \}}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00077}\mbox{\hyperlink{_my_sqr_equation_8h_a0a5f0682bcb7948f315b84134029c99e}{00077}}\ \textcolor{keywordtype}{short}\ \mbox{\hyperlink{solve_root_8cpp_a0a5f0682bcb7948f315b84134029c99e}{solveRoot}}(\textcolor{keywordtype}{double}\ a,\ \textcolor{keywordtype}{double}\ b,\ \textcolor{keywordtype}{double}\ c,\ \textcolor{keywordtype}{double}\ *\ x1,\ \textcolor{keywordtype}{double}\ *\ x2)\ \{}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00078}00078\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{solve_root_8cpp_aab686ba65e0281b74d30841c2eae5667}{isRavno}}(a,\ 0))\ \{}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{solve_root_8cpp_af3222f7c92ef73b804e5ee180655321f}{solveLineRoot}}(b,\ c,\ x1);}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00080}00080\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00082}00082\ \ \ \ \ \textcolor{keywordtype}{double}\ d\ =\ NAN,\ sqd\ =\ NAN;}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00084}00084\ \ \ \ \ d\ =\ b\ *\ b\ -\/\ 4\ *\ a\ *\ c;}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00086}00086\ \ \ \ \ \textcolor{keywordflow}{if}\ (d\ <\ 0)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1}{noRoot}};}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00088}00088\ \ \ \ \ sqd\ =\ sqrt(d);}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00090}00090\ \ \ \ \ *x1\ =\ (-\/b\ +\ sqd)\ /\ (2\ *\ a);}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00092}00092\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{solve_root_8cpp_aa183967a7a915749e9800658481403e8}{isZero}}(*x1))\ *x1\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00094}00094\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{solve_root_8cpp_aab686ba65e0281b74d30841c2eae5667}{isRavno}}(d,\ 0))\ \ \{}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00095}00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb}{oneRoot}};}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00096}00096\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00097}00097\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00098}00098\ \ \ \ \ \ \ \ \ *x2\ =\ (-\/b\ -\/\ sqd)\ /\ (2\ *\ a);}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00099}00099\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{solve_root_8cpp_aa183967a7a915749e9800658481403e8}{isZero}}(*x2))\ *x2\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00100}00100\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e}{twoRoot}};}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00101}00101\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00102}00102\ }
+\DoxyCodeLine{\Hypertarget{solve_root_8cpp_source_l00103}00103\ \}}
+
+\end{DoxyCode}

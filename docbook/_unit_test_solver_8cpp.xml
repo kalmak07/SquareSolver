@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__unit_test_solver_8cpp" xml:lang="en-US">
+<title>UnitTestSolver.cpp File Reference</title>
+<indexterm><primary>UnitTestSolver.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;MySqrEquation.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Data Structures    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structtest_data">testData</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="__unit_test_solver_8cpp_1a4e1f36be4bc6249fda70570aacc235bd">TestSolver</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>const short <link linkend="__unit_test_solver_8cpp_1a0f894e7e9e730cefef008a0ab8c32a46">countDataInTest</link> = 7</para>
+</listitem>
+            <listitem><para>struct <link linkend="_structtest_data">testData</link> <link linkend="__unit_test_solver_8cpp_1a43d3322350cab98fa23bf71f1f8ed44e">Tests</link> []</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__unit_test_solver_8cpp_1a4e1f36be4bc6249fda70570aacc235bd"/><section>
+    <title>TestSolver()</title>
+<indexterm><primary>TestSolver</primary><secondary>UnitTestSolver.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolver.cpp</primary><secondary>TestSolver</secondary></indexterm>
+<para><computeroutput>void TestSolver ( )</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00023">23</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="__unit_test_solver_8cpp_1a0f894e7e9e730cefef008a0ab8c32a46"/><section>
+    <title>countDataInTest</title>
+<indexterm><primary>countDataInTest</primary><secondary>UnitTestSolver.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolver.cpp</primary><secondary>countDataInTest</secondary></indexterm>
+<para><computeroutput>const short countDataInTest = 7</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00003">3</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
+<anchor xml:id="__unit_test_solver_8cpp_1a43d3322350cab98fa23bf71f1f8ed44e"/><section>
+    <title>Tests</title>
+<indexterm><primary>Tests</primary><secondary>UnitTestSolver.cpp</secondary></indexterm>
+<indexterm><primary>UnitTestSolver.cpp</primary><secondary>Tests</secondary></indexterm>
+<para><computeroutput>struct <link linkend="_structtest_data">testData</link> Tests[]</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">{
+&#32;&#32;&#32;&#32;{<emphasis role="stringliteral">&quot;infRoots&quot;</emphasis>,&#32;&#32;&#32;&#32;0,&#32;&#32;0,&#32;0,&#32;&#32;0,&#32;&#32;<link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb">infRoot</link>,&#32;&#32;&#32;&#32;0,&#32;&#32;0},
+&#32;&#32;&#32;&#32;{<emphasis role="stringliteral">&quot;1&quot;</emphasis>,&#32;&#32;&#32;1,&#32;&#32;&#32;&#32;1,&#32;0,&#32;&#32;1,&#32;&#32;<link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1">noRoot</link>,&#32;&#32;&#32;&#32;&#32;0,&#32;&#32;0},
+&#32;&#32;&#32;&#32;{<emphasis role="stringliteral">&quot;1&quot;</emphasis>,&#32;&#32;&#32;2,&#32;&#32;&#32;&#32;1e-20,&#32;&#32;1e-20,&#32;&#32;1e-20,&#32;&#32;<link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb">infRoot</link>,&#32;&#32;&#32;&#32;0,&#32;&#32;0},
+&#32;&#32;&#32;&#32;{<emphasis role="stringliteral">&quot;1&quot;</emphasis>,&#32;&#32;&#32;3,&#32;&#32;&#32;&#32;0,&#32;&#32;2,&#32;&#32;1,&#32;&#32;<link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb">oneRoot</link>,&#32;&#32;&#32;&#32;-0.5,&#32;&#32;0}
+}
+</programlisting><para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00016">16</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
+</section>
+</section>

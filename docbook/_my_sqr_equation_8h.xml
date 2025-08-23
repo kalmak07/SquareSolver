@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__my_sqr_equation_8h" xml:lang="en-US">
+<title>MySqrEquation.h File Reference</title>
+<indexterm><primary>MySqrEquation.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;cmath&gt;<?linebreak?>#include &lt;stdio.h&gt;<?linebreak?>#include &lt;assert.h&gt;<?linebreak?>#include &lt;windows.h&gt;<?linebreak?>#include &quot;consts.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="__my_sqr_equation_8h_1aa183967a7a915749e9800658481403e8">isZero</link> (double x)</para>
+
+<para>Compares numbers with zero. </para>
+</listitem>
+            <listitem><para>bool <link linkend="__my_sqr_equation_8h_1aab686ba65e0281b74d30841c2eae5667">isRavno</link> (double a, double b)</para>
+
+<para>Compares two numbers. </para>
+</listitem>
+            <listitem><para>short <link linkend="__my_sqr_equation_8h_1af3222f7c92ef73b804e5ee180655321f">solveLineRoot</link> (double b, double c, double *x1)</para>
+
+<para>Solve linear equations ax^2 + bx + c = 0. </para>
+</listitem>
+            <listitem><para>short <link linkend="__my_sqr_equation_8h_1a0a5f0682bcb7948f315b84134029c99e">solveRoot</link> (double a, double b, double c, double *x1, double *x2)</para>
+
+<para>Solve square equations ax^2 + bx + c = 0. </para>
+</listitem>
+            <listitem><para>bool <link linkend="__my_sqr_equation_8h_1ac0deb143cdef5abadb1dabec43c67f37">input</link> (double *a, double *b, double *c, int attempt)</para>
+
+<para>This func get data from terminal. </para>
+</listitem>
+            <listitem><para>void <link linkend="__my_sqr_equation_8h_1a8b6d741c9efbf2f359bd93f3d6c7212b">conclusion</link> (short count, double x1, double x2)</para>
+
+<para>This func display data on terminal. </para>
+</listitem>
+            <listitem><para>void <link linkend="__my_sqr_equation_8h_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link> (short textColor, short bgColor)</para>
+
+<para>This func changes color in windows terminal. </para>
+</listitem>
+            <listitem><para>void <link linkend="__my_sqr_equation_8h_1a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</link> ()</para>
+
+<para>This func clear input Buffer. </para>
+</listitem>
+            <listitem><para>void <link linkend="__my_sqr_equation_8h_1a4e1f36be4bc6249fda70570aacc235bd">TestSolver</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__my_sqr_equation_8h_1a22d7c3e857afba4903a76181f91ea9fb"/><section>
+    <title>clearInputBuffer()</title>
+<indexterm><primary>clearInputBuffer</primary><secondary>MySqrEquation.h</secondary></indexterm>
+<indexterm><primary>MySqrEquation.h</primary><secondary>clearInputBuffer</secondary></indexterm>
+<para><computeroutput>void clearInputBuffer ( )</computeroutput></para><para>
+
+<para>This func clear input Buffer. </para>
+</para>
+
+<para><note><title>Note</title>
+
+<para>This func clear input Buffer. Need for correct work scanf. </para>
+</note>
+</para>
+<para>
+Definition at line <link linkend="_input_8cpp_source_1l00028">28</link> of file <link linkend="_input_8cpp_source">input.cpp</link>.</para>
+</section>
+<anchor xml:id="__my_sqr_equation_8h_1a8b6d741c9efbf2f359bd93f3d6c7212b"/><section>
+    <title>conclusion()</title>
+<indexterm><primary>conclusion</primary><secondary>MySqrEquation.h</secondary></indexterm>
+<indexterm><primary>MySqrEquation.h</primary><secondary>conclusion</secondary></indexterm>
+<para><computeroutput>void conclusion (short count, double x1, double x2)</computeroutput></para><para>
+
+<para>This func display data on terminal. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>count</entry><entry>
+<para>count roots equation </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>x1</entry><entry>
+<para>first root equation </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>x2</entry><entry>
+<para>second root equation</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>Note</title>
+
+<para>This func display data on windows terminal. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Check count on correspondence with enum <link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692a">Roots</link>. </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_input_8cpp_source_1l00075">75</link> of file <link linkend="_input_8cpp_source">input.cpp</link>.</para>
+</section>
+<anchor xml:id="__my_sqr_equation_8h_1ac0deb143cdef5abadb1dabec43c67f37"/><section>
+    <title>input()</title>
+<indexterm><primary>input</primary><secondary>MySqrEquation.h</secondary></indexterm>
+<indexterm><primary>MySqrEquation.h</primary><secondary>input</secondary></indexterm>
+<para><computeroutput>bool input (double * a, double * b, double * c, int attempt)</computeroutput></para><para>
+
+<para>This func get data from terminal. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>out</entry><entry>a</entry><entry>
+<para>Pointer to the first number </para>
+</entry>
+                            </row>
+                            <row>
+<entry>out</entry><entry>b</entry><entry>
+<para>Pointer to the second number </para>
+</entry>
+                            </row>
+                            <row>
+<entry>out</entry><entry>c</entry><entry>
+<para>Pointer to the third number </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>attempt</entry><entry>
+<para>count attempt on input</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>Note</title>
+
+<para>This func changes color in windows terminal. Check number on correspondence windows colors. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Text color number always less 16. Background color number write in format: 1 &lt;&lt; 4. </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_input_8cpp_source_1l00045">45</link> of file <link linkend="_input_8cpp_source">input.cpp</link>.</para>
+</section>
+<anchor xml:id="__my_sqr_equation_8h_1aab686ba65e0281b74d30841c2eae5667"/><section>
+    <title>isRavno()</title>
+<indexterm><primary>isRavno</primary><secondary>MySqrEquation.h</secondary></indexterm>
+<indexterm><primary>MySqrEquation.h</primary><secondary>isRavno</secondary></indexterm>
+<para><computeroutput>bool isRavno (double a, double b)</computeroutput></para><para>
+
+<para>Compares two numbers. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>a</entry><entry>
+<para>Thirst compared number </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>b</entry><entry>
+<para>Second compared number</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>Note</title>
+
+<para>Compares two numbers. The accuracy is determined by the const eps. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Check number on type double. </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_solve_root_8cpp_source_1l00013">13</link> of file <link linkend="_solve_root_8cpp_source">solveRoot.cpp</link>.</para>
+</section>
+<anchor xml:id="__my_sqr_equation_8h_1aa183967a7a915749e9800658481403e8"/><section>
+    <title>isZero()</title>
+<indexterm><primary>isZero</primary><secondary>MySqrEquation.h</secondary></indexterm>
+<indexterm><primary>MySqrEquation.h</primary><secondary>isZero</secondary></indexterm>
+<para><computeroutput>bool isZero (double x)</computeroutput></para><para>
+
+<para>Compares numbers with zero. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>x</entry><entry>
+<para>Compared number</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>Note</title>
+
+<para>Compares number with zero. The accuracy is determined by the const eps. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Check number on type double. </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_solve_root_8cpp_source_1l00026">26</link> of file <link linkend="_solve_root_8cpp_source">solveRoot.cpp</link>.</para>
+</section>
+<anchor xml:id="__my_sqr_equation_8h_1aa17d11d871a4f23a2aa4633de05b8c86"/><section>
+    <title>setColor()</title>
+<indexterm><primary>setColor</primary><secondary>MySqrEquation.h</secondary></indexterm>
+<indexterm><primary>MySqrEquation.h</primary><secondary>setColor</secondary></indexterm>
+<para><computeroutput>void setColor (short textColor, short bgColor)</computeroutput></para><para>
+
+<para>This func changes color in windows terminal. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>textColor</entry><entry>
+<para>changes text color </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>bgColor</entry><entry>
+<para>changes background color</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>Note</title>
+
+<para>This func changes color in windows terminal. Check number on correspondence windows colors. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Text color number always less 16. Background color number write in format: 1 &lt;&lt; 4. </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_input_8cpp_source_1l00013">13</link> of file <link linkend="_input_8cpp_source">input.cpp</link>.</para>
+</section>
+<anchor xml:id="__my_sqr_equation_8h_1af3222f7c92ef73b804e5ee180655321f"/><section>
+    <title>solveLineRoot()</title>
+<indexterm><primary>solveLineRoot</primary><secondary>MySqrEquation.h</secondary></indexterm>
+<indexterm><primary>MySqrEquation.h</primary><secondary>solveLineRoot</secondary></indexterm>
+<para><computeroutput>short solveLineRoot (double b, double c, double * x1)</computeroutput></para><para>
+
+<para>Solve linear equations ax^2 + bx + c = 0. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>b</entry><entry>
+<para>Coefficient at x </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>c</entry><entry>
+<para>Free member </para>
+</entry>
+                            </row>
+                            <row>
+<entry>out</entry><entry>x1</entry><entry>
+<para>Pointer to the first root </para>
+</entry>
+                            </row>
+                            <row>
+<entry>out</entry><entry>x2</entry><entry>
+<para>Pointer to the second root </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>short count of real roots:<itemizedlist>
+<listitem>
+<para>0: no roots</para>
+</listitem><listitem>
+<para>1: one root</para>
+</listitem><listitem>
+<para>-1: infinity roots</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<note><title>Note</title>
+
+<para>To work with complex roots and linear equations, use a different function. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Check pointers for NULL before using them </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_solve_root_8cpp_source_1l00046">46</link> of file <link linkend="_solve_root_8cpp_source">solveRoot.cpp</link>.</para>
+</section>
+<anchor xml:id="__my_sqr_equation_8h_1a0a5f0682bcb7948f315b84134029c99e"/><section>
+    <title>solveRoot()</title>
+<indexterm><primary>solveRoot</primary><secondary>MySqrEquation.h</secondary></indexterm>
+<indexterm><primary>MySqrEquation.h</primary><secondary>solveRoot</secondary></indexterm>
+<para><computeroutput>short solveRoot (double a, double b, double c, double * x1, double * x2)</computeroutput></para><para>
+
+<para>Solve square equations ax^2 + bx + c = 0. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>a</entry><entry>
+<para>Coefficient at x^2 </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>b</entry><entry>
+<para>Coefficient at x </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>c</entry><entry>
+<para>Free member </para>
+</entry>
+                            </row>
+                            <row>
+<entry>out</entry><entry>x1</entry><entry>
+<para>Pointer to the first root </para>
+</entry>
+                            </row>
+                            <row>
+<entry>out</entry><entry>x2</entry><entry>
+<para>Pointer to the second root </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>short count of real roots:<itemizedlist>
+<listitem>
+<para>0: no roots</para>
+</listitem><listitem>
+<para>1: one root</para>
+</listitem><listitem>
+<para>2: two roots</para>
+</listitem><listitem>
+<para>-1: infinity roots</para>
+</listitem></itemizedlist>
+</para>
+</formalpara>
+<note><title>Note</title>
+
+<para>To work with complex roots, use a different function. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Check pointers for NULL before using them </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_solve_root_8cpp_source_1l00077">77</link> of file <link linkend="_solve_root_8cpp_source">solveRoot.cpp</link>.</para>
+</section>
+<anchor xml:id="__my_sqr_equation_8h_1a4e1f36be4bc6249fda70570aacc235bd"/><section>
+    <title>TestSolver()</title>
+<indexterm><primary>TestSolver</primary><secondary>MySqrEquation.h</secondary></indexterm>
+<indexterm><primary>MySqrEquation.h</primary><secondary>TestSolver</secondary></indexterm>
+<para><computeroutput>void TestSolver ( )</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00023">23</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
+</section>
+</section>

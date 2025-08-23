@@ -1,0 +1,152 @@
+\doxysection{solve\+Root.\+cpp File Reference}
+\hypertarget{solve_root_8cpp}{}\label{solve_root_8cpp}\index{solveRoot.cpp@{solveRoot.cpp}}
+{\ttfamily \#include "{}My\+Sqr\+Equation.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{solve_root_8cpp_aab686ba65e0281b74d30841c2eae5667}{is\+Ravno}} (double a, double b)
+\begin{DoxyCompactList}\small\item\em Compares two numbers. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{solve_root_8cpp_aa183967a7a915749e9800658481403e8}{is\+Zero}} (double x)
+\begin{DoxyCompactList}\small\item\em Compares numbers with zero. \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{solve_root_8cpp_af3222f7c92ef73b804e5ee180655321f}{solve\+Line\+Root}} (double b, double c, double \texorpdfstring{$\ast$}{*}x1)
+\begin{DoxyCompactList}\small\item\em Solve linear equations ax\texorpdfstring{$^\wedge$}{\string^}2 + bx + c = 0. \end{DoxyCompactList}\item 
+short \mbox{\hyperlink{solve_root_8cpp_a0a5f0682bcb7948f315b84134029c99e}{solve\+Root}} (double a, double b, double c, double \texorpdfstring{$\ast$}{*}x1, double \texorpdfstring{$\ast$}{*}x2)
+\begin{DoxyCompactList}\small\item\em Solve square equations ax\texorpdfstring{$^\wedge$}{\string^}2 + bx + c = 0. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{solve_root_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{solve_root_8cpp_aab686ba65e0281b74d30841c2eae5667}\index{solveRoot.cpp@{solveRoot.cpp}!isRavno@{isRavno}}
+\index{isRavno@{isRavno}!solveRoot.cpp@{solveRoot.cpp}}
+\doxysubsubsection{\texorpdfstring{isRavno()}{isRavno()}}
+{\footnotesize\ttfamily \label{solve_root_8cpp_aab686ba65e0281b74d30841c2eae5667} 
+bool is\+Ravno (\begin{DoxyParamCaption}\item[{double}]{a}{, }\item[{double}]{b}{}\end{DoxyParamCaption})}
+
+
+
+Compares two numbers. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em a} & Thirst compared number \\
+\hline
+\mbox{\texttt{in}}  & {\em b} & Second compared number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Compares two numbers. The accuracy is determined by the const eps. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Check number on type double. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{solve_root_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{solve_root_8cpp_source}{solve\+Root.\+cpp}}.
+
+\Hypertarget{solve_root_8cpp_aa183967a7a915749e9800658481403e8}\index{solveRoot.cpp@{solveRoot.cpp}!isZero@{isZero}}
+\index{isZero@{isZero}!solveRoot.cpp@{solveRoot.cpp}}
+\doxysubsubsection{\texorpdfstring{isZero()}{isZero()}}
+{\footnotesize\ttfamily \label{solve_root_8cpp_aa183967a7a915749e9800658481403e8} 
+bool is\+Zero (\begin{DoxyParamCaption}\item[{double}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Compares numbers with zero. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em x} & Compared number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Compares number with zero. The accuracy is determined by the const eps. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Check number on type double. 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{solve_root_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{solve_root_8cpp_source}{solve\+Root.\+cpp}}.
+
+\Hypertarget{solve_root_8cpp_af3222f7c92ef73b804e5ee180655321f}\index{solveRoot.cpp@{solveRoot.cpp}!solveLineRoot@{solveLineRoot}}
+\index{solveLineRoot@{solveLineRoot}!solveRoot.cpp@{solveRoot.cpp}}
+\doxysubsubsection{\texorpdfstring{solveLineRoot()}{solveLineRoot()}}
+{\footnotesize\ttfamily \label{solve_root_8cpp_af3222f7c92ef73b804e5ee180655321f} 
+short solve\+Line\+Root (\begin{DoxyParamCaption}\item[{double}]{b}{, }\item[{double}]{c}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{x1}{}\end{DoxyParamCaption})}
+
+
+
+Solve linear equations ax\texorpdfstring{$^\wedge$}{\string^}2 + bx + c = 0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em b} & Coefficient at x \\
+\hline
+\mbox{\texttt{in}}  & {\em c} & Free member \\
+\hline
+\mbox{\texttt{out}}  & {\em x1} & Pointer to the first root \\
+\hline
+\mbox{\texttt{out}}  & {\em x2} & Pointer to the second root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+short count of real roots\+:
+\begin{DoxyItemize}
+\item 0\+: no roots
+\item 1\+: one root
+\item -\/1\+: infinity roots
+\end{DoxyItemize}
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+To work with complex roots and linear equations, use a different function. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Check pointers for NULL before using them 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{solve_root_8cpp_source_l00046}{46}} of file \mbox{\hyperlink{solve_root_8cpp_source}{solve\+Root.\+cpp}}.
+
+\Hypertarget{solve_root_8cpp_a0a5f0682bcb7948f315b84134029c99e}\index{solveRoot.cpp@{solveRoot.cpp}!solveRoot@{solveRoot}}
+\index{solveRoot@{solveRoot}!solveRoot.cpp@{solveRoot.cpp}}
+\doxysubsubsection{\texorpdfstring{solveRoot()}{solveRoot()}}
+{\footnotesize\ttfamily \label{solve_root_8cpp_a0a5f0682bcb7948f315b84134029c99e} 
+short solve\+Root (\begin{DoxyParamCaption}\item[{double}]{a}{, }\item[{double}]{b}{, }\item[{double}]{c}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{x1}{, }\item[{double \texorpdfstring{$\ast$}{*}}]{x2}{}\end{DoxyParamCaption})}
+
+
+
+Solve square equations ax\texorpdfstring{$^\wedge$}{\string^}2 + bx + c = 0. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em a} & Coefficient at x\texorpdfstring{$^\wedge$}{\string^}2 \\
+\hline
+\mbox{\texttt{in}}  & {\em b} & Coefficient at x \\
+\hline
+\mbox{\texttt{in}}  & {\em c} & Free member \\
+\hline
+\mbox{\texttt{out}}  & {\em x1} & Pointer to the first root \\
+\hline
+\mbox{\texttt{out}}  & {\em x2} & Pointer to the second root \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+short count of real roots\+:
+\begin{DoxyItemize}
+\item 0\+: no roots
+\item 1\+: one root
+\item 2\+: two roots
+\item -\/1\+: infinity roots
+\end{DoxyItemize}
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+To work with complex roots, use a different function. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Check pointers for NULL before using them 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{solve_root_8cpp_source_l00077}{77}} of file \mbox{\hyperlink{solve_root_8cpp_source}{solve\+Root.\+cpp}}.
+

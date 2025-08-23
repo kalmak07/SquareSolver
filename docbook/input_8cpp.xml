@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_input_8cpp" xml:lang="en-US">
+<title>input.cpp File Reference</title>
+<indexterm><primary>input.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;MySqrEquation.h&quot;<?linebreak?></programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86">setColor</link> (short textColor, short bgColor)</para>
+
+<para>This func changes color in windows terminal. </para>
+</listitem>
+            <listitem><para>void <link linkend="_input_8cpp_1a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</link> ()</para>
+
+<para>This func clear input Buffer. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_input_8cpp_1ac0deb143cdef5abadb1dabec43c67f37">input</link> (double *a, double *b, double *c, int attempt)</para>
+
+<para>This func get data from terminal. </para>
+</listitem>
+            <listitem><para>void <link linkend="_input_8cpp_1a8b6d741c9efbf2f359bd93f3d6c7212b">conclusion</link> (short count, double x1, double x2)</para>
+
+<para>This func display data on terminal. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_input_8cpp_1a22d7c3e857afba4903a76181f91ea9fb"/><section>
+    <title>clearInputBuffer()</title>
+<indexterm><primary>clearInputBuffer</primary><secondary>input.cpp</secondary></indexterm>
+<indexterm><primary>input.cpp</primary><secondary>clearInputBuffer</secondary></indexterm>
+<para><computeroutput>void clearInputBuffer ( )</computeroutput></para><para>
+
+<para>This func clear input Buffer. </para>
+</para>
+
+<para><note><title>Note</title>
+
+<para>This func clear input Buffer. Need for correct work scanf. </para>
+</note>
+</para>
+<para>
+Definition at line <link linkend="_input_8cpp_source_1l00028">28</link> of file <link linkend="_input_8cpp_source">input.cpp</link>.</para>
+</section>
+<anchor xml:id="_input_8cpp_1a8b6d741c9efbf2f359bd93f3d6c7212b"/><section>
+    <title>conclusion()</title>
+<indexterm><primary>conclusion</primary><secondary>input.cpp</secondary></indexterm>
+<indexterm><primary>input.cpp</primary><secondary>conclusion</secondary></indexterm>
+<para><computeroutput>void conclusion (short count, double x1, double x2)</computeroutput></para><para>
+
+<para>This func display data on terminal. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>count</entry><entry>
+<para>count roots equation </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>x1</entry><entry>
+<para>first root equation </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>x2</entry><entry>
+<para>second root equation</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>Note</title>
+
+<para>This func display data on windows terminal. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Check count on correspondence with enum <link linkend="_consts_8h_1a34f6126547cfdaeca6fb82d45a97692a">Roots</link>. </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_input_8cpp_source_1l00075">75</link> of file <link linkend="_input_8cpp_source">input.cpp</link>.</para>
+</section>
+<anchor xml:id="_input_8cpp_1ac0deb143cdef5abadb1dabec43c67f37"/><section>
+    <title>input()</title>
+<indexterm><primary>input</primary><secondary>input.cpp</secondary></indexterm>
+<indexterm><primary>input.cpp</primary><secondary>input</secondary></indexterm>
+<para><computeroutput>bool input (double * a, double * b, double * c, int attempt)</computeroutput></para><para>
+
+<para>This func get data from terminal. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>out</entry><entry>a</entry><entry>
+<para>Pointer to the first number </para>
+</entry>
+                            </row>
+                            <row>
+<entry>out</entry><entry>b</entry><entry>
+<para>Pointer to the second number </para>
+</entry>
+                            </row>
+                            <row>
+<entry>out</entry><entry>c</entry><entry>
+<para>Pointer to the third number </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>attempt</entry><entry>
+<para>count attempt on input</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>Note</title>
+
+<para>This func changes color in windows terminal. Check number on correspondence windows colors. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Text color number always less 16. Background color number write in format: 1 &lt;&lt; 4. </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_input_8cpp_source_1l00045">45</link> of file <link linkend="_input_8cpp_source">input.cpp</link>.</para>
+</section>
+<anchor xml:id="_input_8cpp_1aa17d11d871a4f23a2aa4633de05b8c86"/><section>
+    <title>setColor()</title>
+<indexterm><primary>setColor</primary><secondary>input.cpp</secondary></indexterm>
+<indexterm><primary>input.cpp</primary><secondary>setColor</secondary></indexterm>
+<para><computeroutput>void setColor (short textColor, short bgColor)</computeroutput></para><para>
+
+<para>This func changes color in windows terminal. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="3" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>in</entry><entry>textColor</entry><entry>
+<para>changes text color </para>
+</entry>
+                            </row>
+                            <row>
+<entry>in</entry><entry>bgColor</entry><entry>
+<para>changes background color</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <note><title>Note</title>
+
+<para>This func changes color in windows terminal. Check number on correspondence windows colors. </para>
+</note>
+<warning><title>Warning</title>
+
+<para>Text color number always less 16. Background color number write in format: 1 &lt;&lt; 4. </para>
+</warning>
+</para>
+<para>
+Definition at line <link linkend="_input_8cpp_source_1l00013">13</link> of file <link linkend="_input_8cpp_source">input.cpp</link>.</para>
+</section>
+</section>
+</section>

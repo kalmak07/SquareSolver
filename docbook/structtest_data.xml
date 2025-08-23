@@ -5,24 +5,88 @@
 <simplesect>
     <title>Data Fields    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_structtest_data_1a865845acffbfa0e205e47e7955ddad8c"/>char <emphasis role="strong">testName</emphasis> [20]</para>
+            <listitem><para>char <link linkend="_structtest_data_1a865845acffbfa0e205e47e7955ddad8c">testName</link> [20]</para>
 </listitem>
-            <listitem><para><anchor xml:id="_structtest_data_1ab339924ec7b479c6641a3d09e3dac4c6"/>short <emphasis role="strong">testNumber</emphasis></para>
+            <listitem><para>short <link linkend="_structtest_data_1ab339924ec7b479c6641a3d09e3dac4c6">testNumber</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_structtest_data_1a6160350fe26c6af366f654e5f2fd0166"/>double <emphasis role="strong">aTest</emphasis></para>
+            <listitem><para>double <link linkend="_structtest_data_1a6160350fe26c6af366f654e5f2fd0166">aTest</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_structtest_data_1ac1cfedc87e3b32aae81bdec4ecdab9af"/>double <emphasis role="strong">bTest</emphasis></para>
+            <listitem><para>double <link linkend="_structtest_data_1ac1cfedc87e3b32aae81bdec4ecdab9af">bTest</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_structtest_data_1af791e0c46791b749533486449c74f733"/>double <emphasis role="strong">cTest</emphasis></para>
+            <listitem><para>double <link linkend="_structtest_data_1af791e0c46791b749533486449c74f733">cTest</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_structtest_data_1aedd79f8a916310338542ffffae291e10"/>short <emphasis role="strong">countRes</emphasis></para>
+            <listitem><para>short <link linkend="_structtest_data_1aedd79f8a916310338542ffffae291e10">countRes</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_structtest_data_1ac592c9d423384ec4e809f6b21d31f10e"/>double <emphasis role="strong">x1Res</emphasis></para>
+            <listitem><para>double <link linkend="_structtest_data_1ac592c9d423384ec4e809f6b21d31f10e">x1Res</link></para>
 </listitem>
-            <listitem><para><anchor xml:id="_structtest_data_1aac19b3c906248df32fac3de69b928eea"/>double <emphasis role="strong">x2Res</emphasis></para>
+            <listitem><para>double <link linkend="_structtest_data_1aac19b3c906248df32fac3de69b928eea">x2Res</link></para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00005">5</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_structtest_data_1a6160350fe26c6af366f654e5f2fd0166"/><section>
+    <title>aTest</title>
+<indexterm><primary>aTest</primary><secondary>testData</secondary></indexterm>
+<indexterm><primary>testData</primary><secondary>aTest</secondary></indexterm>
+<para><computeroutput>double aTest</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00008">8</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
+<anchor xml:id="_structtest_data_1ac1cfedc87e3b32aae81bdec4ecdab9af"/><section>
+    <title>bTest</title>
+<indexterm><primary>bTest</primary><secondary>testData</secondary></indexterm>
+<indexterm><primary>testData</primary><secondary>bTest</secondary></indexterm>
+<para><computeroutput>double bTest</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00009">9</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
+<anchor xml:id="_structtest_data_1aedd79f8a916310338542ffffae291e10"/><section>
+    <title>countRes</title>
+<indexterm><primary>countRes</primary><secondary>testData</secondary></indexterm>
+<indexterm><primary>testData</primary><secondary>countRes</secondary></indexterm>
+<para><computeroutput>short countRes</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00011">11</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
+<anchor xml:id="_structtest_data_1af791e0c46791b749533486449c74f733"/><section>
+    <title>cTest</title>
+<indexterm><primary>cTest</primary><secondary>testData</secondary></indexterm>
+<indexterm><primary>testData</primary><secondary>cTest</secondary></indexterm>
+<para><computeroutput>double cTest</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00010">10</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
+<anchor xml:id="_structtest_data_1a865845acffbfa0e205e47e7955ddad8c"/><section>
+    <title>testName</title>
+<indexterm><primary>testName</primary><secondary>testData</secondary></indexterm>
+<indexterm><primary>testData</primary><secondary>testName</secondary></indexterm>
+<para><computeroutput>char testName[20]</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00006">6</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
+<anchor xml:id="_structtest_data_1ab339924ec7b479c6641a3d09e3dac4c6"/><section>
+    <title>testNumber</title>
+<indexterm><primary>testNumber</primary><secondary>testData</secondary></indexterm>
+<indexterm><primary>testData</primary><secondary>testNumber</secondary></indexterm>
+<para><computeroutput>short testNumber</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00007">7</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
+<anchor xml:id="_structtest_data_1ac592c9d423384ec4e809f6b21d31f10e"/><section>
+    <title>x1Res</title>
+<indexterm><primary>x1Res</primary><secondary>testData</secondary></indexterm>
+<indexterm><primary>testData</primary><secondary>x1Res</secondary></indexterm>
+<para><computeroutput>double x1Res</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00012">12</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
+<anchor xml:id="_structtest_data_1aac19b3c906248df32fac3de69b928eea"/><section>
+    <title>x2Res</title>
+<indexterm><primary>x2Res</primary><secondary>testData</secondary></indexterm>
+<indexterm><primary>testData</primary><secondary>x2Res</secondary></indexterm>
+<para><computeroutput>double x2Res</computeroutput></para><para>
+Definition at line <link linkend="__unit_test_solver_8cpp_source_1l00013">13</link> of file <link linkend="__unit_test_solver_8cpp_source">UnitTestSolver.cpp</link>.</para>
+</section>
 <para>
 The documentation for this struct was generated from the following file:</para>
-UnitTestSolver.cpp</section>
+<link linkend="__unit_test_solver_8cpp">UnitTestSolver.cpp</link></section>
+</section>
