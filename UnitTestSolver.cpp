@@ -6,8 +6,8 @@ const short countDataInTest = 7;
 double matrixTests[countUnitTests][countDataInTest] = {
 //  №   A,  B,  C,  count,  x1Res,  x2Res
     {0, 0, 0,  0,  infRoot,    0,  0},
-    {1, 1, 0,  1,  noRoot,     0,  0}
-
+    {1, 1, 0,  1,  noRoot,     0,  0},
+    {2, 1e-20,  1e-20,  1e-20,  infRoot,    0,  0}
 };
 
 enum TestsConst {
