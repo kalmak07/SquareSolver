@@ -3,8 +3,10 @@
 
 #include <cmath>
 #include <stdio.h>
+#include <assert.h>
 #include "consts.h"
 
+void TestSolver();
 void clearInputBuffer();
 bool input(double * a, double * b, double * c, int attempt);
 short solveRoot(double a, double b, double c, double * x1, double * x2);

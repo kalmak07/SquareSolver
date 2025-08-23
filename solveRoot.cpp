@@ -10,7 +10,11 @@ bool isZero(double x) {
 
 short solveRoot(double a, double b, double c, double * x1, double * x2) {
     if (isRavno(a, 0)) {
-        if (isRavno(b, 0)) return noRoot;
+        if (isRavno(b, 0)) {
+            if (isRavno(c, 0)) return infRoot;
+            else return noRoot;
+        }
+
         else {
             *x1 = -c / b;
             if (isZero(*x1)) *x1 = 0;
