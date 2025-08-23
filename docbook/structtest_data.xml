@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structtest_data" xml:lang="en-US">
+<title>testData Struct Reference</title>
+<indexterm><primary>testData</primary></indexterm>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_structtest_data_1a865845acffbfa0e205e47e7955ddad8c"/>char <emphasis role="strong">testName</emphasis> [20]</para>
+</listitem>
+            <listitem><para><anchor xml:id="_structtest_data_1ab339924ec7b479c6641a3d09e3dac4c6"/>short <emphasis role="strong">testNumber</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structtest_data_1a6160350fe26c6af366f654e5f2fd0166"/>double <emphasis role="strong">aTest</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structtest_data_1ac1cfedc87e3b32aae81bdec4ecdab9af"/>double <emphasis role="strong">bTest</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structtest_data_1af791e0c46791b749533486449c74f733"/>double <emphasis role="strong">cTest</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structtest_data_1aedd79f8a916310338542ffffae291e10"/>short <emphasis role="strong">countRes</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structtest_data_1ac592c9d423384ec4e809f6b21d31f10e"/>double <emphasis role="strong">x1Res</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_structtest_data_1aac19b3c906248df32fac3de69b928eea"/>double <emphasis role="strong">x2Res</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this struct was generated from the following file:</para>
+UnitTestSolver.cpp</section>

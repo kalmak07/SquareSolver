@@ -1,15 +1,46 @@
 #include "MySqrEquation.h"
 
+/**
+ * @brief This func changes color in windows terminal
+ *
+ * @param[in] textColor changes text color
+ * @param[in] bgColor changes background color
+ *
+ * @note This func changes color in windows terminal. Check number on correspondence windows colors.
+ * @warning Text color number always less 16. Background color number write in format: 1 << 4.
+ */
+
 void setColor(short textColor, short bgColor) {
+
+    assert(textColor < )
+
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     //WORD attributes = textColor | bgColor;
     SetConsoleTextAttribute(hConsole, (WORD)(textColor | bgColor));
 }
 
+/**
+ * @brief This func clear input Buffer
+ *
+ * @note This func clear input Buffer. Need for correct work scanf.
+ */
+
 void clearInputBuffer() {
     int testBuf;
     while ((testBuf = getchar()) != '\n' && testBuf != EOF) { }
 }
+
+/**
+ * @brief This func get data from terminal
+ *
+ * @param[out] a Pointer to the first number
+ * @param[out] b Pointer to the second number
+ * @param[out] c Pointer to the third number
+ * @param[in] attempt count attempt on input
+ *
+ * @note This func changes color in windows terminal. Check number on correspondence windows colors.
+ * @warning Text color number always less 16. Background color number write in format: 1 << 4.
+ */
 
 bool input(double * a, double * b, double * c, int attempt) {
 
@@ -29,6 +60,17 @@ bool input(double * a, double * b, double * c, int attempt) {
 
     return false;
 }
+
+/**
+ * @brief This func display data on terminal
+ *
+ * @param[in] count count roots equation
+ * @param[in] x1 first root equation
+ * @param[in] x2 second root equation
+ *
+ * @note This func display data on windows terminal.
+ * @warning Check count on correspondence with enum Roots.
+ */
 
 void conclusion(short count, double x1, double x2) {
     switch (count) {

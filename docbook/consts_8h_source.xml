@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_consts_8h_source" xml:lang="en-US">
+<title>consts.h</title>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;CONSTS_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;CONSTS_H</emphasis>
+3 
+4 <emphasis role="keyword">enum</emphasis>&#32;Roots&#32;{
+5 &#32;&#32;&#32;&#32;noRoot&#32;=&#32;0,
+6 &#32;&#32;&#32;&#32;oneRoot&#32;=&#32;1,
+7 &#32;&#32;&#32;&#32;twoRoot&#32;=&#32;2,
+8 &#32;&#32;&#32;&#32;infRoot&#32;=&#32;-1
+9 };
+10 
+11 <emphasis role="keyword">enum</emphasis>&#32;ConsoleColors{
+12 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Базовые&#32;цвета&#32;текста</emphasis>
+13 &#32;&#32;&#32;&#32;BLACK&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;0,&#32;&#32;&#32;<emphasis role="comment">//&#32;Чёрный</emphasis>
+14 &#32;&#32;&#32;&#32;DARK_BLUE&#32;&#32;&#32;&#32;&#32;=&#32;1,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-синий</emphasis>
+15 &#32;&#32;&#32;&#32;DARK_GREEN&#32;&#32;&#32;&#32;=&#32;2,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-зелёный</emphasis>
+16 &#32;&#32;&#32;&#32;DARK_CYAN&#32;&#32;&#32;&#32;&#32;=&#32;3,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-бирюзовый</emphasis>
+17 &#32;&#32;&#32;&#32;DARK_RED&#32;&#32;&#32;&#32;&#32;&#32;=&#32;4,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-красный</emphasis>
+18 &#32;&#32;&#32;&#32;DARK_MAGENTA&#32;&#32;=&#32;5,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-пурпурный</emphasis>
+19 &#32;&#32;&#32;&#32;DARK_YELLOW&#32;&#32;&#32;=&#32;6,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-желтый&#32;(коричневый)</emphasis>
+20 &#32;&#32;&#32;&#32;LIGHT_GRAY&#32;&#32;&#32;&#32;=&#32;7,&#32;&#32;&#32;<emphasis role="comment">//&#32;Светло-серый&#32;(стандартный)</emphasis>
+21 &#32;&#32;&#32;&#32;DARK_GRAY&#32;&#32;&#32;&#32;&#32;=&#32;8,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-серый</emphasis>
+22 
+23 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Яркие&#32;цвета&#32;текста</emphasis>
+24 &#32;&#32;&#32;&#32;BLUE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;9,&#32;&#32;&#32;<emphasis role="comment">//&#32;Синий</emphasis>
+25 &#32;&#32;&#32;&#32;GREEN&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;10,&#32;&#32;<emphasis role="comment">//&#32;Зелёный</emphasis>
+26 &#32;&#32;&#32;&#32;CYAN&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;11,&#32;&#32;<emphasis role="comment">//&#32;Бирюзовый</emphasis>
+27 &#32;&#32;&#32;&#32;RED&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;12,&#32;&#32;<emphasis role="comment">//&#32;Красный</emphasis>
+28 &#32;&#32;&#32;&#32;MAGENTA&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;13,&#32;&#32;<emphasis role="comment">//&#32;Пурпурный</emphasis>
+29 &#32;&#32;&#32;&#32;YELLOW&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;14,&#32;&#32;<emphasis role="comment">//&#32;Жёлтый</emphasis>
+30 &#32;&#32;&#32;&#32;WHITE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;15,&#32;&#32;<emphasis role="comment">//&#32;Белый</emphasis>
+31 
+32 &#32;&#32;&#32;&#32;<emphasis role="comment">//&#32;Цвета&#32;фона&#32;(получаются&#32;путем&#32;сдвига&#32;на&#32;4&#32;бита)</emphasis>
+33 &#32;&#32;&#32;&#32;BG_BLACK&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;0&#32;&lt;&lt;&#32;4,&#32;&#32;&#32;<emphasis role="comment">//&#32;Чёрный&#32;фон</emphasis>
+34 &#32;&#32;&#32;&#32;BG_DARK_BLUE&#32;&#32;&#32;&#32;&#32;=&#32;1&#32;&lt;&lt;&#32;4,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-синий&#32;фон</emphasis>
+35 &#32;&#32;&#32;&#32;BG_DARK_GREEN&#32;&#32;&#32;&#32;=&#32;2&#32;&lt;&lt;&#32;4,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-зелёный&#32;фон</emphasis>
+36 &#32;&#32;&#32;&#32;BG_DARK_CYAN&#32;&#32;&#32;&#32;&#32;=&#32;3&#32;&lt;&lt;&#32;4,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-бирюзовый&#32;фон</emphasis>
+37 &#32;&#32;&#32;&#32;BG_DARK_RED&#32;&#32;&#32;&#32;&#32;&#32;=&#32;4&#32;&lt;&lt;&#32;4,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-красный&#32;фон</emphasis>
+38 &#32;&#32;&#32;&#32;BG_DARK_MAGENTA&#32;&#32;=&#32;5&#32;&lt;&lt;&#32;4,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-пурпурный&#32;фон</emphasis>
+39 &#32;&#32;&#32;&#32;BG_DARK_YELLOW&#32;&#32;&#32;=&#32;6&#32;&lt;&lt;&#32;4,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-желтый&#32;фон</emphasis>
+40 &#32;&#32;&#32;&#32;BG_LIGHT_GRAY&#32;&#32;&#32;&#32;=&#32;7&#32;&lt;&lt;&#32;4,&#32;&#32;&#32;<emphasis role="comment">//&#32;Светло-серый&#32;фон</emphasis>
+41 &#32;&#32;&#32;&#32;BG_DARK_GRAY&#32;&#32;&#32;&#32;&#32;=&#32;8&#32;&lt;&lt;&#32;4,&#32;&#32;&#32;<emphasis role="comment">//&#32;Тёмно-серый&#32;фон</emphasis>
+42 &#32;&#32;&#32;&#32;BG_BLUE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;9&#32;&lt;&lt;&#32;4,&#32;&#32;&#32;<emphasis role="comment">//&#32;Синий&#32;фон</emphasis>
+43 &#32;&#32;&#32;&#32;BG_GREEN&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;10&#32;&lt;&lt;&#32;4,&#32;&#32;<emphasis role="comment">//&#32;Зелёный&#32;фон</emphasis>
+44 &#32;&#32;&#32;&#32;BG_CYAN&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;11&#32;&lt;&lt;&#32;4,&#32;&#32;<emphasis role="comment">//&#32;Бирюзовый&#32;фон</emphasis>
+45 &#32;&#32;&#32;&#32;BG_RED&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;12&#32;&lt;&lt;&#32;4,&#32;&#32;<emphasis role="comment">//&#32;Красный&#32;фон</emphasis>
+46 &#32;&#32;&#32;&#32;BG_MAGENTA&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;13&#32;&lt;&lt;&#32;4,&#32;&#32;<emphasis role="comment">//&#32;Пурпурный&#32;фон</emphasis>
+47 &#32;&#32;&#32;&#32;BG_YELLOW&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;14&#32;&lt;&lt;&#32;4,&#32;&#32;<emphasis role="comment">//&#32;Жёлтый&#32;фон</emphasis>
+48 &#32;&#32;&#32;&#32;BG_WHITE&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;=&#32;15&#32;&lt;&lt;&#32;4&#32;&#32;&#32;<emphasis role="comment">//&#32;Белый&#32;фон</emphasis>
+49 };
+50 
+51 <emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;attempts&#32;=&#32;10;
+52 <emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>&#32;eps&#32;=&#32;1e-8;
+53 <emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">short</emphasis>&#32;errInput&#32;=&#32;-1;
+54 
+55 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

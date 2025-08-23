@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__my_sqr_equation_8h_source" xml:lang="en-US">
+<title>MySqrEquation.h</title>
+<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#ifndef&#32;HEDDER_H</emphasis>
+2 <emphasis role="preprocessor">#define&#32;HEDDER_H</emphasis>
+3 
+4 <emphasis role="preprocessor">#include&#32;&lt;cmath&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&lt;stdio.h&gt;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&lt;assert.h&gt;</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&lt;windows.h&gt;</emphasis>
+8 <emphasis role="preprocessor">#include&#32;&quot;consts.h&quot;</emphasis>
+9 
+10 <emphasis role="keywordtype">bool</emphasis>&#32;isZero(<emphasis role="keywordtype">double</emphasis>&#32;x);
+11 <emphasis role="keywordtype">bool</emphasis>&#32;isRavno(<emphasis role="keywordtype">double</emphasis>&#32;a,&#32;<emphasis role="keywordtype">double</emphasis>&#32;b);
+12 <emphasis role="keywordtype">short</emphasis>&#32;solveLineRoot(<emphasis role="keywordtype">double</emphasis>&#32;b,&#32;<emphasis role="keywordtype">double</emphasis>&#32;c,&#32;<emphasis role="keywordtype">double</emphasis>&#32;*&#32;x1);
+13 <emphasis role="keywordtype">short</emphasis>&#32;solveRoot(<emphasis role="keywordtype">double</emphasis>&#32;a,&#32;<emphasis role="keywordtype">double</emphasis>&#32;b,&#32;<emphasis role="keywordtype">double</emphasis>&#32;c,&#32;<emphasis role="keywordtype">double</emphasis>&#32;*&#32;x1,&#32;<emphasis role="keywordtype">double</emphasis>&#32;*&#32;x2);
+14 <emphasis role="keywordtype">bool</emphasis>&#32;input(<emphasis role="keywordtype">double</emphasis>&#32;*&#32;a,&#32;<emphasis role="keywordtype">double</emphasis>&#32;*&#32;b,&#32;<emphasis role="keywordtype">double</emphasis>&#32;*&#32;c,&#32;<emphasis role="keywordtype">int</emphasis>&#32;attempt);
+15 <emphasis role="keywordtype">void</emphasis>&#32;conclusion(<emphasis role="keywordtype">short</emphasis>&#32;count,&#32;<emphasis role="keywordtype">double</emphasis>&#32;x1,&#32;<emphasis role="keywordtype">double</emphasis>&#32;x2);
+16 <emphasis role="keywordtype">void</emphasis>&#32;setColor(<emphasis role="keywordtype">short</emphasis>&#32;textColor,&#32;<emphasis role="keywordtype">short</emphasis>&#32;bgColor);
+17 <emphasis role="keywordtype">void</emphasis>&#32;clearInputBuffer();
+18 <emphasis role="keywordtype">void</emphasis>&#32;TestSolver();
+19 
+20 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

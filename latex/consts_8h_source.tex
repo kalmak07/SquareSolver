@@ -1,0 +1,60 @@
+\doxysection{consts.\+h}
+\hypertarget{consts_8h_source}{}\label{consts_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONSTS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONSTS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{keyword}{enum}\ Roots\ \{}
+\DoxyCodeLine{00005\ \ \ \ \ noRoot\ =\ 0,}
+\DoxyCodeLine{00006\ \ \ \ \ oneRoot\ =\ 1,}
+\DoxyCodeLine{00007\ \ \ \ \ twoRoot\ =\ 2,}
+\DoxyCodeLine{00008\ \ \ \ \ infRoot\ =\ -\/1}
+\DoxyCodeLine{00009\ \};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{enum}\ ConsoleColors\{}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ Базовые\ цвета\ текста}}
+\DoxyCodeLine{00013\ \ \ \ \ BLACK\ \ \ \ \ \ \ \ \ =\ 0,\ \ \ \textcolor{comment}{//\ Чёрный}}
+\DoxyCodeLine{00014\ \ \ \ \ DARK\_BLUE\ \ \ \ \ =\ 1,\ \ \ \textcolor{comment}{//\ Тёмно-\/синий}}
+\DoxyCodeLine{00015\ \ \ \ \ DARK\_GREEN\ \ \ \ =\ 2,\ \ \ \textcolor{comment}{//\ Тёмно-\/зелёный}}
+\DoxyCodeLine{00016\ \ \ \ \ DARK\_CYAN\ \ \ \ \ =\ 3,\ \ \ \textcolor{comment}{//\ Тёмно-\/бирюзовый}}
+\DoxyCodeLine{00017\ \ \ \ \ DARK\_RED\ \ \ \ \ \ =\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/красный}}
+\DoxyCodeLine{00018\ \ \ \ \ DARK\_MAGENTA\ \ =\ 5,\ \ \ \textcolor{comment}{//\ Тёмно-\/пурпурный}}
+\DoxyCodeLine{00019\ \ \ \ \ DARK\_YELLOW\ \ \ =\ 6,\ \ \ \textcolor{comment}{//\ Тёмно-\/желтый\ (коричневый)}}
+\DoxyCodeLine{00020\ \ \ \ \ LIGHT\_GRAY\ \ \ \ =\ 7,\ \ \ \textcolor{comment}{//\ Светло-\/серый\ (стандартный)}}
+\DoxyCodeLine{00021\ \ \ \ \ DARK\_GRAY\ \ \ \ \ =\ 8,\ \ \ \textcolor{comment}{//\ Тёмно-\/серый}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{comment}{//\ Яркие\ цвета\ текста}}
+\DoxyCodeLine{00024\ \ \ \ \ BLUE\ \ \ \ \ \ \ \ \ \ =\ 9,\ \ \ \textcolor{comment}{//\ Синий}}
+\DoxyCodeLine{00025\ \ \ \ \ GREEN\ \ \ \ \ \ \ \ \ =\ 10,\ \ \textcolor{comment}{//\ Зелёный}}
+\DoxyCodeLine{00026\ \ \ \ \ CYAN\ \ \ \ \ \ \ \ \ \ =\ 11,\ \ \textcolor{comment}{//\ Бирюзовый}}
+\DoxyCodeLine{00027\ \ \ \ \ RED\ \ \ \ \ \ \ \ \ \ \ =\ 12,\ \ \textcolor{comment}{//\ Красный}}
+\DoxyCodeLine{00028\ \ \ \ \ MAGENTA\ \ \ \ \ \ \ =\ 13,\ \ \textcolor{comment}{//\ Пурпурный}}
+\DoxyCodeLine{00029\ \ \ \ \ YELLOW\ \ \ \ \ \ \ \ =\ 14,\ \ \textcolor{comment}{//\ Жёлтый}}
+\DoxyCodeLine{00030\ \ \ \ \ WHITE\ \ \ \ \ \ \ \ \ =\ 15,\ \ \textcolor{comment}{//\ Белый}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{comment}{//\ Цвета\ фона\ (получаются\ путем\ сдвига\ на\ 4\ бита)}}
+\DoxyCodeLine{00033\ \ \ \ \ BG\_BLACK\ \ \ \ \ \ \ \ \ =\ 0\ <<\ 4,\ \ \ \textcolor{comment}{//\ Чёрный\ фон}}
+\DoxyCodeLine{00034\ \ \ \ \ BG\_DARK\_BLUE\ \ \ \ \ =\ 1\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/синий\ фон}}
+\DoxyCodeLine{00035\ \ \ \ \ BG\_DARK\_GREEN\ \ \ \ =\ 2\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/зелёный\ фон}}
+\DoxyCodeLine{00036\ \ \ \ \ BG\_DARK\_CYAN\ \ \ \ \ =\ 3\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/бирюзовый\ фон}}
+\DoxyCodeLine{00037\ \ \ \ \ BG\_DARK\_RED\ \ \ \ \ \ =\ 4\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/красный\ фон}}
+\DoxyCodeLine{00038\ \ \ \ \ BG\_DARK\_MAGENTA\ \ =\ 5\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/пурпурный\ фон}}
+\DoxyCodeLine{00039\ \ \ \ \ BG\_DARK\_YELLOW\ \ \ =\ 6\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/желтый\ фон}}
+\DoxyCodeLine{00040\ \ \ \ \ BG\_LIGHT\_GRAY\ \ \ \ =\ 7\ <<\ 4,\ \ \ \textcolor{comment}{//\ Светло-\/серый\ фон}}
+\DoxyCodeLine{00041\ \ \ \ \ BG\_DARK\_GRAY\ \ \ \ \ =\ 8\ <<\ 4,\ \ \ \textcolor{comment}{//\ Тёмно-\/серый\ фон}}
+\DoxyCodeLine{00042\ \ \ \ \ BG\_BLUE\ \ \ \ \ \ \ \ \ \ =\ 9\ <<\ 4,\ \ \ \textcolor{comment}{//\ Синий\ фон}}
+\DoxyCodeLine{00043\ \ \ \ \ BG\_GREEN\ \ \ \ \ \ \ \ \ =\ 10\ <<\ 4,\ \ \textcolor{comment}{//\ Зелёный\ фон}}
+\DoxyCodeLine{00044\ \ \ \ \ BG\_CYAN\ \ \ \ \ \ \ \ \ \ =\ 11\ <<\ 4,\ \ \textcolor{comment}{//\ Бирюзовый\ фон}}
+\DoxyCodeLine{00045\ \ \ \ \ BG\_RED\ \ \ \ \ \ \ \ \ \ \ =\ 12\ <<\ 4,\ \ \textcolor{comment}{//\ Красный\ фон}}
+\DoxyCodeLine{00046\ \ \ \ \ BG\_MAGENTA\ \ \ \ \ \ \ =\ 13\ <<\ 4,\ \ \textcolor{comment}{//\ Пурпурный\ фон}}
+\DoxyCodeLine{00047\ \ \ \ \ BG\_YELLOW\ \ \ \ \ \ \ \ =\ 14\ <<\ 4,\ \ \textcolor{comment}{//\ Жёлтый\ фон}}
+\DoxyCodeLine{00048\ \ \ \ \ BG\_WHITE\ \ \ \ \ \ \ \ \ =\ 15\ <<\ 4\ \ \ \textcolor{comment}{//\ Белый\ фон}}
+\DoxyCodeLine{00049\ \};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ attempts\ =\ 10;}
+\DoxyCodeLine{00052\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ eps\ =\ 1e-\/8;}
+\DoxyCodeLine{00053\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{short}\ errInput\ =\ -\/1;}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

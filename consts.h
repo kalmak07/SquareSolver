@@ -5,7 +5,7 @@ enum Roots {
     noRoot = 0,
     oneRoot = 1,
     twoRoot = 2,
-    infRoot = 3
+    infRoot = -1
 };
 
 enum ConsoleColors{
