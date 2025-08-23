@@ -3,7 +3,7 @@
 /**
  * @brief Compares two numbers
  *
- * @param[in] a Thirst compared number
+ * @param[in] a First compared number
  * @param[in] b Second compared number
  *
  * @note Compares two numbers. The accuracy is determined by the const eps.
