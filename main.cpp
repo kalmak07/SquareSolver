@@ -4,7 +4,9 @@
 int main(void) {
     printf("quadratic equation solver v0.22\n");
 
-    TestSolver();
+    #ifdef _DEBUG
+        TestSolver();
+    #endif
 
     printf("------------------------------\n");
     printf("indicate coefficients A, B, C:\n");

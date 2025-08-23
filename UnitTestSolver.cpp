@@ -1,9 +1,8 @@
 #include "MySqrEquation.h"
 
-const short countUnitTests = 2;
 const short countDataInTest = 7;
 
-double matrixTests[countUnitTests][countDataInTest] = {
+double matrixTests[][countDataInTest] = {
 //  №   A,  B,  C,  count,  x1Res,  x2Res
     {0, 0, 0,  0,  infRoot,    0,  0},
     {1, 1, 0,  1,  noRoot,     0,  0},
