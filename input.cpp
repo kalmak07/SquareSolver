@@ -12,7 +12,7 @@
 
 void setColor(short textColor, short bgColor) {
 
-    assert(textColor < )
+    assert(textColor < 16);
 
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     //WORD attributes = textColor | bgColor;

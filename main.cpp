@@ -1,7 +1,23 @@
 #include "MySqrEquation.h"
 #include "consts.h"
 
+void restoreColor() {
+    setColor(WHITE, BG_BLACK);
+}
+
+// Обработчик сигналов
+void signalHandler(int signal) {
+    printf("\n"); // Переводим на новую строку
+    restoreColor(); // Восстанавливаем цвет
+    exit(signal); // Завершаем программу
+}
+
 int main(void) {
+
+    signal(SIGINT, signalHandler);  // Ctrl+C
+    signal(SIGTERM, signalHandler); // Завершение процесса
+    atexit(restoreColor);
+
     setColor(YELLOW, BG_BLACK);
 
     printf("quadratic equation solver v0.23\n");

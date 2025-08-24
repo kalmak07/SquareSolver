@@ -15,7 +15,7 @@ struct testData {
 
 struct testData Tests[] {
     {"infRoots",    0,  0, 0,  0,  infRoot,    0,  0},
-    {"1",   1,    1, 0,  1,  noRoot,     0,  0},
+    {"1",   1,    0, 0,  1,  noRoot,     0,  0},
     {"1",   2,    1e-20,  1e-20,  1e-20,  infRoot,    0,  0},
     {"1",   3,    0,  2,  1,  oneRoot,    -0.5,  0}
 };
@@ -23,7 +23,7 @@ struct testData Tests[] {
 void TestSolver() {
     bool  errUnitTest = false;
     unsigned int countTests = sizeof(Tests) / sizeof(Tests[0]);
-    short countGoodTests = countTests;
+    unsigned int countGoodTests = countTests;
 
     for (unsigned int i = 0; i < countTests; i++) {
         double x1Test = 0, x2Test = 0, countRootTest = 0;

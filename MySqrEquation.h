@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include <windows.h>
+#include <signal.h>
 #include "consts.h"
 
 bool isZero(double x);
@@ -16,5 +17,8 @@ void conclusion(short count, double x1, double x2);
 void setColor(short textColor, short bgColor);
 void clearInputBuffer();
 void TestSolver();
+
+void signalHandler(int signal);
+void restoreColor();
 
 #endif
