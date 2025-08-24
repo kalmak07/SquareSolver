@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['clearinputbuffer_0',['clearInputBuffer',['../input_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb',1,'clearInputBuffer():&#160;input.cpp'],['../_my_sqr_equation_8h.html#a22d7c3e857afba4903a76181f91ea9fb',1,'clearInputBuffer():&#160;input.cpp']]],
-  ['conclusion_1',['conclusion',['../input_8cpp.html#a8b6d741c9efbf2f359bd93f3d6c7212b',1,'conclusion(short count, double x1, double x2):&#160;input.cpp'],['../_my_sqr_equation_8h.html#a8b6d741c9efbf2f359bd93f3d6c7212b',1,'conclusion(short count, double x1, double x2):&#160;input.cpp']]]
+  ['_5ftx_5fauto_5ffunc_0',['_tx_auto_func',['../group___misc.html#ga1767a63cce977aa94cc0ebd4e8f5a644',1,'TXLib.h']]],
+  ['_5ftx_5fauto_5ffunc_5f_1',['_tx_auto_func_',['../struct__tx__auto__func__.html#a1ccc0ace7fe871d10cca48cbbac52970',1,'_tx_auto_func_']]]
 ];

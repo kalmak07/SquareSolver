@@ -1,5 +1,6 @@
 var consts_8h =
 [
+    [ "ProgramFlags", "struct_program_flags.html", "struct_program_flags" ],
     [ "ConsoleColors", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7", [
       [ "BLACK", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7af77fb67151d0c18d397069ad8c271ba3", null ],
       [ "DARK_BLUE", "consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a99d38b5651ed7ae79da0b244e9777229", null ],

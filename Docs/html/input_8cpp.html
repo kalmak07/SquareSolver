@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">SquareSolver<span id="projectnumber">&#160;v0.23</span>
+   <div id="projectname">SquareSolver<span id="projectnumber">&#160;0.3.0</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,10 @@ $(function(){initNavTree('input_8cpp.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad2e59c7203b3bddc1bc9a2224b52e8e7" id="r_ad2e59c7203b3bddc1bc9a2224b52e8e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2e59c7203b3bddc1bc9a2224b52e8e7">signalHandler</a> (int signal)</td></tr>
+<tr class="memdesc:ad2e59c7203b3bddc1bc9a2224b52e8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This func processes signals and when completed prog, changes console color on stoc.  <br /></td></tr>
+<tr class="memitem:a61738e2518a17f870a63f52b54bad0f2" id="r_a61738e2518a17f870a63f52b54bad0f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61738e2518a17f870a63f52b54bad0f2">restoreColor</a> ()</td></tr>
+<tr class="memdesc:a61738e2518a17f870a63f52b54bad0f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return stock color.  <br /></td></tr>
 <tr class="memitem:aa17d11d871a4f23a2aa4633de05b8c86" id="r_aa17d11d871a4f23a2aa4633de05b8c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a> (short textColor, short bgColor)</td></tr>
 <tr class="memdesc:aa17d11d871a4f23a2aa4633de05b8c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">This func changes color in windows terminal.  <br /></td></tr>
 <tr class="memitem:a22d7c3e857afba4903a76181f91ea9fb" id="r_a22d7c3e857afba4903a76181f91ea9fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</a> ()</td></tr>
@@ -125,7 +129,7 @@ Functions</h2></td></tr>
 <p>This func clear input Buffer. </p>
 <dl class="section note"><dt>Note</dt><dd>This func clear input Buffer. Need for correct work scanf. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00028">28</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00053">53</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
 </div>
 </div>
@@ -165,7 +169,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This func display data on windows terminal. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Check count on correspondence with enum <a class="el" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692a">Roots</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00075">75</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00097">97</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
 </div>
 </div>
@@ -211,7 +215,29 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This func changes color in windows terminal. Check number on correspondence windows colors. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Text color number always less 16. Background color number write in format: 1 &lt;&lt; 4. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00045">45</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00070">70</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a61738e2518a17f870a63f52b54bad0f2" name="a61738e2518a17f870a63f52b54bad0f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61738e2518a17f870a63f52b54bad0f2">&#9670;&#160;</a></span>restoreColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void restoreColor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return stock color. </p>
+<dl class="section note"><dt>Note</dt><dd>This func return stock color in windows terminal </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00024">24</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
 </div>
 </div>
@@ -245,7 +271,36 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This func changes color in windows terminal. Check number on correspondence windows colors. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Text color number always less 16. Background color number write in format: 1 &lt;&lt; 4. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00013">13</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00038">38</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad2e59c7203b3bddc1bc9a2224b52e8e7" name="ad2e59c7203b3bddc1bc9a2224b52e8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e59c7203b3bddc1bc9a2224b52e8e7">&#9670;&#160;</a></span>signalHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void signalHandler </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>signal</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This func processes signals and when completed prog, changes console color on stoc. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">signal</td><td>system signal</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This func processes signals and when completed prog, changes console color on stoc. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Don`t work good. Testing only on windows 11 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00012">12</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
 </div>
 </div>

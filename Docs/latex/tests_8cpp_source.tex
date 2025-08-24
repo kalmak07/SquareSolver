@@ -1,0 +1,26 @@
+\doxysection{tests.\+cpp}
+\hypertarget{tests_8cpp_source}{}\label{tests_8cpp_source}\mbox{\hyperlink{tests_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_my_sqr_equation_8h}{MySqrEquation.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00011}\mbox{\hyperlink{_my_sqr_equation_8h_a6b1e94fb163717c0f7f37b614b174d88}{00011}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{tests_8cpp_a6b1e94fb163717c0f7f37b614b174d88}{runTests}}(\textcolor{keywordtype}{bool}\ \ isFile)\ \{}
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00013}00013\ \ \ \ \ FILE\ *fp;}
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00015}00015\ \ \ \ \ \textcolor{keywordflow}{if}\ (isFile)\ \{}
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ fp\ =\ fopen(\textcolor{stringliteral}{"{}testsSolver.csv"{}},\ \textcolor{stringliteral}{"{}w"{}});}
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_t_x_lib_8h_a3153a272f18d0f805028fce7e4337b53}{assert}}(fp\ !=\ NULL);}
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ fprintf(fp,\ \textcolor{stringliteral}{"{}testNumber,\ status,\ testName,\ aIn,\ bIn,\ cIn,\ \(\backslash\)}}
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00022}00022\ \textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ expCountRes,\ CountRes,\ expX1Res,\ X1Res,\ expX2Res,\ X2Res\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00024}00024\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{_my_sqr_equation_8h_aaa11bc470a4b6d80404e00756a0f070b}{TestSolver}}(isFile,\ fp);}
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{tests_8cpp_source_l00028}00028\ \}}
+
+\end{DoxyCode}

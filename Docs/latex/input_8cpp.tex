@@ -4,6 +4,10 @@
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+void \mbox{\hyperlink{input_8cpp_ad2e59c7203b3bddc1bc9a2224b52e8e7}{signal\+Handler}} (int signal)
+\begin{DoxyCompactList}\small\item\em This func processes signals and when completed prog, changes console color on stoc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{input_8cpp_a61738e2518a17f870a63f52b54bad0f2}{restore\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Return stock color. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{input_8cpp_aa17d11d871a4f23a2aa4633de05b8c86}{set\+Color}} (short text\+Color, short bg\+Color)
 \begin{DoxyCompactList}\small\item\em This func changes color in windows terminal. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{input_8cpp_a22d7c3e857afba4903a76181f91ea9fb}{clear\+Input\+Buffer}} ()
@@ -32,7 +36,7 @@ This func clear input Buffer. Need for correct work scanf.
 \end{DoxyNote}
 
 
-Definition at line \mbox{\hyperlink{input_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
 
 \Hypertarget{input_8cpp_a8b6d741c9efbf2f359bd93f3d6c7212b}\index{input.cpp@{input.cpp}!conclusion@{conclusion}}
 \index{conclusion@{conclusion}!input.cpp@{input.cpp}}
@@ -61,7 +65,7 @@ Check count on correspondence with enum \doxylink{consts_8h_a34f6126547cfdaeca6f
 \end{DoxyWarning}
 
 
-Definition at line \mbox{\hyperlink{input_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00097}{97}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
 
 \Hypertarget{input_8cpp_ac0deb143cdef5abadb1dabec43c67f37}\index{input.cpp@{input.cpp}!input@{input}}
 \index{input@{input}!input.cpp@{input.cpp}}
@@ -92,7 +96,24 @@ Text color number always less 16. Background color number write in format\+: 1 \
 \end{DoxyWarning}
 
 
-Definition at line \mbox{\hyperlink{input_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00070}{70}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+
+\Hypertarget{input_8cpp_a61738e2518a17f870a63f52b54bad0f2}\index{input.cpp@{input.cpp}!restoreColor@{restoreColor}}
+\index{restoreColor@{restoreColor}!input.cpp@{input.cpp}}
+\doxysubsubsection{\texorpdfstring{restoreColor()}{restoreColor()}}
+{\footnotesize\ttfamily \label{input_8cpp_a61738e2518a17f870a63f52b54bad0f2} 
+void restore\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Return stock color. 
+
+\begin{DoxyNote}{Note}
+This func return stock color in windows terminal 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
 
 \Hypertarget{input_8cpp_aa17d11d871a4f23a2aa4633de05b8c86}\index{input.cpp@{input.cpp}!setColor@{setColor}}
 \index{setColor@{setColor}!input.cpp@{input.cpp}}
@@ -119,5 +140,30 @@ Text color number always less 16. Background color number write in format\+: 1 \
 \end{DoxyWarning}
 
 
-Definition at line \mbox{\hyperlink{input_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+
+\Hypertarget{input_8cpp_ad2e59c7203b3bddc1bc9a2224b52e8e7}\index{input.cpp@{input.cpp}!signalHandler@{signalHandler}}
+\index{signalHandler@{signalHandler}!input.cpp@{input.cpp}}
+\doxysubsubsection{\texorpdfstring{signalHandler()}{signalHandler()}}
+{\footnotesize\ttfamily \label{input_8cpp_ad2e59c7203b3bddc1bc9a2224b52e8e7} 
+void signal\+Handler (\begin{DoxyParamCaption}\item[{int}]{signal}{}\end{DoxyParamCaption})}
+
+
+
+This func processes signals and when completed prog, changes console color on stoc. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em signal} & system signal\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This func processes signals and when completed prog, changes console color on stoc. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Don\`{}t work good. Testing only on windows 11 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
 

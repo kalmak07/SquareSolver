@@ -2,34 +2,39 @@
 \hypertarget{main_8cpp_source}{}\label{main_8cpp_source}\mbox{\hyperlink{main_8cpp}{Go to the documentation of this file.}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{main_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_my_sqr_equation_8h}{MySqrEquation.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{consts_8h}{consts.h}}"{}}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00003}00003\ }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00004}\mbox{\hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{00004}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cpp_a840291bc02cba5474a4cb46a9b9566fe}{main}}(\textcolor{keywordtype}{void})\ \{}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00005}00005\ \ \ \ \ \mbox{\hyperlink{input_8cpp_aa17d11d871a4f23a2aa4633de05b8c86}{setColor}}(\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7ae735a848bf82163a19236ead1c3ef2d2}{YELLOW}},\ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57}{BG\_BLACK}});}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00006}00006\ }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00007}00007\ \ \ \ \ printf(\textcolor{stringliteral}{"{}quadratic\ equation\ solver\ v0.23\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00008}00008\ }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ \_DEBUG}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00010}00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_my_sqr_equation_8h_a4e1f36be4bc6249fda70570aacc235bd}{TestSolver}}();}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00012}00012\ }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00013}00013\ \ \ \ \ \mbox{\hyperlink{input_8cpp_aa17d11d871a4f23a2aa4633de05b8c86}{setColor}}(\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50}{WHITE}},\ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57}{BG\_BLACK}});}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00014}00014\ }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00015}00015\ \ \ \ \ printf(\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00016}00016\ \ \ \ \ printf(\textcolor{stringliteral}{"{}indicate\ coefficients\ A,\ B,\ C:\(\backslash\)n"{}});}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00017}00017\ }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00018}00018\ }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00019}00019\ \ \ \ \ \textcolor{keywordtype}{double}\ a\ =\ NAN,\ b\ =\ NAN,\ c\ =\ NAN,\ x1\ =\ NAN,\ x2\ =\ NAN;}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00020}00020\ }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{input_8cpp_ac0deb143cdef5abadb1dabec43c67f37}{input}}(\&a,\ \&b,\ \&c,\ \mbox{\hyperlink{consts_8h_a89698dbed193356a0b30f69a364928ca}{attempts}}))\ \{}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{short}\ result\ =\ \mbox{\hyperlink{_my_sqr_equation_8h_a0a5f0682bcb7948f315b84134029c99e}{solveRoot}}(a,\ b,\ c,\ \&x1,\ \&x2);}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{input_8cpp_a8b6d741c9efbf2f359bd93f3d6c7212b}{conclusion}}(result,\ x1,\ x2);}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00024}00024\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00003}\mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{00003}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}\ *argv[])\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00004}00004\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_program_flags}{ProgramFlags}}\ programFlags;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00006}00006\ \ \ \ \ \mbox{\hyperlink{_my_sqr_equation_8h_acedccb376f8d8c1e73f6e565d834ddd0}{flagDefinition}}(argc,\ argv,\ \&programFlags);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00008}00008\ \ \ \ \ signal(SIGINT,\ \mbox{\hyperlink{input_8cpp_ad2e59c7203b3bddc1bc9a2224b52e8e7}{signalHandler}});\ \ \textcolor{comment}{//\ Ctrl+C}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00009}00009\ \ \ \ \ signal(SIGTERM,\ \mbox{\hyperlink{input_8cpp_ad2e59c7203b3bddc1bc9a2224b52e8e7}{signalHandler}});\ \textcolor{comment}{//\ Завершение\ процесса}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00010}00010\ \ \ \ \ atexit(\mbox{\hyperlink{input_8cpp_a61738e2518a17f870a63f52b54bad0f2}{restoreColor}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00012}00012\ \ \ \ \ \textcolor{keywordflow}{if}\ (programFlags.\mbox{\hyperlink{struct_program_flags_a5e2204a81ce597172e79fcdf000c130f}{showHelp}})\ \mbox{\hyperlink{_my_sqr_equation_8h_aec315d77f5c38417289a0e311d2a9d31}{showHelp}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00014}00014\ \textcolor{preprocessor}{\ \ \ \ \#ifdef\ \_DEBUG}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (programFlags.\mbox{\hyperlink{struct_program_flags_a7211399282f5aca438b0487199410168}{runTests}})\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00016}00016\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (programFlags.\mbox{\hyperlink{struct_program_flags_a002a2a64f4efdb283983d95f46f92596}{isFile}})\ \mbox{\hyperlink{_my_sqr_equation_8h_a4cb7681966ba1ca4d52bb3aa277069fb}{COLORED\_PRINT}}(\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a35d6719cb4d7577c031b3d79057a1b79}{BLUE}},\ (\textcolor{stringliteral}{"{}Write\ unit\ tests\ in\ file\(\backslash\)n"{}}));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \mbox{\hyperlink{_my_sqr_equation_8h_a4cb7681966ba1ca4d52bb3aa277069fb}{COLORED\_PRINT}}(\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a35d6719cb4d7577c031b3d79057a1b79}{BLUE}},\ (\textcolor{stringliteral}{"{}Write\ unit\ tests\ in\ console\(\backslash\)n"{}}));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_my_sqr_equation_8h_a6b1e94fb163717c0f7f37b614b174d88}{runTests}}(programFlags.\mbox{\hyperlink{struct_program_flags_a002a2a64f4efdb283983d95f46f92596}{isFile}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00020}00020\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00022}00022\ \ \ \ \ \mbox{\hyperlink{_my_sqr_equation_8h_a4cb7681966ba1ca4d52bb3aa277069fb}{COLORED\_PRINT}}(\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7ae735a848bf82163a19236ead1c3ef2d2}{YELLOW}},\ (\textcolor{stringliteral}{"{}quadratic\ equation\ solver\ v0.23\(\backslash\)n"{}}));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00023}00023\ \ \ \ \ \mbox{\hyperlink{_my_sqr_equation_8h_a4cb7681966ba1ca4d52bb3aa277069fb}{COLORED\_PRINT}}(\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50}{WHITE}},\ (\textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}}));}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00024}00024\ \ \ \ \ \mbox{\hyperlink{_my_sqr_equation_8h_a4cb7681966ba1ca4d52bb3aa277069fb}{COLORED\_PRINT}}(\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50}{WHITE}},\ (\textcolor{stringliteral}{"{}indicate\ coefficients\ A,\ B,\ C:\(\backslash\)n"{}}));}
 \DoxyCodeLine{\Hypertarget{main_8cpp_source_l00025}00025\ }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{input_8cpp_aa17d11d871a4f23a2aa4633de05b8c86}{setColor}}(\mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50}{WHITE}},\ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57}{BG\_BLACK}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00026}00026\ \ \ \ \ \textcolor{keywordtype}{double}\ a\ =\ NAN,\ b\ =\ NAN,\ c\ =\ NAN,\ x1\ =\ NAN,\ x2\ =\ NAN;}
 \DoxyCodeLine{\Hypertarget{main_8cpp_source_l00027}00027\ }
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00029}00029\ \}}
-\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{input_8cpp_ac0deb143cdef5abadb1dabec43c67f37}{input}}(\&a,\ \&b,\ \&c,\ \mbox{\hyperlink{consts_8h_a89698dbed193356a0b30f69a364928ca}{attempts}}))\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00029}00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{short}\ result\ =\ \mbox{\hyperlink{_my_sqr_equation_8h_a0a5f0682bcb7948f315b84134029c99e}{solveRoot}}(a,\ b,\ c,\ \&x1,\ \&x2);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00030}00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{input_8cpp_a8b6d741c9efbf2f359bd93f3d6c7212b}{conclusion}}(result,\ x1,\ x2);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00031}00031\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00035}00035\ }
 
 \end{DoxyCode}

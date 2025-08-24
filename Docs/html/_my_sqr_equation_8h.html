@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">SquareSolver<span id="projectnumber">&#160;v0.23</span>
+   <div id="projectname">SquareSolver<span id="projectnumber">&#160;0.3.0</span>
    </div>
   </td>
  </tr>
@@ -95,12 +95,21 @@ $(function(){initNavTree('_my_sqr_equation_8h.html','',''); });
 <code>#include &lt;stdio.h&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 <code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;signal.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="consts_8h_source.html">consts.h</a>&quot;</code><br />
 </div>
 <p><a href="_my_sqr_equation_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a4cb7681966ba1ca4d52bb3aa277069fb" id="r_a4cb7681966ba1ca4d52bb3aa277069fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cb7681966ba1ca4d52bb3aa277069fb">COLORED_PRINT</a>(color,  message)</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:acedccb376f8d8c1e73f6e565d834ddd0" id="r_acedccb376f8d8c1e73f6e565d834ddd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acedccb376f8d8c1e73f6e565d834ddd0">flagDefinition</a> (int argc, char *argv[], struct <a class="el" href="struct_program_flags.html">ProgramFlags</a> *stractFlag)</td></tr>
+<tr class="memdesc:acedccb376f8d8c1e73f6e565d834ddd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">this func definition flags  <br /></td></tr>
+<tr class="memitem:aec315d77f5c38417289a0e311d2a9d31" id="r_aec315d77f5c38417289a0e311d2a9d31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec315d77f5c38417289a0e311d2a9d31">showHelp</a> ()</td></tr>
+<tr class="memdesc:aec315d77f5c38417289a0e311d2a9d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">this func write help about starts flags  <br /></td></tr>
 <tr class="memitem:aa183967a7a915749e9800658481403e8" id="r_aa183967a7a915749e9800658481403e8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa183967a7a915749e9800658481403e8">isZero</a> (double x)</td></tr>
 <tr class="memdesc:aa183967a7a915749e9800658481403e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares numbers with zero.  <br /></td></tr>
 <tr class="memitem:aab686ba65e0281b74d30841c2eae5667" id="r_aab686ba65e0281b74d30841c2eae5667"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab686ba65e0281b74d30841c2eae5667">isRavno</a> (double a, double b)</td></tr>
@@ -109,16 +118,53 @@ Functions</h2></td></tr>
 <tr class="memdesc:af3222f7c92ef73b804e5ee180655321f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve linear equations ax^2 + bx + c = 0.  <br /></td></tr>
 <tr class="memitem:a0a5f0682bcb7948f315b84134029c99e" id="r_a0a5f0682bcb7948f315b84134029c99e"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a5f0682bcb7948f315b84134029c99e">solveRoot</a> (double a, double b, double c, double *x1, double *x2)</td></tr>
 <tr class="memdesc:a0a5f0682bcb7948f315b84134029c99e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solve square equations ax^2 + bx + c = 0.  <br /></td></tr>
+<tr class="memitem:a6b1e94fb163717c0f7f37b614b174d88" id="r_a6b1e94fb163717c0f7f37b614b174d88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b1e94fb163717c0f7f37b614b174d88">runTests</a> (bool isFile)</td></tr>
+<tr class="memdesc:a6b1e94fb163717c0f7f37b614b174d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">This func run all tests, create csv file and write all data test.  <br /></td></tr>
+<tr class="memitem:aaa11bc470a4b6d80404e00756a0f070b" id="r_aaa11bc470a4b6d80404e00756a0f070b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa11bc470a4b6d80404e00756a0f070b">TestSolver</a> (bool isFile, FILE *fp)</td></tr>
+<tr class="memdesc:aaa11bc470a4b6d80404e00756a0f070b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This func test function solveRoot. This func supports writing in csv file and writing in console. He work with struct <a class="el" href="structtest_data.html">testData</a>.  <br /></td></tr>
 <tr class="memitem:ac0deb143cdef5abadb1dabec43c67f37" id="r_ac0deb143cdef5abadb1dabec43c67f37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0deb143cdef5abadb1dabec43c67f37">input</a> (double *a, double *b, double *c, int attempt)</td></tr>
 <tr class="memdesc:ac0deb143cdef5abadb1dabec43c67f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">This func get data from terminal.  <br /></td></tr>
+<tr class="memitem:a22d7c3e857afba4903a76181f91ea9fb" id="r_a22d7c3e857afba4903a76181f91ea9fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</a> ()</td></tr>
+<tr class="memdesc:a22d7c3e857afba4903a76181f91ea9fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This func clear input Buffer.  <br /></td></tr>
 <tr class="memitem:a8b6d741c9efbf2f359bd93f3d6c7212b" id="r_a8b6d741c9efbf2f359bd93f3d6c7212b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b6d741c9efbf2f359bd93f3d6c7212b">conclusion</a> (short count, double x1, double x2)</td></tr>
 <tr class="memdesc:a8b6d741c9efbf2f359bd93f3d6c7212b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This func display data on terminal.  <br /></td></tr>
 <tr class="memitem:aa17d11d871a4f23a2aa4633de05b8c86" id="r_aa17d11d871a4f23a2aa4633de05b8c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a> (short textColor, short bgColor)</td></tr>
 <tr class="memdesc:aa17d11d871a4f23a2aa4633de05b8c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">This func changes color in windows terminal.  <br /></td></tr>
-<tr class="memitem:a22d7c3e857afba4903a76181f91ea9fb" id="r_a22d7c3e857afba4903a76181f91ea9fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</a> ()</td></tr>
-<tr class="memdesc:a22d7c3e857afba4903a76181f91ea9fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This func clear input Buffer.  <br /></td></tr>
-<tr class="memitem:a4e1f36be4bc6249fda70570aacc235bd" id="r_a4e1f36be4bc6249fda70570aacc235bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e1f36be4bc6249fda70570aacc235bd">TestSolver</a> ()</td></tr>
+<tr class="memitem:a61738e2518a17f870a63f52b54bad0f2" id="r_a61738e2518a17f870a63f52b54bad0f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61738e2518a17f870a63f52b54bad0f2">restoreColor</a> ()</td></tr>
+<tr class="memdesc:a61738e2518a17f870a63f52b54bad0f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return stock color.  <br /></td></tr>
+<tr class="memitem:ad2e59c7203b3bddc1bc9a2224b52e8e7" id="r_ad2e59c7203b3bddc1bc9a2224b52e8e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2e59c7203b3bddc1bc9a2224b52e8e7">signalHandler</a> (int signal)</td></tr>
+<tr class="memdesc:ad2e59c7203b3bddc1bc9a2224b52e8e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This func processes signals and when completed prog, changes console color on stoc.  <br /></td></tr>
 </table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="a4cb7681966ba1ca4d52bb3aa277069fb" name="a4cb7681966ba1ca4d52bb3aa277069fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cb7681966ba1ca4d52bb3aa277069fb">&#9670;&#160;</a></span>COLORED_PRINT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COLORED_PRINT</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>color</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>message</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> { \</div>
+<div class="line">    setColor(color, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>); \</div>
+<div class="line">    printf message; \</div>
+<div class="line">    restoreColor(); \</div>
+<div class="line">} <span class="keywordflow">while</span>(0)</div>
+<div class="ttc" id="aconsts_8h_html_a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57"><div class="ttname"><a href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a></div><div class="ttdeci">@ BG_BLACK</div><div class="ttdef"><b>Definition</b> <a href="consts_8h_source.html#l00033">consts.h:33</a></div></div>
+</div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="_my_sqr_equation_8h_source.html#l00011">11</a> of file <a class="el" href="_my_sqr_equation_8h_source.html">MySqrEquation.h</a>.</p>
+
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="a22d7c3e857afba4903a76181f91ea9fb" name="a22d7c3e857afba4903a76181f91ea9fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22d7c3e857afba4903a76181f91ea9fb">&#9670;&#160;</a></span>clearInputBuffer()</h2>
@@ -138,7 +184,7 @@ Functions</h2></td></tr>
 <p>This func clear input Buffer. </p>
 <dl class="section note"><dt>Note</dt><dd>This func clear input Buffer. Need for correct work scanf. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00028">28</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00053">53</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
 </div>
 </div>
@@ -178,7 +224,47 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This func display data on windows terminal. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Check count on correspondence with enum <a class="el" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692a">Roots</a>. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00075">75</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00097">97</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+
+</div>
+</div>
+<a id="acedccb376f8d8c1e73f6e565d834ddd0" name="acedccb376f8d8c1e73f6e565d834ddd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acedccb376f8d8c1e73f6e565d834ddd0">&#9670;&#160;</a></span>flagDefinition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void flagDefinition </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_program_flags.html">ProgramFlags</a> *</td>          <td class="paramname"><span class="paramname"><em>stractFlag</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>this func definition flags </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">argc</td><td>count flags </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">argv</td><td>array with flags </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">stractFlag</td><td>struct, where are stored flags</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>this func definition flags and stored flags </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>This func definition only -h, -t, -f flags </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="program_flags_8cpp_source.html#l00014">14</a> of file <a class="el" href="program_flags_8cpp_source.html">programFlags.cpp</a>.</p>
 
 </div>
 </div>
@@ -224,7 +310,7 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This func changes color in windows terminal. Check number on correspondence windows colors. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Text color number always less 16. Background color number write in format: 1 &lt;&lt; 4. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00045">45</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00070">70</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
 </div>
 </div>
@@ -250,7 +336,7 @@ Functions</h2></td></tr>
 <p>Compares two numbers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>Thirst compared number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>First compared number </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>Second compared number</td></tr>
   </table>
   </dd>
@@ -291,6 +377,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a61738e2518a17f870a63f52b54bad0f2" name="a61738e2518a17f870a63f52b54bad0f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61738e2518a17f870a63f52b54bad0f2">&#9670;&#160;</a></span>restoreColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void restoreColor </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return stock color. </p>
+<dl class="section note"><dt>Note</dt><dd>This func return stock color in windows terminal </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00024">24</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a6b1e94fb163717c0f7f37b614b174d88" name="a6b1e94fb163717c0f7f37b614b174d88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b1e94fb163717c0f7f37b614b174d88">&#9670;&#160;</a></span>runTests()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void runTests </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isFile</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This func run all tests, create csv file and write all data test. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">isFile</td><td>if true, then writes to file, else write in console</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This func run all tests, create csv file and write all data test </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="tests_8cpp_source.html#l00011">11</a> of file <a class="el" href="tests_8cpp_source.html">tests.cpp</a>.</p>
+
+</div>
+</div>
 <a id="aa17d11d871a4f23a2aa4633de05b8c86" name="aa17d11d871a4f23a2aa4633de05b8c86"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa17d11d871a4f23a2aa4633de05b8c86">&#9670;&#160;</a></span>setColor()</h2>
 
@@ -321,7 +457,58 @@ Functions</h2></td></tr>
 <dl class="section note"><dt>Note</dt><dd>This func changes color in windows terminal. Check number on correspondence windows colors. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Text color number always less 16. Background color number write in format: 1 &lt;&lt; 4. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00013">13</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00038">38</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aec315d77f5c38417289a0e311d2a9d31" name="aec315d77f5c38417289a0e311d2a9d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec315d77f5c38417289a0e311d2a9d31">&#9670;&#160;</a></span>showHelp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void showHelp </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>this func write help about starts flags </p>
+<dl class="section note"><dt>Note</dt><dd>This func write only about -h, -t, -f </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="program_flags_8cpp_source.html#l00038">38</a> of file <a class="el" href="program_flags_8cpp_source.html">programFlags.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad2e59c7203b3bddc1bc9a2224b52e8e7" name="ad2e59c7203b3bddc1bc9a2224b52e8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2e59c7203b3bddc1bc9a2224b52e8e7">&#9670;&#160;</a></span>signalHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void signalHandler </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>signal</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This func processes signals and when completed prog, changes console color on stoc. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">signal</td><td>system signal</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This func processes signals and when completed prog, changes console color on stoc. </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Don`t work good. Testing only on windows 11 </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="input_8cpp_source.html#l00012">12</a> of file <a class="el" href="input_8cpp_source.html">input.cpp</a>.</p>
 
 </div>
 </div>
@@ -431,22 +618,37 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4e1f36be4bc6249fda70570aacc235bd" name="a4e1f36be4bc6249fda70570aacc235bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e1f36be4bc6249fda70570aacc235bd">&#9670;&#160;</a></span>TestSolver()</h2>
+<a id="aaa11bc470a4b6d80404e00756a0f070b" name="aaa11bc470a4b6d80404e00756a0f070b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa11bc470a4b6d80404e00756a0f070b">&#9670;&#160;</a></span>TestSolver()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TestSolver </td>
+          <td class="memname">bool TestSolver </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>fp</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unit_test_solver_8cpp_source.html#l00023">23</a> of file <a class="el" href="_unit_test_solver_8cpp_source.html">UnitTestSolver.cpp</a>.</p>
+<p>This func test function solveRoot. This func supports writing in csv file and writing in console. He work with struct <a class="el" href="structtest_data.html">testData</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">isFile</td><td>if true, then writes to file, else write in console </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*</td><td>fp file, where it is written data of test</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This func work with array of struct </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Keep the sequence and types of variables </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_unit_test_solver_8cpp_source.html#l00034">34</a> of file <a class="el" href="_unit_test_solver_8cpp_source.html">UnitTestSolver.cpp</a>.</p>
 
 </div>
 </div>

@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">SquareSolver<span id="projectnumber">&#160;v0.23</span>
+   <div id="projectname">SquareSolver<span id="projectnumber">&#160;0.3.0</span>
    </div>
   </td>
  </tr>
@@ -101,7 +101,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4e1f36be4bc6249fda70570aacc235bd" id="r_a4e1f36be4bc6249fda70570aacc235bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e1f36be4bc6249fda70570aacc235bd">TestSolver</a> ()</td></tr>
+<tr class="memitem:aaa11bc470a4b6d80404e00756a0f070b" id="r_aaa11bc470a4b6d80404e00756a0f070b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa11bc470a4b6d80404e00756a0f070b">TestSolver</a> (bool isFile, FILE *fp)</td></tr>
+<tr class="memdesc:aaa11bc470a4b6d80404e00756a0f070b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This func test function solveRoot. This func supports writing in csv file and writing in console. He work with struct <a class="el" href="structtest_data.html">testData</a>.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -109,22 +110,37 @@ Variables</h2></td></tr>
 <tr class="memitem:a43d3322350cab98fa23bf71f1f8ed44e" id="r_a43d3322350cab98fa23bf71f1f8ed44e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structtest_data.html">testData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43d3322350cab98fa23bf71f1f8ed44e">Tests</a> []</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
-<a id="a4e1f36be4bc6249fda70570aacc235bd" name="a4e1f36be4bc6249fda70570aacc235bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e1f36be4bc6249fda70570aacc235bd">&#9670;&#160;</a></span>TestSolver()</h2>
+<a id="aaa11bc470a4b6d80404e00756a0f070b" name="aaa11bc470a4b6d80404e00756a0f070b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa11bc470a4b6d80404e00756a0f070b">&#9670;&#160;</a></span>TestSolver()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TestSolver </td>
+          <td class="memname">bool TestSolver </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">FILE *</td>          <td class="paramname"><span class="paramname"><em>fp</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_unit_test_solver_8cpp_source.html#l00023">23</a> of file <a class="el" href="_unit_test_solver_8cpp_source.html">UnitTestSolver.cpp</a>.</p>
+<p>This func test function solveRoot. This func supports writing in csv file and writing in console. He work with struct <a class="el" href="structtest_data.html">testData</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">isFile</td><td>if true, then writes to file, else write in console </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">*</td><td>fp file, where it is written data of test</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>This func work with array of struct </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>Keep the sequence and types of variables </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="_unit_test_solver_8cpp_source.html#l00034">34</a> of file <a class="el" href="_unit_test_solver_8cpp_source.html">UnitTestSolver.cpp</a>.</p>
 
 </div>
 </div>
@@ -158,13 +174,15 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">    {<span class="stringliteral">&quot;infRoots&quot;</span>,    0,  0, 0,  0,  <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb">infRoot</a>,    0,  0},</div>
-<div class="line">    {<span class="stringliteral">&quot;1&quot;</span>,   1,    1, 0,  1,  <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1">noRoot</a>,     0,  0},</div>
+<div class="line">    {<span class="stringliteral">&quot;1&quot;</span>,   1,    0, 0,  1,  <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1">noRoot</a>,     0,  0},</div>
 <div class="line">    {<span class="stringliteral">&quot;1&quot;</span>,   2,    1e-20,  1e-20,  1e-20,  <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb">infRoot</a>,    0,  0},</div>
-<div class="line">    {<span class="stringliteral">&quot;1&quot;</span>,   3,    0,  2,  1,  <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb">oneRoot</a>,    -0.5,  0}</div>
+<div class="line">    {<span class="stringliteral">&quot;1&quot;</span>,   3,    0,  2,  1,  <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb">oneRoot</a>,    -0.5,  0},</div>
+<div class="line">    {<span class="stringliteral">&quot;123&quot;</span>,   4,    -0.00001321,  -1,  3,  <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e">twoRoot</a>,    -75703.22698180,  2.99988112}</div>
 <div class="line">}</div>
 <div class="ttc" id="aconsts_8h_html_a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb"><div class="ttname"><a href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb">infRoot</a></div><div class="ttdeci">@ infRoot</div><div class="ttdef"><b>Definition</b> <a href="consts_8h_source.html#l00008">consts.h:8</a></div></div>
 <div class="ttc" id="aconsts_8h_html_a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1"><div class="ttname"><a href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1">noRoot</a></div><div class="ttdeci">@ noRoot</div><div class="ttdef"><b>Definition</b> <a href="consts_8h_source.html#l00005">consts.h:5</a></div></div>
 <div class="ttc" id="aconsts_8h_html_a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb"><div class="ttname"><a href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb">oneRoot</a></div><div class="ttdeci">@ oneRoot</div><div class="ttdef"><b>Definition</b> <a href="consts_8h_source.html#l00006">consts.h:6</a></div></div>
+<div class="ttc" id="aconsts_8h_html_a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e"><div class="ttname"><a href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e">twoRoot</a></div><div class="ttdeci">@ twoRoot</div><div class="ttdef"><b>Definition</b> <a href="consts_8h_source.html#l00007">consts.h:7</a></div></div>
 </div><!-- fragment -->
 <p class="definition">Definition at line <a class="el" href="_unit_test_solver_8cpp_source.html#l00016">16</a> of file <a class="el" href="_unit_test_solver_8cpp_source.html">UnitTestSolver.cpp</a>.</p>
 

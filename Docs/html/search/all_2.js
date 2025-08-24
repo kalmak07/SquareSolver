@@ -1,11 +1,23 @@
 var searchData=
 [
-  ['clearinputbuffer_0',['clearInputBuffer',['../input_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb',1,'clearInputBuffer():&#160;input.cpp'],['../_my_sqr_equation_8h.html#a22d7c3e857afba4903a76181f91ea9fb',1,'clearInputBuffer():&#160;input.cpp']]],
-  ['conclusion_1',['conclusion',['../input_8cpp.html#a8b6d741c9efbf2f359bd93f3d6c7212b',1,'conclusion(short count, double x1, double x2):&#160;input.cpp'],['../_my_sqr_equation_8h.html#a8b6d741c9efbf2f359bd93f3d6c7212b',1,'conclusion(short count, double x1, double x2):&#160;input.cpp']]],
-  ['consolecolors_2',['ConsoleColors',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7',1,'consts.h']]],
-  ['consts_2eh_3',['consts.h',['../consts_8h.html',1,'']]],
-  ['countdataintest_4',['countDataInTest',['../_unit_test_solver_8cpp.html#a0f894e7e9e730cefef008a0ab8c32a46',1,'countDataInTest:&#160;UnitTestSolver.cpp'],['../_unit_test_solver_old_8cpp.html#a0f894e7e9e730cefef008a0ab8c32a46',1,'countDataInTest:&#160;UnitTestSolverOld.cpp']]],
-  ['countres_5',['countRes',['../structtest_data.html#aedd79f8a916310338542ffffae291e10',1,'testData::countRes'],['../_unit_test_solver_old_8cpp.html#a2ea114946e0f7b2fba9bb2707a2d264cafbcaec0ef03c910191b7cfbc518663d3',1,'countRes:&#160;UnitTestSolverOld.cpp']]],
-  ['ctest_6',['cTest',['../structtest_data.html#af791e0c46791b749533486449c74f733',1,'testData::cTest'],['../_unit_test_solver_old_8cpp.html#a2ea114946e0f7b2fba9bb2707a2d264ca73352e7ce53ca9c3daac7b3c92a9b379',1,'cTest:&#160;UnitTestSolverOld.cpp']]],
-  ['cyan_7',['CYAN',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aafe71cad474c15ce63b300c470eef8cc',1,'consts.h']]]
+  ['bg_5fblack_0',['BG_BLACK',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57',1,'consts.h']]],
+  ['bg_5fblue_1',['BG_BLUE',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a9ef352990ea099ae830a329fe0e3f8a8',1,'consts.h']]],
+  ['bg_5fcyan_2',['BG_CYAN',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a93c40c8386036f57d2a0496a562b7365',1,'consts.h']]],
+  ['bg_5fdark_5fblue_3',['BG_DARK_BLUE',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7ab377625fb158e7ea6d4301ccb2320857',1,'consts.h']]],
+  ['bg_5fdark_5fcyan_4',['BG_DARK_CYAN',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7ab8067f35f87872943edb42e87cf2cf99',1,'consts.h']]],
+  ['bg_5fdark_5fgray_5',['BG_DARK_GRAY',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aa8f430dda7ef10328134bf48cd7f4fd4',1,'consts.h']]],
+  ['bg_5fdark_5fgreen_6',['BG_DARK_GREEN',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a2a19914ca66d11fabf07226d44da77fc',1,'consts.h']]],
+  ['bg_5fdark_5fmagenta_7',['BG_DARK_MAGENTA',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7afec3a992dfae4c7cec0f5a58b541d7eb',1,'consts.h']]],
+  ['bg_5fdark_5fred_8',['BG_DARK_RED',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a300d26832fc5e160679c7dfdbe8f895e',1,'consts.h']]],
+  ['bg_5fdark_5fyellow_9',['BG_DARK_YELLOW',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a220fd141c901d9f5fdbaab0988bea1d9',1,'consts.h']]],
+  ['bg_5fgreen_10',['BG_GREEN',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a23ec75818e963eb7df7b8688a1b7b1ea',1,'consts.h']]],
+  ['bg_5flight_5fgray_11',['BG_LIGHT_GRAY',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a22eaabcccaf7bce0ca49cfed51250759',1,'consts.h']]],
+  ['bg_5fmagenta_12',['BG_MAGENTA',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7ace3a751d65c8857e4e50039addcbc48f',1,'consts.h']]],
+  ['bg_5fred_13',['BG_RED',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a2ff597ee3a5eafbc85d4762a6fa5dd91',1,'consts.h']]],
+  ['bg_5fwhite_14',['BG_WHITE',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aecc0ff952194921d53813a10bfe2b4d6',1,'consts.h']]],
+  ['bg_5fyellow_15',['BG_YELLOW',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7adc16c75fa1b6ca460dae363706307c43',1,'consts.h']]],
+  ['black_16',['BLACK',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7af77fb67151d0c18d397069ad8c271ba3',1,'consts.h']]],
+  ['blue_17',['BLUE',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a35d6719cb4d7577c031b3d79057a1b79',1,'consts.h']]],
+  ['btest_18',['bTest',['../structtest_data.html#ac1cfedc87e3b32aae81bdec4ecdab9af',1,'testData']]],
+  ['button_19',['BUTTON',['../group___dialogs.html#gga077745aacfb8431d6529e20ad67d1674a7d67f007544f534278ecca3cdca12565',1,'txDialog']]]
 ];

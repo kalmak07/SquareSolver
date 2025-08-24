@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['testsolver_0',['TestSolver',['../_my_sqr_equation_8h.html#a4e1f36be4bc6249fda70570aacc235bd',1,'TestSolver():&#160;UnitTestSolver.cpp'],['../_unit_test_solver_8cpp.html#a4e1f36be4bc6249fda70570aacc235bd',1,'TestSolver():&#160;UnitTestSolver.cpp'],['../_unit_test_solver_old_8cpp.html#a4e1f36be4bc6249fda70570aacc235bd',1,'TestSolver():&#160;UnitTestSolverOld.cpp']]]
+  ['in_0',['In',['../group___misc.html#ga1298dbfaaff41786f77c7cd302d73c31',1,'In(Tx x, Ta a, Tb b) tx_nodiscard tx_deprecated:&#160;TXLib.h'],['../_t_x_lib_8h.html#a103314e92b676ac59ad94c394a32ad5e',1,'In(std::nomeow_t, Tx x, Ta a, Tb b) tx_nodiscard tx_deprecated:&#160;TXLib.h'],['../group___misc.html#gadfae620e55d8798711d4a0c72f6af99e',1,'In(const POINT &amp;pt, const RECT &amp;rect) tx_nodiscard tx_deprecated:&#160;TXLib.h'],['../group___misc.html#ga5f6ca2eaa2ff152301239bcefbda5dfe',1,'In(const COORD &amp;pt, const SMALL_RECT &amp;rect) tx_nodiscard tx_deprecated:&#160;TXLib.h']]],
+  ['input_1',['input',['../input_8cpp.html#ac0deb143cdef5abadb1dabec43c67f37',1,'input(double *a, double *b, double *c, int attempt):&#160;input.cpp'],['../_my_sqr_equation_8h.html#ac0deb143cdef5abadb1dabec43c67f37',1,'input(double *a, double *b, double *c, int attempt):&#160;input.cpp']]],
+  ['isravno_2',['isRavno',['../_my_sqr_equation_8h.html#aab686ba65e0281b74d30841c2eae5667',1,'isRavno(double a, double b):&#160;solveRoot.cpp'],['../solve_root_8cpp.html#aab686ba65e0281b74d30841c2eae5667',1,'isRavno(double a, double b):&#160;solveRoot.cpp']]],
+  ['iszero_3',['isZero',['../_my_sqr_equation_8h.html#aa183967a7a915749e9800658481403e8',1,'isZero(double x):&#160;solveRoot.cpp'],['../solve_root_8cpp.html#aa183967a7a915749e9800658481403e8',1,'isZero(double x):&#160;solveRoot.cpp']]]
 ];

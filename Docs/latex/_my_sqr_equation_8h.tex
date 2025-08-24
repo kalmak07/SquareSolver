@@ -4,10 +4,20 @@
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include $<$assert.\+h$>$}\newline
 {\ttfamily \#include $<$windows.\+h$>$}\newline
+{\ttfamily \#include $<$signal.\+h$>$}\newline
 {\ttfamily \#include "{}consts.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_my_sqr_equation_8h_a4cb7681966ba1ca4d52bb3aa277069fb}{COLORED\+\_\+\+PRINT}}(color,  message)
+\end{DoxyCompactItemize}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
+void \mbox{\hyperlink{_my_sqr_equation_8h_acedccb376f8d8c1e73f6e565d834ddd0}{flag\+Definition}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]}, struct \mbox{\hyperlink{struct_program_flags}{Program\+Flags}} \texorpdfstring{$\ast$}{*}stract\+Flag)
+\begin{DoxyCompactList}\small\item\em this func definition flags \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_my_sqr_equation_8h_aec315d77f5c38417289a0e311d2a9d31}{show\+Help}} ()
+\begin{DoxyCompactList}\small\item\em this func write help about starts flags \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{_my_sqr_equation_8h_aa183967a7a915749e9800658481403e8}{is\+Zero}} (double x)
 \begin{DoxyCompactList}\small\item\em Compares numbers with zero. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{_my_sqr_equation_8h_aab686ba65e0281b74d30841c2eae5667}{is\+Ravno}} (double a, double b)
@@ -16,16 +26,46 @@ short \mbox{\hyperlink{_my_sqr_equation_8h_af3222f7c92ef73b804e5ee180655321f}{so
 \begin{DoxyCompactList}\small\item\em Solve linear equations ax\texorpdfstring{$^\wedge$}{\string^}2 + bx + c = 0. \end{DoxyCompactList}\item 
 short \mbox{\hyperlink{_my_sqr_equation_8h_a0a5f0682bcb7948f315b84134029c99e}{solve\+Root}} (double a, double b, double c, double \texorpdfstring{$\ast$}{*}x1, double \texorpdfstring{$\ast$}{*}x2)
 \begin{DoxyCompactList}\small\item\em Solve square equations ax\texorpdfstring{$^\wedge$}{\string^}2 + bx + c = 0. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_my_sqr_equation_8h_a6b1e94fb163717c0f7f37b614b174d88}{run\+Tests}} (bool is\+File)
+\begin{DoxyCompactList}\small\item\em This func run all tests, create csv file and write all data test. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_my_sqr_equation_8h_aaa11bc470a4b6d80404e00756a0f070b}{Test\+Solver}} (bool is\+File, FILE \texorpdfstring{$\ast$}{*}fp)
+\begin{DoxyCompactList}\small\item\em This func test function solve\+Root. This func supports writing in csv file and writing in console. He work with struct \doxylink{structtest_data}{test\+Data}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{_my_sqr_equation_8h_ac0deb143cdef5abadb1dabec43c67f37}{input}} (double \texorpdfstring{$\ast$}{*}a, double \texorpdfstring{$\ast$}{*}b, double \texorpdfstring{$\ast$}{*}c, int attempt)
 \begin{DoxyCompactList}\small\item\em This func get data from terminal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_my_sqr_equation_8h_a22d7c3e857afba4903a76181f91ea9fb}{clear\+Input\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em This func clear input Buffer. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_my_sqr_equation_8h_a8b6d741c9efbf2f359bd93f3d6c7212b}{conclusion}} (short count, double x1, double x2)
 \begin{DoxyCompactList}\small\item\em This func display data on terminal. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{_my_sqr_equation_8h_aa17d11d871a4f23a2aa4633de05b8c86}{set\+Color}} (short text\+Color, short bg\+Color)
 \begin{DoxyCompactList}\small\item\em This func changes color in windows terminal. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_my_sqr_equation_8h_a22d7c3e857afba4903a76181f91ea9fb}{clear\+Input\+Buffer}} ()
-\begin{DoxyCompactList}\small\item\em This func clear input Buffer. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{_my_sqr_equation_8h_a4e1f36be4bc6249fda70570aacc235bd}{Test\+Solver}} ()
-\end{DoxyCompactItemize}
+void \mbox{\hyperlink{_my_sqr_equation_8h_a61738e2518a17f870a63f52b54bad0f2}{restore\+Color}} ()
+\begin{DoxyCompactList}\small\item\em Return stock color. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_my_sqr_equation_8h_ad2e59c7203b3bddc1bc9a2224b52e8e7}{signal\+Handler}} (int signal)
+\begin{DoxyCompactList}\small\item\em This func processes signals and when completed prog, changes console color on stoc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{_my_sqr_equation_8h_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_my_sqr_equation_8h_a4cb7681966ba1ca4d52bb3aa277069fb}\index{MySqrEquation.h@{MySqrEquation.h}!COLORED\_PRINT@{COLORED\_PRINT}}
+\index{COLORED\_PRINT@{COLORED\_PRINT}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{COLORED\_PRINT}{COLORED\_PRINT}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_a4cb7681966ba1ca4d52bb3aa277069fb} 
+\#define COLORED\+\_\+\+PRINT(\begin{DoxyParamCaption}\item[{}]{color}{, }\item[{}]{message}{}\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\ \{\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ setColor(color,\ \mbox{\hyperlink{consts_8h_a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57}{BG\_BLACK}});\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ printf\ message;\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ restoreColor();\ \(\backslash\)}
+\DoxyCodeLine{\}\ \textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+
+
+Definition at line \mbox{\hyperlink{_my_sqr_equation_8h_source_l00011}{11}} of file \mbox{\hyperlink{_my_sqr_equation_8h_source}{My\+Sqr\+Equation.\+h}}.
+
 
 
 \label{doc-func-members}
@@ -46,7 +86,7 @@ This func clear input Buffer. Need for correct work scanf.
 \end{DoxyNote}
 
 
-Definition at line \mbox{\hyperlink{input_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
 
 \Hypertarget{_my_sqr_equation_8h_a8b6d741c9efbf2f359bd93f3d6c7212b}\index{MySqrEquation.h@{MySqrEquation.h}!conclusion@{conclusion}}
 \index{conclusion@{conclusion}!MySqrEquation.h@{MySqrEquation.h}}
@@ -75,7 +115,36 @@ Check count on correspondence with enum \doxylink{consts_8h_a34f6126547cfdaeca6f
 \end{DoxyWarning}
 
 
-Definition at line \mbox{\hyperlink{input_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00097}{97}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+
+\Hypertarget{_my_sqr_equation_8h_acedccb376f8d8c1e73f6e565d834ddd0}\index{MySqrEquation.h@{MySqrEquation.h}!flagDefinition@{flagDefinition}}
+\index{flagDefinition@{flagDefinition}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{flagDefinition()}{flagDefinition()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_acedccb376f8d8c1e73f6e565d834ddd0} 
+void flag\+Definition (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}, }\item[{struct \mbox{\hyperlink{struct_program_flags}{Program\+Flags}} \texorpdfstring{$\ast$}{*}}]{stract\+Flag}{}\end{DoxyParamCaption})}
+
+
+
+this func definition flags 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em argc} & count flags \\
+\hline
+\mbox{\texttt{in}}  & {\em argv} & array with flags \\
+\hline
+\mbox{\texttt{out}}  & {\em stract\+Flag} & struct, where are stored flags\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+this func definition flags and stored flags 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+This func definition only -\/h, -\/t, -\/f flags 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{program_flags_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{program_flags_8cpp_source}{program\+Flags.\+cpp}}.
 
 \Hypertarget{_my_sqr_equation_8h_ac0deb143cdef5abadb1dabec43c67f37}\index{MySqrEquation.h@{MySqrEquation.h}!input@{input}}
 \index{input@{input}!MySqrEquation.h@{MySqrEquation.h}}
@@ -106,7 +175,7 @@ Text color number always less 16. Background color number write in format\+: 1 \
 \end{DoxyWarning}
 
 
-Definition at line \mbox{\hyperlink{input_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00070}{70}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
 
 \Hypertarget{_my_sqr_equation_8h_aab686ba65e0281b74d30841c2eae5667}\index{MySqrEquation.h@{MySqrEquation.h}!isRavno@{isRavno}}
 \index{isRavno@{isRavno}!MySqrEquation.h@{MySqrEquation.h}}
@@ -120,7 +189,7 @@ Compares two numbers.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{in}}  & {\em a} & Thirst compared number \\
+\mbox{\texttt{in}}  & {\em a} & First compared number \\
 \hline
 \mbox{\texttt{in}}  & {\em b} & Second compared number\\
 \hline
@@ -160,6 +229,45 @@ Check number on type double.
 
 Definition at line \mbox{\hyperlink{solve_root_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{solve_root_8cpp_source}{solve\+Root.\+cpp}}.
 
+\Hypertarget{_my_sqr_equation_8h_a61738e2518a17f870a63f52b54bad0f2}\index{MySqrEquation.h@{MySqrEquation.h}!restoreColor@{restoreColor}}
+\index{restoreColor@{restoreColor}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{restoreColor()}{restoreColor()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_a61738e2518a17f870a63f52b54bad0f2} 
+void restore\+Color (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Return stock color. 
+
+\begin{DoxyNote}{Note}
+This func return stock color in windows terminal 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+
+\Hypertarget{_my_sqr_equation_8h_a6b1e94fb163717c0f7f37b614b174d88}\index{MySqrEquation.h@{MySqrEquation.h}!runTests@{runTests}}
+\index{runTests@{runTests}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{runTests()}{runTests()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_a6b1e94fb163717c0f7f37b614b174d88} 
+void run\+Tests (\begin{DoxyParamCaption}\item[{bool}]{is\+File}{}\end{DoxyParamCaption})}
+
+
+
+This func run all tests, create csv file and write all data test. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em is\+File} & if true, then writes to file, else write in console\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This func run all tests, create csv file and write all data test 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{tests_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{tests_8cpp_source}{tests.\+cpp}}.
+
 \Hypertarget{_my_sqr_equation_8h_aa17d11d871a4f23a2aa4633de05b8c86}\index{MySqrEquation.h@{MySqrEquation.h}!setColor@{setColor}}
 \index{setColor@{setColor}!MySqrEquation.h@{MySqrEquation.h}}
 \doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
@@ -185,7 +293,49 @@ Text color number always less 16. Background color number write in format\+: 1 \
 \end{DoxyWarning}
 
 
-Definition at line \mbox{\hyperlink{input_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
+
+\Hypertarget{_my_sqr_equation_8h_aec315d77f5c38417289a0e311d2a9d31}\index{MySqrEquation.h@{MySqrEquation.h}!showHelp@{showHelp}}
+\index{showHelp@{showHelp}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{showHelp()}{showHelp()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_aec315d77f5c38417289a0e311d2a9d31} 
+void show\+Help (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+this func write help about starts flags 
+
+\begin{DoxyNote}{Note}
+This func write only about -\/h, -\/t, -\/f 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{program_flags_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{program_flags_8cpp_source}{program\+Flags.\+cpp}}.
+
+\Hypertarget{_my_sqr_equation_8h_ad2e59c7203b3bddc1bc9a2224b52e8e7}\index{MySqrEquation.h@{MySqrEquation.h}!signalHandler@{signalHandler}}
+\index{signalHandler@{signalHandler}!MySqrEquation.h@{MySqrEquation.h}}
+\doxysubsubsection{\texorpdfstring{signalHandler()}{signalHandler()}}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_ad2e59c7203b3bddc1bc9a2224b52e8e7} 
+void signal\+Handler (\begin{DoxyParamCaption}\item[{int}]{signal}{}\end{DoxyParamCaption})}
+
+
+
+This func processes signals and when completed prog, changes console color on stoc. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em signal} & system signal\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This func processes signals and when completed prog, changes console color on stoc. 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Don\`{}t work good. Testing only on windows 11 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{input_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{input_8cpp_source}{input.\+cpp}}.
 
 \Hypertarget{_my_sqr_equation_8h_af3222f7c92ef73b804e5ee180655321f}\index{MySqrEquation.h@{MySqrEquation.h}!solveLineRoot@{solveLineRoot}}
 \index{solveLineRoot@{solveLineRoot}!MySqrEquation.h@{MySqrEquation.h}}
@@ -268,13 +418,30 @@ Check pointers for NULL before using them
 
 Definition at line \mbox{\hyperlink{solve_root_8cpp_source_l00077}{77}} of file \mbox{\hyperlink{solve_root_8cpp_source}{solve\+Root.\+cpp}}.
 
-\Hypertarget{_my_sqr_equation_8h_a4e1f36be4bc6249fda70570aacc235bd}\index{MySqrEquation.h@{MySqrEquation.h}!TestSolver@{TestSolver}}
+\Hypertarget{_my_sqr_equation_8h_aaa11bc470a4b6d80404e00756a0f070b}\index{MySqrEquation.h@{MySqrEquation.h}!TestSolver@{TestSolver}}
 \index{TestSolver@{TestSolver}!MySqrEquation.h@{MySqrEquation.h}}
 \doxysubsubsection{\texorpdfstring{TestSolver()}{TestSolver()}}
-{\footnotesize\ttfamily \label{_my_sqr_equation_8h_a4e1f36be4bc6249fda70570aacc235bd} 
-void Test\+Solver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{_my_sqr_equation_8h_aaa11bc470a4b6d80404e00756a0f070b} 
+bool Test\+Solver (\begin{DoxyParamCaption}\item[{bool}]{is\+File}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{fp}{}\end{DoxyParamCaption})}
 
 
 
-Definition at line \mbox{\hyperlink{_unit_test_solver_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{_unit_test_solver_8cpp_source}{Unit\+Test\+Solver.\+cpp}}.
+This func test function solve\+Root. This func supports writing in csv file and writing in console. He work with struct \doxylink{structtest_data}{test\+Data}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em is\+File} & if true, then writes to file, else write in console \\
+\hline
+\mbox{\texttt{out}}  & {\em \texorpdfstring{$\ast$}{*}} & fp file, where it is written data of test\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This func work with array of struct 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Keep the sequence and types of variables 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{_unit_test_solver_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{_unit_test_solver_8cpp_source}{Unit\+Test\+Solver.\+cpp}}.
 

@@ -1,5 +1,5 @@
 PROJECT_NAME = myApp.exe
-VERSION = 1.0.0
+VERSION = 0.3.0
 
 CC = g++
 CFLAGS = -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline \

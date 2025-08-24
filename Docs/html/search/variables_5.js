@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['testname_0',['testName',['../structtest_data.html#a865845acffbfa0e205e47e7955ddad8c',1,'testData']]],
-  ['testnumber_1',['testNumber',['../structtest_data.html#ab339924ec7b479c6641a3d09e3dac4c6',1,'testData']]],
-  ['tests_2',['Tests',['../_unit_test_solver_8cpp.html#a43d3322350cab98fa23bf71f1f8ed44e',1,'UnitTestSolver.cpp']]]
+  ['font_0',['font',['../structtx_dialog_1_1_layout.html#ad41674a1cf26ce09ed78be29f12ea121',1,'txDialog::Layout']]],
+  ['fontsize_1',['fontsize',['../structtx_dialog_1_1_layout.html#ad71d13adce565c8e4692040b8c4cba83',1,'txDialog::Layout']]],
+  ['func_5f_2',['func_',['../struct__tx__auto__func__.html#a7203dd1f06ae3ab338a6c7b4bbb3feac',1,'_tx_auto_func_']]]
 ];

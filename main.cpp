@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
         }
     #endif
 
-    COLORED_PRINT(YELLOW, ("quadratic equation solver v0.23\n"));
+    COLORED_PRINT(YELLOW, ("quadratic equation solver v0.3.0\n"));
     COLORED_PRINT(WHITE, ("------------------------------\n"));
     COLORED_PRINT(WHITE, ("indicate coefficients A, B, C:\n"));
 

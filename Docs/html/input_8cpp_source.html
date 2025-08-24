@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">SquareSolver<span id="projectnumber">&#160;v0.23</span>
+   <div id="projectname">SquareSolver<span id="projectnumber">&#160;0.3.0</span>
    </div>
   </td>
  </tr>
@@ -93,79 +93,87 @@ $(function(){initNavTree('input_8cpp_source.html','',''); });
 <div class="contents">
 <a href="input_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_my_sqr_equation_8h.html">MySqrEquation.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">   13</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<span class="keywordtype">short</span> textColor, <span class="keywordtype">short</span> bgColor) {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    assert(textColor &lt; )</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="comment">//WORD attributes = textColor | bgColor;</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    SetConsoleTextAttribute(hConsole, (WORD)(textColor | bgColor));</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="input_8cpp.html#ad2e59c7203b3bddc1bc9a2224b52e8e7">   12</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="input_8cpp.html#ad2e59c7203b3bddc1bc9a2224b52e8e7">signalHandler</a>(<span class="keywordtype">int</span> signal) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    printf(<span class="stringliteral">&quot;sig&quot;</span>);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="input_8cpp.html#a61738e2518a17f870a63f52b54bad0f2">restoreColor</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    exit(signal);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="input_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb">   28</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="input_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</a>() {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">int</span> testBuf;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">while</span> ((testBuf = getchar()) != <span class="charliteral">&#39;\n&#39;</span> &amp;&amp; testBuf != EOF) { }</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="}">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="input_8cpp.html#a61738e2518a17f870a63f52b54bad0f2">   24</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="input_8cpp.html#a61738e2518a17f870a63f52b54bad0f2">restoreColor</a>() {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50">WHITE</a>, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
 </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="input_8cpp.html#ac0deb143cdef5abadb1dabec43c67f37">   45</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="input_8cpp.html#ac0deb143cdef5abadb1dabec43c67f37">input</a>(<span class="keywordtype">double</span> * a, <span class="keywordtype">double</span> * b, <span class="keywordtype">double</span> * c, <span class="keywordtype">int</span> attempt) {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">for</span> (attempt = attempt; attempt &gt; 0; attempt = attempt - 1) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span> (scanf(<span class="stringliteral">&quot;%lf %lf %lf&quot;</span>, a, b, c) != 3) {</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88">RED</a>, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            printf(<span class="stringliteral">&quot;invalid values, attempts left %i\n&quot;</span>, attempt);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>            <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50">WHITE</a>, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <a class="code hl_function" href="input_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</a>();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88">RED</a>, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    printf(<span class="stringliteral">&quot;the program is tired&quot;</span>);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50">WHITE</a>, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="foldopen" id="foldopen00038" data-start="{" data-end="}">
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">   38</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<span class="keywordtype">short</span> textColor, <span class="keywordtype">short</span> bgColor) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <a class="code hl_define" href="_t_x_lib_8h.html#a3153a272f18d0f805028fce7e4337b53">assert</a>(textColor &lt; 16);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">//WORD attributes = textColor | bgColor;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    SetConsoleTextAttribute(hConsole, (WORD)(textColor | bgColor));</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="input_8cpp.html#a8b6d741c9efbf2f359bd93f3d6c7212b">   75</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="input_8cpp.html#a8b6d741c9efbf2f359bd93f3d6c7212b">conclusion</a>(<span class="keywordtype">short</span> count, <span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> x2) {</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">switch</span> (count) {</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1">noRoot</a>:</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7ae735a848bf82163a19236ead1c3ef2d2">YELLOW</a>, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            printf(<span class="stringliteral">&quot;No roots\n&quot;</span>);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb">oneRoot</a>:</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aa60bd322f93178d68184e30e162571ca">GREEN</a>, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            printf(<span class="stringliteral">&quot;One root:\n x1 = x2 = %lf\n&quot;</span>, x1);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e">twoRoot</a>:</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aa60bd322f93178d68184e30e162571ca">GREEN</a>, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            printf(<span class="stringliteral">&quot;Two roots:\n x1 = %lf\n x2 = %lf\n&quot;</span>, x1, x2);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb">infRoot</a>:</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7ae735a848bf82163a19236ead1c3ef2d2">YELLOW</a>, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            printf(<span class="stringliteral">&quot;Inf roots&quot;</span>);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">default</span>:</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88">RED</a>, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            printf(<span class="stringliteral">&quot;Xz&quot;</span>);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50">WHITE</a>, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>);</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="input_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb">   53</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="input_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</a>() {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">int</span> testBuf;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">while</span> ((testBuf = getchar()) != <span class="charliteral">&#39;\n&#39;</span> &amp;&amp; testBuf != EOF) { }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="input_8cpp.html#ac0deb143cdef5abadb1dabec43c67f37">   70</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="input_8cpp.html#ac0deb143cdef5abadb1dabec43c67f37">input</a>(<span class="keywordtype">double</span> * a, <span class="keywordtype">double</span> * b, <span class="keywordtype">double</span> * c, <span class="keywordtype">int</span> attempt) {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">for</span> (attempt = attempt; attempt &gt; 0; attempt = attempt - 1) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">if</span> (scanf(<span class="stringliteral">&quot;%lf %lf %lf&quot;</span>, a, b, c) != 3) {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="comment">//restoreColor();</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <a class="code hl_define" href="_my_sqr_equation_8h.html#a4cb7681966ba1ca4d52bb3aa277069fb">COLORED_PRINT</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88">RED</a>, (<span class="stringliteral">&quot;invalid values, attempts left %i\n&quot;</span>, attempt)); <span class="comment">//ERROR!!!</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">else</span> <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <a class="code hl_function" href="input_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</a>();</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <a class="code hl_define" href="_my_sqr_equation_8h.html#a4cb7681966ba1ca4d52bb3aa277069fb">COLORED_PRINT</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88">RED</a>, (<span class="stringliteral">&quot;the program is tired&quot;</span>));</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>}</div>
+</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="input_8cpp.html#a8b6d741c9efbf2f359bd93f3d6c7212b">   97</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="input_8cpp.html#a8b6d741c9efbf2f359bd93f3d6c7212b">conclusion</a>(<span class="keywordtype">short</span> count, <span class="keywordtype">double</span> x1, <span class="keywordtype">double</span> x2) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keywordflow">switch</span> (count) {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1">noRoot</a>:</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            <a class="code hl_define" href="_my_sqr_equation_8h.html#a4cb7681966ba1ca4d52bb3aa277069fb">COLORED_PRINT</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7ae735a848bf82163a19236ead1c3ef2d2">YELLOW</a>, (<span class="stringliteral">&quot;No roots\n&quot;</span>));</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb">oneRoot</a>:</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>            <a class="code hl_define" href="_my_sqr_equation_8h.html#a4cb7681966ba1ca4d52bb3aa277069fb">COLORED_PRINT</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aa60bd322f93178d68184e30e162571ca">GREEN</a>, (<span class="stringliteral">&quot;One root:\n x1 = x2 = %lf\n&quot;</span>, x1));</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e">twoRoot</a>:</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <a class="code hl_define" href="_my_sqr_equation_8h.html#a4cb7681966ba1ca4d52bb3aa277069fb">COLORED_PRINT</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aa60bd322f93178d68184e30e162571ca">GREEN</a>, (<span class="stringliteral">&quot;Two roots:\n x1 = %lf\n x2 = %lf\n&quot;</span>, x1, x2));</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb">infRoot</a>:</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <a class="code hl_define" href="_my_sqr_equation_8h.html#a4cb7681966ba1ca4d52bb3aa277069fb">COLORED_PRINT</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7ae735a848bf82163a19236ead1c3ef2d2">YELLOW</a>, (<span class="stringliteral">&quot;Inf roots&quot;</span>));</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <a class="code hl_function" href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88">RED</a>, <a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a>);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <a class="code hl_define" href="_my_sqr_equation_8h.html#a4cb7681966ba1ca4d52bb3aa277069fb">COLORED_PRINT</a>(<a class="code hl_enumvalue" href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7af80f9a890089d211842d59625e561f88">RED</a>, (<span class="stringliteral">&quot;Xz&quot;</span>));</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    }</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
 </div>
 <div class="ttc" id="a_my_sqr_equation_8h_html"><div class="ttname"><a href="_my_sqr_equation_8h.html">MySqrEquation.h</a></div></div>
+<div class="ttc" id="a_my_sqr_equation_8h_html_a4cb7681966ba1ca4d52bb3aa277069fb"><div class="ttname"><a href="_my_sqr_equation_8h.html#a4cb7681966ba1ca4d52bb3aa277069fb">COLORED_PRINT</a></div><div class="ttdeci">#define COLORED_PRINT(color, message)</div><div class="ttdef"><b>Definition</b> <a href="_my_sqr_equation_8h_source.html#l00011">MySqrEquation.h:11</a></div></div>
+<div class="ttc" id="a_t_x_lib_8h_html_a3153a272f18d0f805028fce7e4337b53"><div class="ttname"><a href="_t_x_lib_8h.html#a3153a272f18d0f805028fce7e4337b53">assert</a></div><div class="ttdeci">#define assert(cond)</div><div class="ttdef"><b>Definition</b> <a href="_t_x_lib_8h_source.html#l04797">TXLib.h:4797</a></div></div>
 <div class="ttc" id="aconsts_8h_html_a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50"><div class="ttname"><a href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a283fc479650da98250635b9c3c0e7e50">WHITE</a></div><div class="ttdeci">@ WHITE</div><div class="ttdef"><b>Definition</b> <a href="consts_8h_source.html#l00030">consts.h:30</a></div></div>
 <div class="ttc" id="aconsts_8h_html_a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57"><div class="ttname"><a href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7a7d787cd03030ff1648a6bbabf0762f57">BG_BLACK</a></div><div class="ttdeci">@ BG_BLACK</div><div class="ttdef"><b>Definition</b> <a href="consts_8h_source.html#l00033">consts.h:33</a></div></div>
 <div class="ttc" id="aconsts_8h_html_a225b8f79702c03082fd73b092bb44bf7aa60bd322f93178d68184e30e162571ca"><div class="ttname"><a href="consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aa60bd322f93178d68184e30e162571ca">GREEN</a></div><div class="ttdeci">@ GREEN</div><div class="ttdef"><b>Definition</b> <a href="consts_8h_source.html#l00025">consts.h:25</a></div></div>
@@ -175,10 +183,12 @@ $(function(){initNavTree('input_8cpp_source.html','',''); });
 <div class="ttc" id="aconsts_8h_html_a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1"><div class="ttname"><a href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1">noRoot</a></div><div class="ttdeci">@ noRoot</div><div class="ttdef"><b>Definition</b> <a href="consts_8h_source.html#l00005">consts.h:5</a></div></div>
 <div class="ttc" id="aconsts_8h_html_a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb"><div class="ttname"><a href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb">oneRoot</a></div><div class="ttdeci">@ oneRoot</div><div class="ttdef"><b>Definition</b> <a href="consts_8h_source.html#l00006">consts.h:6</a></div></div>
 <div class="ttc" id="aconsts_8h_html_a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e"><div class="ttname"><a href="consts_8h.html#a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e">twoRoot</a></div><div class="ttdeci">@ twoRoot</div><div class="ttdef"><b>Definition</b> <a href="consts_8h_source.html#l00007">consts.h:7</a></div></div>
-<div class="ttc" id="ainput_8cpp_html_a22d7c3e857afba4903a76181f91ea9fb"><div class="ttname"><a href="input_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</a></div><div class="ttdeci">void clearInputBuffer()</div><div class="ttdoc">This func clear input Buffer.</div><div class="ttdef"><b>Definition</b> <a href="#l00028">input.cpp:28</a></div></div>
-<div class="ttc" id="ainput_8cpp_html_a8b6d741c9efbf2f359bd93f3d6c7212b"><div class="ttname"><a href="input_8cpp.html#a8b6d741c9efbf2f359bd93f3d6c7212b">conclusion</a></div><div class="ttdeci">void conclusion(short count, double x1, double x2)</div><div class="ttdoc">This func display data on terminal.</div><div class="ttdef"><b>Definition</b> <a href="#l00075">input.cpp:75</a></div></div>
-<div class="ttc" id="ainput_8cpp_html_aa17d11d871a4f23a2aa4633de05b8c86"><div class="ttname"><a href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a></div><div class="ttdeci">void setColor(short textColor, short bgColor)</div><div class="ttdoc">This func changes color in windows terminal.</div><div class="ttdef"><b>Definition</b> <a href="#l00013">input.cpp:13</a></div></div>
-<div class="ttc" id="ainput_8cpp_html_ac0deb143cdef5abadb1dabec43c67f37"><div class="ttname"><a href="input_8cpp.html#ac0deb143cdef5abadb1dabec43c67f37">input</a></div><div class="ttdeci">bool input(double *a, double *b, double *c, int attempt)</div><div class="ttdoc">This func get data from terminal.</div><div class="ttdef"><b>Definition</b> <a href="#l00045">input.cpp:45</a></div></div>
+<div class="ttc" id="ainput_8cpp_html_a22d7c3e857afba4903a76181f91ea9fb"><div class="ttname"><a href="input_8cpp.html#a22d7c3e857afba4903a76181f91ea9fb">clearInputBuffer</a></div><div class="ttdeci">void clearInputBuffer()</div><div class="ttdoc">This func clear input Buffer.</div><div class="ttdef"><b>Definition</b> <a href="#l00053">input.cpp:53</a></div></div>
+<div class="ttc" id="ainput_8cpp_html_a61738e2518a17f870a63f52b54bad0f2"><div class="ttname"><a href="input_8cpp.html#a61738e2518a17f870a63f52b54bad0f2">restoreColor</a></div><div class="ttdeci">void restoreColor()</div><div class="ttdoc">Return stock color.</div><div class="ttdef"><b>Definition</b> <a href="#l00024">input.cpp:24</a></div></div>
+<div class="ttc" id="ainput_8cpp_html_a8b6d741c9efbf2f359bd93f3d6c7212b"><div class="ttname"><a href="input_8cpp.html#a8b6d741c9efbf2f359bd93f3d6c7212b">conclusion</a></div><div class="ttdeci">void conclusion(short count, double x1, double x2)</div><div class="ttdoc">This func display data on terminal.</div><div class="ttdef"><b>Definition</b> <a href="#l00097">input.cpp:97</a></div></div>
+<div class="ttc" id="ainput_8cpp_html_aa17d11d871a4f23a2aa4633de05b8c86"><div class="ttname"><a href="input_8cpp.html#aa17d11d871a4f23a2aa4633de05b8c86">setColor</a></div><div class="ttdeci">void setColor(short textColor, short bgColor)</div><div class="ttdoc">This func changes color in windows terminal.</div><div class="ttdef"><b>Definition</b> <a href="#l00038">input.cpp:38</a></div></div>
+<div class="ttc" id="ainput_8cpp_html_ac0deb143cdef5abadb1dabec43c67f37"><div class="ttname"><a href="input_8cpp.html#ac0deb143cdef5abadb1dabec43c67f37">input</a></div><div class="ttdeci">bool input(double *a, double *b, double *c, int attempt)</div><div class="ttdoc">This func get data from terminal.</div><div class="ttdef"><b>Definition</b> <a href="#l00070">input.cpp:70</a></div></div>
+<div class="ttc" id="ainput_8cpp_html_ad2e59c7203b3bddc1bc9a2224b52e8e7"><div class="ttname"><a href="input_8cpp.html#ad2e59c7203b3bddc1bc9a2224b52e8e7">signalHandler</a></div><div class="ttdeci">void signalHandler(int signal)</div><div class="ttdoc">This func processes signals and when completed prog, changes console color on stoc.</div><div class="ttdef"><b>Definition</b> <a href="#l00012">input.cpp:12</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

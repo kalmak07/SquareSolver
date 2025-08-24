@@ -9,8 +9,8 @@ struct \mbox{\hyperlink{structtest_data}{test\+Data}}
 \doxysubsubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{_unit_test_solver_8cpp_a4e1f36be4bc6249fda70570aacc235bd}{Test\+Solver}} ()
-\end{DoxyCompactItemize}
+bool \mbox{\hyperlink{_unit_test_solver_8cpp_aaa11bc470a4b6d80404e00756a0f070b}{Test\+Solver}} (bool is\+File, FILE \texorpdfstring{$\ast$}{*}fp)
+\begin{DoxyCompactList}\small\item\em This func test function solve\+Root. This func supports writing in csv file and writing in console. He work with struct \doxylink{structtest_data}{test\+Data}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -23,15 +23,32 @@ struct \mbox{\hyperlink{structtest_data}{test\+Data}} \mbox{\hyperlink{_unit_tes
 \label{doc-func-members}
 \Hypertarget{_unit_test_solver_8cpp_doc-func-members}
 \doxysubsection{Function Documentation}
-\Hypertarget{_unit_test_solver_8cpp_a4e1f36be4bc6249fda70570aacc235bd}\index{UnitTestSolver.cpp@{UnitTestSolver.cpp}!TestSolver@{TestSolver}}
+\Hypertarget{_unit_test_solver_8cpp_aaa11bc470a4b6d80404e00756a0f070b}\index{UnitTestSolver.cpp@{UnitTestSolver.cpp}!TestSolver@{TestSolver}}
 \index{TestSolver@{TestSolver}!UnitTestSolver.cpp@{UnitTestSolver.cpp}}
 \doxysubsubsection{\texorpdfstring{TestSolver()}{TestSolver()}}
-{\footnotesize\ttfamily \label{_unit_test_solver_8cpp_a4e1f36be4bc6249fda70570aacc235bd} 
-void Test\+Solver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{_unit_test_solver_8cpp_aaa11bc470a4b6d80404e00756a0f070b} 
+bool Test\+Solver (\begin{DoxyParamCaption}\item[{bool}]{is\+File}{, }\item[{FILE \texorpdfstring{$\ast$}{*}}]{fp}{}\end{DoxyParamCaption})}
 
 
 
-Definition at line \mbox{\hyperlink{_unit_test_solver_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{_unit_test_solver_8cpp_source}{Unit\+Test\+Solver.\+cpp}}.
+This func test function solve\+Root. This func supports writing in csv file and writing in console. He work with struct \doxylink{structtest_data}{test\+Data}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{in}}  & {\em is\+File} & if true, then writes to file, else write in console \\
+\hline
+\mbox{\texttt{out}}  & {\em \texorpdfstring{$\ast$}{*}} & fp file, where it is written data of test\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This func work with array of struct 
+\end{DoxyNote}
+\begin{DoxyWarning}{Warning}
+Keep the sequence and types of variables 
+\end{DoxyWarning}
+
+
+Definition at line \mbox{\hyperlink{_unit_test_solver_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{_unit_test_solver_8cpp_source}{Unit\+Test\+Solver.\+cpp}}.
 
 
 
@@ -58,9 +75,10 @@ struct \mbox{\hyperlink{structtest_data}{test\+Data}} Tests\mbox{[}$\,$\mbox{]}}
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\{}
 \DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}infRoots"{}},\ \ \ \ 0,\ \ 0,\ 0,\ \ 0,\ \ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb}{infRoot}},\ \ \ \ 0,\ \ 0\},}
-\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}1"{}},\ \ \ 1,\ \ \ \ 1,\ 0,\ \ 1,\ \ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1}{noRoot}},\ \ \ \ \ 0,\ \ 0\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}1"{}},\ \ \ 1,\ \ \ \ 0,\ 0,\ \ 1,\ \ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aa8f818ec203c4dba4bf9ce44797e75fa1}{noRoot}},\ \ \ \ \ 0,\ \ 0\},}
 \DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}1"{}},\ \ \ 2,\ \ \ \ 1e-\/20,\ \ 1e-\/20,\ \ 1e-\/20,\ \ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aa743de4daeb9f9f3e81b105fff597d9fb}{infRoot}},\ \ \ \ 0,\ \ 0\},}
-\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}1"{}},\ \ \ 3,\ \ \ \ 0,\ \ 2,\ \ 1,\ \ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb}{oneRoot}},\ \ \ \ -\/0.5,\ \ 0\}}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}1"{}},\ \ \ 3,\ \ \ \ 0,\ \ 2,\ \ 1,\ \ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aac73256ab8a96bd2ae8a6977e170e65fb}{oneRoot}},\ \ \ \ -\/0.5,\ \ 0\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{stringliteral}{"{}123"{}},\ \ \ 4,\ \ \ \ -\/0.00001321,\ \ -\/1,\ \ 3,\ \ \mbox{\hyperlink{consts_8h_a34f6126547cfdaeca6fb82d45a97692aaeb742e0fd9a627c1b225628bbe85bc2e}{twoRoot}},\ \ \ \ -\/75703.22698180,\ \ 2.99988112\}}
 \DoxyCodeLine{\}}
 
 \end{DoxyCode}

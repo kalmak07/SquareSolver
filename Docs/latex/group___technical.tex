@@ -1,0 +1,852 @@
+\doxysection{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} }
+\hypertarget{group___technical}{}\label{group___technical}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___technical_ga6b76c63cd895c2be63ac8e690028623b}{\+\_\+\+TX\+\_\+\+VER}}
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___technical_gaddc6398e255e44934e56e22f91874d19}{\+\_\+\+TX\+\_\+\+VERSION}}~\+\_\+\+TX\+\_\+\+V\+\_\+\+FROM\+\_\+\+CVS (\$Version\+Info\+: , TXLib.\+h, 00173a, 166, 2020-\/07-\/08 18\+:51\+:07 +0400, "{}Ded (Ilya Dedinsky, http\+://txlib.\+ru) $<$mail@txlib.\+ru$>$"{}, \$)
+\item 
+\#define \mbox{\hyperlink{group___technical_ga23f2f255fba17496bdb8a386e9c31093}{\+\_\+\+TX\+\_\+\+AUTHOR}}~\+\_\+\+TX\+\_\+\+A\+\_\+\+FROM\+\_\+\+CVS (\$Version\+Info\+: , TXLib.\+h, 00173a, 166, 2020-\/07-\/08 18\+:51\+:07 +0400, "{}Ded (Ilya Dedinsky, http\+://txlib.\+ru) $<$mail@txlib.\+ru$>$"{}, \$)
+\item 
+\#define \mbox{\hyperlink{group___technical_ga43d277b4418068ebef1fd2bdbaf550f6}{\+\_\+\+TX\+\_\+\+MODULE}}
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib. {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___technical_gadd1c9ccd036228402b807abaea14f7ee}{\+\_\+\+\_\+\+TX\+\_\+\+COMPILER\+\_\+\+\_\+}}
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___technical_ga3e287c38947fea870d01588fbd2a5fc9}{\+\_\+\+TX\+\_\+\+BUILDMODE}}
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{group___technical_ga69d3e86db3b7c7458bbcb7c505a3b884}{\+\_\+tx\+Log\+Name}} \mbox{[}MAX\+\_\+\+PATH\mbox{]} = "{}"{}
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}-\/{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___technical_ga8a148ac2f04e1f9c7414af69362e0668}{\+\_\+tx\+Console\+Mode}} = SW\+\_\+\+HIDE
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}. {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} Show\+Window. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___technical_ga4ddb32d7a8a676537014da7aea7bf273}{\+\_\+tx\+Window\+Style}} = WS\+\_\+\+POPUP \texorpdfstring{$\vert$}{|} WS\+\_\+\+BORDER \texorpdfstring{$\vert$}{|} WS\+\_\+\+CAPTION \texorpdfstring{$\vert$}{|} WS\+\_\+\+SYSMENU
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group___technical_gad8e573bf6e0fb87f5d0313b5108a6166}{\+\_\+tx\+Console\+Font}} = "{}Lucida Console"{}
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{group___technical_gacc95bfbcf7a0f9124e8cd5e80d0b3cd3}{\+\_\+tx\+Cursor\+Blink\+Interval}} = 500
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} ({\ucr}{\ucr}) \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{group___technical_gaf2070fcdbd473d328f17f130623db80a}{\+\_\+tx\+Window\+Update\+Interval}} = 25
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} ({\ucr}{\ucr}) \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{group___technical_ga7859e95fc4faec435abe372989f4f8ac}{\+\_\+\+TX\+\_\+\+TIMEOUT}} = 1000
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \href{http://sfml-dev.org}{\texttt{SFML}} \end{DoxyCompactList}\item 
+bool(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group___technical_gad85278fd5caaf0ce42e307d6ce8d79c5}{\+\_\+tx\+Swap\+Buffers}} )(HDC dest, int x\+Dest, int y\+Dest, int w\+Dest, int h\+Dest, HDC src, int x\+Src, int y\+Src, int w\+Src, int h\+Src, DWORD r\+Op) = NULL
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr} TXLib {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} WM\+\_\+\+PAINT. \end{DoxyCompactList}\item 
+const unsigned \mbox{\hyperlink{group___technical_ga352331b32407c4e95bc4f7a5e39fad25}{\+\_\+\+TX\+\_\+\+BUFSIZE}} = 1024
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group___technical_ga181143543b3883cf8570f80da3ad7fcc}{\+\_\+tx\+Watchdog\+Timeout}} = 10\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___technical_ga7859e95fc4faec435abe372989f4f8ac}{\+\_\+\+TX\+\_\+\+TIMEOUT}}
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \doxylink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main()} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} exit(), {\ucr} {\ucr}{\ucr}. \end{DoxyCompactList}\item 
+const unsigned \mbox{\hyperlink{group___technical_gaa7273b2f613970c283053c5d9136addd}{\+\_\+\+TX\+\_\+\+BIGBUFSIZE}} = \mbox{\hyperlink{group___technical_ga352331b32407c4e95bc4f7a5e39fad25}{\+\_\+\+TX\+\_\+\+BUFSIZE}} \texorpdfstring{$\ast$}{*} 2
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \end{DoxyCompactList}\item 
+const unsigned \mbox{\hyperlink{group___technical_ga9982623aefbe28deab03b1252777ec2a}{\+\_\+\+TX\+\_\+\+HUGEBUFSIZE}} = \mbox{\hyperlink{group___technical_ga352331b32407c4e95bc4f7a5e39fad25}{\+\_\+\+TX\+\_\+\+BUFSIZE}} \texorpdfstring{$\ast$}{*} 20
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \end{DoxyCompactList}\item 
+const unsigned \mbox{\hyperlink{group___technical_ga7b8b43782557dd87528da77b083364ec}{\+\_\+\+TX\+\_\+\+STACKSIZE}} = 64 \texorpdfstring{$\ast$}{*} 1024
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___technical_gaab281ee20ea6be5eae34d0e15bf03dcf}{\+\_\+\+TX\+\_\+\+NOINIT}}
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___technical_ga15dc1a04b8701e2db400b005b7a17ced}{\+\_\+\+TX\+\_\+\+EXCEPTIONS\+\_\+\+LIMIT}}~16
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___technical_ga2c0a4fe0612f109c5c88d6d55a061db5}{\+\_\+\+TX\+\_\+\+WAITABLE\+\_\+\+PARENTS}}
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___technical_ga9a495d013c6f08cd50220aca99ca56c2}{\+\_\+\+TX\+\_\+\+ALLOW\+\_\+\+KILL\+\_\+\+PARENT}}~true
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___technical_gaf274c058737ec7e680437d2a1cdcd7b6}{\+\_\+\+TX\+\_\+\+FATAL\+\_\+\+EXCEPTIONS\+\_\+\+LIMIT}}~16
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \begin{DoxyCompactItemize}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group___drawing_ga8d87e8872b6e6a19f6df04fa62f95ef9}{tx\+Version}} () tx\+\_\+nodiscard
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{group___drawing_gab2c5f0eff263a7297997281c3d451b91}{tx\+Version\+Number}} () tx\+\_\+nodiscard
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group___drawing_ga596c2331dc02dc4ec67ac98adfe006fe}{tx\+Get\+Module\+File\+Name}} (bool file\+Name\+Only=true) tx\+\_\+nodiscard
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} TXLib. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TX Library.
+
+\begin{DoxyVerb}     �� ������, ��� ���� @c TXLib.h ����� ������� �, ��� ���������, ����� �������������. ��� ��������� ������
+     �������� ������ ������������ ������� ���������� ����������, ����� � ������ ������ �� ����, � ���������
+     <tt>.cpp</tt>-������. � ���� ������, ���� ������� ������ ���� ����� ����, ������������������� �����
+     ������ ��, � ���������� ���������� ��������� ������ �������������� �� ����� ��������, ��� ������� �������.
+
+     ������ ���������� TX Library ������������ ����� ������������ ������������ <tt>.h-</tt>����, � ������������
+     ����� ���������������� ������ ���, ��� ������ ������. ��� ����������� ��������� ������ � �����������.
+
+     ������ ���� @c TXLib.h ������ �������� �� �����, ������� ����� ��-������� ����� ���� ��� ����������.
+
+     ���� ��� ���������� @b ����� ���������� ����� @c TXLib.h ��������� ������ @c TX_COMPILED, �� ���������������
+     ����� ������� ����� �����, ������� ����� �����. ��� ����� �������� ��, ��� ����������� ���� �������� �
+     ������ ����������: ����������� ��������, �������� � �������, ��������� �������, �������, ������� � ��.
+     ��� ���� ����� ���� ������ �����, ������� �������� ����������� ����������� �������, �� ����� ���������������.
+     (������ ������, ��� ���� ���� ������ ������ �� �������� � ������������ �����, ��, ��� ��� ���������� ���������
+     �� �������� ������������� ����� ��� ��������� ������ � ���, ����� ��� ��� ��������� ���������.)
+
+     ����� � ������� ���� �������� ����������������� ����������� ���� ����������� ������� ����������, � ���� �����
+     �������� ��� ���� ����, ������� � ���� @� TXLib.h � ��������� � ��� ������ @c TX_COMPILING. ��� �������� �
+     ���������� ����� ����������� ����������, � �� �������� ��� ������ �������� ���� ���������. � ������� ����
+     ���� ���� ������ @c TXLib.cpp, �� ��� ����� ���� �����. ��� ���������� ����� ����� ����������� �����,
+     �� ����� �� ���������� ����������� � ����������, ��� ��� ��� ���������� �� ����� ����������, � ����� �����
+     ������ ������� ����������, �� 1.5 �� 3 ���.
+\end{DoxyVerb}
+
+
+\begin{DoxyWarning}{Warning}
+{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ttfamily \#define} {\ttfamily TX\+\_\+\+COMPILING} {\ucr} {\ttfamily \#include} "{}\+TXLib.\+h"{}, {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}, {\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.
+\end{DoxyWarning}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ttfamily WIN32\+\_\+\+LEAN\+\_\+\+AND\+\_\+\+MEAN} {\bfseries{{\ucr}{\ucr}}} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ttfamily \doxylink{_t_x_lib_8h}{TXLib.\+h}} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.
+
+\begin{DoxyWarning}{Warning}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ttfamily WIN32\+\_\+\+LEAN\+\_\+\+AND\+\_\+\+MEAN} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ttfamily TX\+\_\+\+COMPILED}. {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}-\/{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ttfamily Windows.\+h} ({\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}.{\ucr}.), {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ttfamily TX\+\_\+\+COMPILED} {\ucr}{\ucr}{\ucr} {\ttfamily TX\+\_\+\+COMPILING}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ttfamily TX}, {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.
+\end{DoxyNote}
+@usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ {\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}\ {\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ Visual\ Studio\ {\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\DoxyCodeLine{\textcolor{comment}{//\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ (IDE).\ {\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\DoxyCodeLine{\textcolor{comment}{//\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\textcolor{comment}{//\ Main.cpp:\ {\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\DoxyCodeLine{\textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \ \ TX\_COMPILED\ \ \ }\textcolor{comment}{//\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ \#include}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_x_lib_8h}{TXLib.h}}"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{group___drawing_gafce21ce98474d5559f316b3d47cdbfab}{txCreateWindow}}\ (800,\ 600);}
+\DoxyCodeLine{\ \ \ \ ...}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\textcolor{comment}{//\ TXLib.cpp:\ {\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ TXLib}}
+\DoxyCodeLine{\textcolor{comment}{//-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \ \ TX\_COMPILING\ \ }\textcolor{comment}{//\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ \#include}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_x_lib_8h}{TXLib.h}}"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//\ [{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}]}}
+
+\end{DoxyCode}
+ \begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___technical_ga2aa2550a5302deb4d46b3759b26f4b41}{TX\+\_\+\+TRACE}}
+\begin{DoxyCompactList}\small\item\em {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}/{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\label{doc-define-members}
+\Hypertarget{group___technical_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{group___technical_gadd1c9ccd036228402b807abaea14f7ee}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_\_TX\_COMPILER\_\_@{\_\_TX\_COMPILER\_\_}}
+\index{\_\_TX\_COMPILER\_\_@{\_\_TX\_COMPILER\_\_}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_\_TX\_COMPILER\_\_}{\_\_TX\_COMPILER\_\_}}
+{\footnotesize\ttfamily \label{group___technical_gadd1c9ccd036228402b807abaea14f7ee} 
+\#define \+\_\+\+\_\+\+TX\+\_\+\+COMPILER\+\_\+\+\_\+}
+
+
+
+{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} 
+
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l00193}{193}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga9a495d013c6f08cd50220aca99ca56c2}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_ALLOW\_KILL\_PARENT@{\_TX\_ALLOW\_KILL\_PARENT}}
+\index{\_TX\_ALLOW\_KILL\_PARENT@{\_TX\_ALLOW\_KILL\_PARENT}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_ALLOW\_KILL\_PARENT}{\_TX\_ALLOW\_KILL\_PARENT}}
+{\footnotesize\ttfamily \label{group___technical_ga9a495d013c6f08cd50220aca99ca56c2} 
+\#define \+\_\+\+TX\+\_\+\+ALLOW\+\_\+\+KILL\+\_\+\+PARENT~true}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib. 
+
+\begin{DoxyVerb}     ����� ���������� ����������� ����� �� ������� �������, ���������� � TXLib, � ����� ����� ����� ������
+     ���������� �������.
+
+     ������ ���������� ��������, ������� ����� ������ ����� �����, �������� � _TX_WAITABLE_PARENTS.
+\end{DoxyVerb}
+
+
+\begin{DoxyNote}{Note}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\bfseries{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \doxylink{_t_x_lib_8h}{TXLib.\+h} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. \begin{DoxyVerb}     ��. ����� ����������� ���� ��������� � ����� TXLib.h.
+\end{DoxyVerb}
+
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{group___technical_ga2c0a4fe0612f109c5c88d6d55a061db5}{\+\_\+\+TX\+\_\+\+WAITABLE\+\_\+\+PARENTS}, \doxylink{group___technical_gaab281ee20ea6be5eae34d0e15bf03dcf}{\+\_\+\+TX\+\_\+\+NOINIT}, \doxylink{group___technical_ga181143543b3883cf8570f80da3ad7fcc}{\+\_\+tx\+Watchdog\+Timeout}
+\end{DoxySeeAlso}
+@usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \_TX\_ALLOW\_KILL\_PARENT\ false}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_x_lib_8h}{TXLib.h}}"{}}}
+
+\end{DoxyCode}
+ 
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05634}{5634}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga23f2f255fba17496bdb8a386e9c31093}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_AUTHOR@{\_TX\_AUTHOR}}
+\index{\_TX\_AUTHOR@{\_TX\_AUTHOR}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_AUTHOR}{\_TX\_AUTHOR}}
+{\footnotesize\ttfamily \label{group___technical_ga23f2f255fba17496bdb8a386e9c31093} 
+\#define \+\_\+\+TX\+\_\+\+AUTHOR~\+\_\+\+TX\+\_\+\+A\+\_\+\+FROM\+\_\+\+CVS (\$Version\+Info\+: , TXLib.\+h, 00173a, 166, 2020-\/07-\/08 18\+:51\+:07 +0400, "{}Ded (Ilya Dedinsky, http\+://txlib.\+ru) $<$mail@txlib.\+ru$>$"{}, \$)}
+
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l00137}{137}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga3e287c38947fea870d01588fbd2a5fc9}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_BUILDMODE@{\_TX\_BUILDMODE}}
+\index{\_TX\_BUILDMODE@{\_TX\_BUILDMODE}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_BUILDMODE}{\_TX\_BUILDMODE}}
+{\footnotesize\ttfamily \label{group___technical_ga3e287c38947fea870d01588fbd2a5fc9} 
+\#define \+\_\+\+TX\+\_\+\+BUILDMODE}
+
+
+
+{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} 
+
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l00226}{226}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga15dc1a04b8701e2db400b005b7a17ced}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_EXCEPTIONS\_LIMIT@{\_TX\_EXCEPTIONS\_LIMIT}}
+\index{\_TX\_EXCEPTIONS\_LIMIT@{\_TX\_EXCEPTIONS\_LIMIT}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_EXCEPTIONS\_LIMIT}{\_TX\_EXCEPTIONS\_LIMIT}}
+{\footnotesize\ttfamily \label{group___technical_ga15dc1a04b8701e2db400b005b7a17ced} 
+\#define \+\_\+\+TX\+\_\+\+EXCEPTIONS\+\_\+\+LIMIT~16}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05569}{5569}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_gaf274c058737ec7e680437d2a1cdcd7b6}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_FATAL\_EXCEPTIONS\_LIMIT@{\_TX\_FATAL\_EXCEPTIONS\_LIMIT}}
+\index{\_TX\_FATAL\_EXCEPTIONS\_LIMIT@{\_TX\_FATAL\_EXCEPTIONS\_LIMIT}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_FATAL\_EXCEPTIONS\_LIMIT}{\_TX\_FATAL\_EXCEPTIONS\_LIMIT}}
+{\footnotesize\ttfamily \label{group___technical_gaf274c058737ec7e680437d2a1cdcd7b6} 
+\#define \+\_\+\+TX\+\_\+\+FATAL\+\_\+\+EXCEPTIONS\+\_\+\+LIMIT~16}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05573}{5573}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga43d277b4418068ebef1fd2bdbaf550f6}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_MODULE@{\_TX\_MODULE}}
+\index{\_TX\_MODULE@{\_TX\_MODULE}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_MODULE}{\_TX\_MODULE}}
+{\footnotesize\ttfamily \label{group___technical_ga43d277b4418068ebef1fd2bdbaf550f6} 
+\#define \+\_\+\+TX\+\_\+\+MODULE}
+
+
+
+{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib. {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+
+\begin{DoxyNote}{Note}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \doxylink{_t_x_lib_8h}{TXLib.\+h}. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l00156}{156}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_gaab281ee20ea6be5eae34d0e15bf03dcf}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_NOINIT@{\_TX\_NOINIT}}
+\index{\_TX\_NOINIT@{\_TX\_NOINIT}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_NOINIT}{\_TX\_NOINIT}}
+{\footnotesize\ttfamily \label{group___technical_gaab281ee20ea6be5eae34d0e15bf03dcf} 
+\#define \+\_\+\+TX\+\_\+\+NOINIT}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib 
+
+\begin{DoxyVerb}     ���� ��������� ���������� � ������� \#define @a �� ��������� TXLib.h � ���������, ������ �������������
+     (�� ������� ������� @c main) @b �� ����������.
+\end{DoxyVerb}
+
+
+\begin{DoxyNote}{Note}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\+:
+\begin{DoxyItemize}
+\item {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr},
+\item {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \+\_\+\+TX\+\_\+\+CODEPAGE (1251) {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr},
+\item {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} C++ ("{}\+Russian"{} / "{}ru\+\_\+\+RU.\+CP1251"{} {\ucr} L"{}\+Russian\+\_\+\+Russia.\+ACP"{}),
+\item {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} stdio {\ucr} iostream {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr},
+\item {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} ({\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} 0, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}.{\ucr}.),
+\item {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr},
+\item {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr},
+\item {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr},
+\item {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}. ~\newline
+ 
+\end{DoxyItemize}
+
+{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr} {\ucr} EXE-\/{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} TXLib {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \doxylink{group___drawing_gafce21ce98474d5559f316b3d47cdbfab}{tx\+Create\+Window()}, {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. {\ucr} {\bfseries{DLL}} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\bfseries{{\ucr}{\ucr}}} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. @nn
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} (not thread-\/safe).
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{group___drawing_gafce21ce98474d5559f316b3d47cdbfab}{tx\+Create\+Window()}, \doxylink{group___technical_ga9a495d013c6f08cd50220aca99ca56c2}{\+\_\+\+TX\+\_\+\+ALLOW\+\_\+\+KILL\+\_\+\+PARENT}, \doxylink{group___technical_ga2c0a4fe0612f109c5c88d6d55a061db5}{\+\_\+\+TX\+\_\+\+WAITABLE\+\_\+\+PARENTS}, \doxylink{group___technical_ga181143543b3883cf8570f80da3ad7fcc}{\+\_\+tx\+Watchdog\+Timeout}, \doxylink{group___technical_ga8a148ac2f04e1f9c7414af69362e0668}{\+\_\+tx\+Console\+Mode}
+\end{DoxySeeAlso}
+@usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \_TX\_NOINIT}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_x_lib_8h}{TXLib.h}}"{}}}
+
+\end{DoxyCode}
+ 
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05371}{5371}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga6b76c63cd895c2be63ac8e690028623b}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_VER@{\_TX\_VER}}
+\index{\_TX\_VER@{\_TX\_VER}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_VER}{\_TX\_VER}}
+{\footnotesize\ttfamily \label{group___technical_ga6b76c63cd895c2be63ac8e690028623b} 
+\#define \+\_\+\+TX\+\_\+\+VER}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+
+\begin{DoxyVerb}       ������ ���������� � ������������� �������: ������� ����� -- ����� ������, ������� -- ����� �������,
+       � �������-���������� �������. ��������, @c 0x172a0050 -- ������ @c 0.172a, ������� @c 50.
+\end{DoxyVerb}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \_TX\_VERSION\ "{}TXLib\ [Ver:\ 1.73a,\ Rev:\ 164,\ Date:\ 2020-\/01-\/30\ 05:00:00\ +0300]"{}\ \ }\textcolor{comment}{//}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \_TX\_AUTHOR\ \ "{}Copyright\ (C)\ Ded\ (Ilya\ Dedinsky,\ http://txlib.ru)"{}\ \ \ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ \ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \_TX\_VER\ \ \ \ \ \ 0x173a0000\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//}}
+
+\end{DoxyCode}
+ {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{group___drawing_ga8d87e8872b6e6a19f6df04fa62f95ef9}{tx\+Version()}
+\end{DoxySeeAlso}
+@usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#if\ !(defined\ (\_TX\_VER)\ \&\&\ (\_TX\_VER\ >=\ 0x172a0000))}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#error\ Must\ use\ TXLib.h\ version\ >=\ 1.72\ to\ compile\ this.}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
+ 
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l00135}{135}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_gaddc6398e255e44934e56e22f91874d19}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_VERSION@{\_TX\_VERSION}}
+\index{\_TX\_VERSION@{\_TX\_VERSION}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_VERSION}{\_TX\_VERSION}}
+{\footnotesize\ttfamily \label{group___technical_gaddc6398e255e44934e56e22f91874d19} 
+\#define \+\_\+\+TX\+\_\+\+VERSION~\+\_\+\+TX\+\_\+\+V\+\_\+\+FROM\+\_\+\+CVS (\$Version\+Info\+: , TXLib.\+h, 00173a, 166, 2020-\/07-\/08 18\+:51\+:07 +0400, "{}Ded (Ilya Dedinsky, http\+://txlib.\+ru) $<$mail@txlib.\+ru$>$"{}, \$)}
+
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l00136}{136}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga2c0a4fe0612f109c5c88d6d55a061db5}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_WAITABLE\_PARENTS@{\_TX\_WAITABLE\_PARENTS}}
+\index{\_TX\_WAITABLE\_PARENTS@{\_TX\_WAITABLE\_PARENTS}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_WAITABLE\_PARENTS}{\_TX\_WAITABLE\_PARENTS}}
+{\footnotesize\ttfamily \label{group___technical_ga2c0a4fe0612f109c5c88d6d55a061db5} 
+\#define \+\_\+\+TX\+\_\+\+WAITABLE\+\_\+\+PARENTS}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Winpty-\/agent.exe:Clion.exe,\ "{}}\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 0:\ CLion32\ \ \ \ \ \ \ */}\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Winpty-\/agent.exe:Clion64.exe,\ "{}}\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 1:\ CLion64\ \ \ \ \ \ \ */}\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}starter.exe:eclipse.exe,\ "{}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 2:\ Eclipse\ 4\ \ \ \ \ */}\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}starter.exe:javaw.exe,\ "{}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 3:\ Eclipse\ 3\ \ \ \ \ */}\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}cmd.exe:devenv.exe,\ "{}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 4:\ MSVS\ 2003+\ \ \ \ */}\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}VSDebugConsole.exe:devenv.exe,\ "{}}\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 5:\ MSVS\ 2019\ \ \ \ \ */}\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}consolepauser.exe:devcpp.exe,\ "{}}\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ 6:\ Dev-\/Cpp\ \ \ \ \ \ \ */}\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}cb\_console\_runner.exe:codeblocks.exe"{}}\ \ \ \ \textcolor{comment}{/*\ 7:\ CodeBlocks\ 8+\ */}}
+
+\end{DoxyCode}
+
+
+{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib. \begin{DoxyVerb}     ���� ��������� ����������� � ������ � TXLib �������� �� ���, �� ��� ���������� TXLib ��������� ���������
+     ����� �������. (��� ����������, ���� �� ������� ����������� ���� TXLib, � ���� ������ ���� �������.)
+
+     ��������� ����������� �������� ��� �������. ����������� �������� �������� ����������� ���������, �����
+     ���������. ��� ���������, ������������ � ������� ����� - ����. ������ ��� ������� CLion, ��. �������
+     _txCleanup() � _txIsParentWaitable() � �������� ������ @ref TXLib.h.
+
+     ����� ���������� ����� ���������� TXLib.h � ���������.
+\end{DoxyVerb}
+
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{group___technical_ga9a495d013c6f08cd50220aca99ca56c2}{\+\_\+\+TX\+\_\+\+ALLOW\+\_\+\+KILL\+\_\+\+PARENT}, \doxylink{group___technical_gaab281ee20ea6be5eae34d0e15bf03dcf}{\+\_\+\+TX\+\_\+\+NOINIT}, \+\_\+tx\+Cleanup(), \+\_\+tx\+Is\+Parent\+Waitable(), \doxylink{group___technical_ga181143543b3883cf8570f80da3ad7fcc}{\+\_\+tx\+Watchdog\+Timeout} 
+\end{DoxySeeAlso}
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05602}{5602}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga2aa2550a5302deb4d46b3759b26f4b41}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!TX\_TRACE@{TX\_TRACE}}
+\index{TX\_TRACE@{TX\_TRACE}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{TX\_TRACE}{TX\_TRACE}}
+{\footnotesize\ttfamily \label{group___technical_ga2aa2550a5302deb4d46b3759b26f4b41} 
+\#define TX\+\_\+\+TRACE}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}/{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+
+\begin{DoxyVerb}     ����������� ���� ����� ������ TX_TRACE, ������� ������������� ����� ������ ���������� (statement).
+     �� ��������� ����������� ���������.
+
+     �� ��������� ����������� ������� ����� ������� OutputDebugString(), �� ����� ����� �����������
+     ���������-���������, ��������, <a href=http://technet.microsoft.com/ru-ru/sysinternals/bb896647%28en-us%29.aspx>
+     DbgView</a>. ��� ����� ��������, ������������� ������ TX_TRACE �� ��������� TXLib.h � ���������.
+\end{DoxyVerb}
+
+
+\begin{DoxyWarning}{Warning}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\bfseries{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} Microsoft Visual Studio. {\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} Dbg\+View ({\ucr}{\ucr}. {\ucr}{\ucr}{\ucr}{\ucr}) {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr} {\ucr}{\ucr} {\ucr}{\ucr}-\/{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} Visual Studio.
+\end{DoxyWarning}
+\begin{DoxyNote}{Note}
+\+\_\+\+TX\+\_\+\+ALLOW\+\_\+\+TRACE {\ucr} TX\+\_\+\+TRACE {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\bfseries{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \doxylink{_t_x_lib_8h}{TXLib.\+h} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.
+\end{DoxyNote}
+@title {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\+: @table @tr 1 @td Regular functions @tr 2 @td Reserved @tr 3 @td Init/\+Cleanup @tr 4 @td Init/\+Cleanup, misc functions @tr 5 @td Error handling, entry points @tr 6 @td Error handling, main part @tr 7 @td Error handling, misc functions @tr 8 @td Canvas worker thread @tr 9 @td Reserved @endtable
+
+@usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//\ {\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ DbgView\ {\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}!}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \ \_TX\_ALLOW\_TRACE\ 1\ \ }\textcolor{comment}{//\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ TXLib\ ({\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ 1).}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_x_lib_8h}{TXLib.h}}"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \ \_DEBUG\ \ \ \ \ \ \ \ \ \ \ \ \ }\textcolor{comment}{//\ {\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr},\ {\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_x_lib_8h}{TXLib.h}}"{}}\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ TXLib\ {\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.}}
+
+\end{DoxyCode}
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} Output\+Debug\+String(). \begin{DoxyVerb}     �� ��������� ����������� ������� ����� ������� OutputDebugString(), �� ����� ����� �����������
+     ���������-���������, ��������, <a href=http://technet.microsoft.com/ru-ru/sysinternals/bb896647%28en-us%29.aspx>
+     DbgView</a>. ��� "���������" ���� ���� ���� <tt>TX\Dev\DbgView.ini,</tt> ��� ���� ��������� � DbgView
+     ����� ���� Edit/Filter/Load (Ctrl+L).
+
+     � ������� TX_TRACE ����� ������������ ��� ����� ���������� TXLib. ��� ����� ���� ��������� �����������
+     TXLib, ��������� ������ _TX_ALLOW_TRACE ����� ���������� ����� TXLib.h � ���������. �� ���������
+     ����������� TXLib ���������.
+
+     TX_TRACE ����� �������������� � ���� ���. �����, ���� ����������� ���������� ���������, �� �����
+     ���������� ����� ����� ������ ����������� ������� TXLib. ����� ����, ��� ����-������ ����� ���������.
+\end{DoxyVerb}
+
+
+@usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ ...}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{group___technical_ga2aa2550a5302deb4d46b3759b26f4b41}{TX\_TRACE}};\ \ \textcolor{comment}{//\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ DbgView\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\DoxyCodeLine{\ \ \ \ ...}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \ TX\_TRACE\ \ printf\ (\_\_TX\_FILELINE\_\_\ "{}\(\backslash\)t"{}\ \_\_TX\_FUNCTION\_\_\ "{}\(\backslash\)n"{});}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_x_lib_8h}{TXLib.h}}"{}}}
+
+\end{DoxyCode}
+ 
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05829}{5829}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+
+
+\label{doc-func-members}
+\Hypertarget{group___technical_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{group___drawing_ga596c2331dc02dc4ec67ac98adfe006fe}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!txGetModuleFileName@{txGetModuleFileName}}
+\index{txGetModuleFileName@{txGetModuleFileName}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{txGetModuleFileName()}{txGetModuleFileName()}}
+{\footnotesize\ttfamily \label{group___drawing_ga596c2331dc02dc4ec67ac98adfe006fe} 
+const char \texorpdfstring{$\ast$}{*} tx\+Get\+Module\+File\+Name (\begin{DoxyParamCaption}\item[{bool}]{file\+Name\+Only}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} TXLib. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name\+Only} & {\itshape {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} Win32 {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} Get\+File\+Module\+Name (NULL, ...). {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+file\+Name\+Only = true\+: {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. ~\newline
+ file\+Name\+Only = false\+: {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} TXLib.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\bfseries{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{group___drawing_gafa31ebd8ed957c41713900a407497cf8}{tx\+Window()}, \doxylink{group___drawing_ga8d87e8872b6e6a19f6df04fa62f95ef9}{tx\+Version()}, \doxylink{group___drawing_gab2c5f0eff263a7297997281c3d451b91}{tx\+Version\+Number()}
+\end{DoxySeeAlso}
+@usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{printf\ (\textcolor{stringliteral}{"{}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}!"{}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ done\ =\ 0;\ done\ <=\ 100;\ done++)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{char}\ title\ [1024]\ =\ \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\ \ \ \ sprintf\ (title,\ \textcolor{stringliteral}{"{}\%s\ -\/\ [\%-\/10.*s]\ \%d\%\%"{}},\ \mbox{\hyperlink{group___drawing_ga596c2331dc02dc4ec67ac98adfe006fe}{txGetModuleFileName}}\ (\textcolor{keyword}{false}),\ done/10,\ \textcolor{stringliteral}{"{}||||||||||"{}},\ done);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ SetWindowText\ (\mbox{\hyperlink{group___drawing_gafa31ebd8ed957c41713900a407497cf8}{txWindow}}(),\ title);}
+\DoxyCodeLine{\ \ \ \ SetWindowText\ (Win32::GetConsoleWindow(),\ title);}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{group___drawing_ga6c293f0b0f71efebdeeb0b56a97ba50c}{txSleep}}\ (50);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{group___misc_gaf41293ee7bab5949d155650702e822da}{txMessageBox}}\ (\textcolor{stringliteral}{"{}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}\ progress\ bar"{}},\ \textcolor{stringliteral}{"{}TXLib\ forever)"{}});}
+
+\end{DoxyCode}
+ \Hypertarget{group___drawing_ga8d87e8872b6e6a19f6df04fa62f95ef9}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!txVersion@{txVersion}}
+\index{txVersion@{txVersion}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{txVersion()}{txVersion()}}
+{\footnotesize\ttfamily \label{group___drawing_ga8d87e8872b6e6a19f6df04fa62f95ef9} 
+const char \texorpdfstring{$\ast$}{*} tx\+Version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+
+\begin{DoxyReturn}{Returns}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.
+\end{DoxyReturn}
+@usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{printf\ (\textcolor{stringliteral}{"{}I\ personally\ love\ \%s\(\backslash\)n"{}},\ \mbox{\hyperlink{group___drawing_ga8d87e8872b6e6a19f6df04fa62f95ef9}{txVersion}}());}
+
+\end{DoxyCode}
+ \Hypertarget{group___drawing_gab2c5f0eff263a7297997281c3d451b91}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!txVersionNumber@{txVersionNumber}}
+\index{txVersionNumber@{txVersionNumber}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{txVersionNumber()}{txVersionNumber()}}
+{\footnotesize\ttfamily \label{group___drawing_gab2c5f0eff263a7297997281c3d451b91} 
+unsigned tx\+Version\+Number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+
+\begin{DoxyReturn}{Returns}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.
+\end{DoxyReturn}
+@usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{printf\ (\textcolor{stringliteral}{"{}My\ magic\ number\ is\ \%x\(\backslash\)n"{}},\ \mbox{\hyperlink{group___drawing_gab2c5f0eff263a7297997281c3d451b91}{txVersionNumber}}());}
+
+\end{DoxyCode}
+ 
+
+\label{doc-var-members}
+\Hypertarget{group___technical_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{group___technical_gaa7273b2f613970c283053c5d9136addd}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_BIGBUFSIZE@{\_TX\_BIGBUFSIZE}}
+\index{\_TX\_BIGBUFSIZE@{\_TX\_BIGBUFSIZE}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_BIGBUFSIZE}{\_TX\_BIGBUFSIZE}}
+{\footnotesize\ttfamily \label{group___technical_gaa7273b2f613970c283053c5d9136addd} 
+const unsigned \+\_\+\+TX\+\_\+\+BIGBUFSIZE = \mbox{\hyperlink{group___technical_ga352331b32407c4e95bc4f7a5e39fad25}{\+\_\+\+TX\+\_\+\+BUFSIZE}} \texorpdfstring{$\ast$}{*} 2}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05558}{5558}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga352331b32407c4e95bc4f7a5e39fad25}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_BUFSIZE@{\_TX\_BUFSIZE}}
+\index{\_TX\_BUFSIZE@{\_TX\_BUFSIZE}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_BUFSIZE}{\_TX\_BUFSIZE}}
+{\footnotesize\ttfamily \label{group___technical_ga352331b32407c4e95bc4f7a5e39fad25} 
+const unsigned \+\_\+\+TX\+\_\+\+BUFSIZE = 1024}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib 
+
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05557}{5557}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga9982623aefbe28deab03b1252777ec2a}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_HUGEBUFSIZE@{\_TX\_HUGEBUFSIZE}}
+\index{\_TX\_HUGEBUFSIZE@{\_TX\_HUGEBUFSIZE}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_HUGEBUFSIZE}{\_TX\_HUGEBUFSIZE}}
+{\footnotesize\ttfamily \label{group___technical_ga9982623aefbe28deab03b1252777ec2a} 
+const unsigned \+\_\+\+TX\+\_\+\+HUGEBUFSIZE = \mbox{\hyperlink{group___technical_ga352331b32407c4e95bc4f7a5e39fad25}{\+\_\+\+TX\+\_\+\+BUFSIZE}} \texorpdfstring{$\ast$}{*} 20}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05559}{5559}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga7b8b43782557dd87528da77b083364ec}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_STACKSIZE@{\_TX\_STACKSIZE}}
+\index{\_TX\_STACKSIZE@{\_TX\_STACKSIZE}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_STACKSIZE}{\_TX\_STACKSIZE}}
+{\footnotesize\ttfamily \label{group___technical_ga7b8b43782557dd87528da77b083364ec} 
+const unsigned \+\_\+\+TX\+\_\+\+STACKSIZE = 64 \texorpdfstring{$\ast$}{*} 1024}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05561}{5561}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga7859e95fc4faec435abe372989f4f8ac}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_TX\_TIMEOUT@{\_TX\_TIMEOUT}}
+\index{\_TX\_TIMEOUT@{\_TX\_TIMEOUT}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_TX\_TIMEOUT}{\_TX\_TIMEOUT}}
+{\footnotesize\ttfamily \label{group___technical_ga7859e95fc4faec435abe372989f4f8ac} 
+const int \+\_\+\+TX\+\_\+\+TIMEOUT = 1000}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \href{http://sfml-dev.org}{\texttt{SFML}} 
+
+\begin{DoxyNote}{Note}
+{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\bfseries{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \doxylink{_t_x_lib_8h}{TXLib.\+h} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. @usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#define\ \ TX\_USE\_SFML}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_x_lib_8h}{TXLib.h}}"{}}}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ <SFML/Graphics.hpp>}}
+
+\end{DoxyCode}
+
+\end{DoxyNote}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} ({\ucr}{\ucr}) 
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05487}{5487}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_gad8e573bf6e0fb87f5d0313b5108a6166}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_txConsoleFont@{\_txConsoleFont}}
+\index{\_txConsoleFont@{\_txConsoleFont}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_txConsoleFont}{\_txConsoleFont}}
+{\footnotesize\ttfamily \label{group___technical_gad8e573bf6e0fb87f5d0313b5108a6166} 
+const char \texorpdfstring{$\ast$}{*} \+\_\+tx\+Console\+Font = "{}Lucida Console"{}}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} 
+
+\begin{DoxyNote}{Note}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\bfseries{{\ucr}{\ucr}}} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05433}{5433}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga8a148ac2f04e1f9c7414af69362e0668}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_txConsoleMode@{\_txConsoleMode}}
+\index{\_txConsoleMode@{\_txConsoleMode}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_txConsoleMode}{\_txConsoleMode}}
+{\footnotesize\ttfamily \label{group___technical_ga8a148ac2f04e1f9c7414af69362e0668} 
+int \+\_\+tx\+Console\+Mode = SW\+\_\+\+HIDE}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}. {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} Show\+Window. 
+
+\begin{DoxyVerb}     �� ���������: @c SW_HIDE -- �������� ���������� ����.
+\end{DoxyVerb}
+
+
+\begin{DoxyNote}{Note}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\bfseries{{\ucr}{\ucr}}} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{group___technical_gaab281ee20ea6be5eae34d0e15bf03dcf}{\+\_\+\+TX\+\_\+\+NOINIT}
+\end{DoxySeeAlso}
+@usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group___technical_ga8a148ac2f04e1f9c7414af69362e0668}{\_txConsoleMode}}\ =\ SW\_HIDE;\ \ \textcolor{comment}{//\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}}}
+\DoxyCodeLine{\mbox{\hyperlink{group___drawing_gafce21ce98474d5559f316b3d47cdbfab}{txCreateWindow}}\ (800,\ 600);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{group___technical_ga8a148ac2f04e1f9c7414af69362e0668}{\_txConsoleMode}}\ =\ SW\_SHOW;\ \ \textcolor{comment}{//\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}}}
+\DoxyCodeLine{\mbox{\hyperlink{group___drawing_gafce21ce98474d5559f316b3d47cdbfab}{txCreateWindow}}\ (800,\ 600);}
+
+\end{DoxyCode}
+ 
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05396}{5396}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_gacc95bfbcf7a0f9124e8cd5e80d0b3cd3}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_txCursorBlinkInterval@{\_txCursorBlinkInterval}}
+\index{\_txCursorBlinkInterval@{\_txCursorBlinkInterval}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_txCursorBlinkInterval}{\_txCursorBlinkInterval}}
+{\footnotesize\ttfamily \label{group___technical_gacc95bfbcf7a0f9124e8cd5e80d0b3cd3} 
+unsigned \+\_\+tx\+Cursor\+Blink\+Interval = 500}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} ({\ucr}{\ucr}) 
+
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05446}{5446}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga69d3e86db3b7c7458bbcb7c505a3b884}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_txLogName@{\_txLogName}}
+\index{\_txLogName@{\_txLogName}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_txLogName}{\_txLogName}}
+{\footnotesize\ttfamily \label{group___technical_ga69d3e86db3b7c7458bbcb7c505a3b884} 
+char \+\_\+tx\+Log\+Name = "{}"{}}
+
+
+
+{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}-\/{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib 
+
+\begin{DoxyVerb}     � ��� ������ ���� @b ����������� ������ ��� ��� ���-�����.
+
+     �� ��������� ���� ��������� �� ����� ������ � ����� ����� � ���������� ����������, ����� �� �� ���, ���
+     � ���� ���������, � ����������� ���������� @c ".log".
+\end{DoxyVerb}
+
+
+\begin{DoxyNote}{Note}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}-\/{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05324}{5324}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_gad85278fd5caaf0ce42e307d6ce8d79c5}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_txSwapBuffers@{\_txSwapBuffers}}
+\index{\_txSwapBuffers@{\_txSwapBuffers}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_txSwapBuffers}{\_txSwapBuffers}}
+{\footnotesize\ttfamily \label{group___technical_gad85278fd5caaf0ce42e307d6ce8d79c5} 
+bool(\texorpdfstring{$\ast$}{*} \+\_\+tx\+Swap\+Buffers)(HDC dest, int x\+Dest, int y\+Dest, int w\+Dest, int h\+Dest, HDC src, int x\+Src, int y\+Src, int w\+Src, int h\+Src, DWORD r\+Op) (\begin{DoxyParamCaption}\item[{HDC}]{dest}{, }\item[{int}]{x\+Dest}{, }\item[{int}]{y\+Dest}{, }\item[{int}]{w\+Dest}{, }\item[{int}]{h\+Dest}{, }\item[{HDC}]{src}{, }\item[{int}]{x\+Src}{, }\item[{int}]{y\+Src}{, }\item[{int}]{w\+Src}{, }\item[{int}]{h\+Src}{, }\item[{DWORD}]{r\+Op}{}\end{DoxyParamCaption}) = NULL}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr} {\ucr}{\ucr}{\ucr}{\ucr} TXLib {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} WM\+\_\+\+PAINT. 
+
+\begin{DoxyVerb}     ���� ����� NULL, �� ������������ Win32::BitBlt.
+
+     �� ������ �������������� �������� ����� ���������, ����� �� �������� �� ���� �������, � �����
+     TXLib ����� �������� ����������� � ���� ����� ���. ������ � ����, ��� ��� ������� ����� ����������
+     � ��������� ������.
+
+     ��������� ���� ������� �������: "StretchBlt function".
+\end{DoxyVerb}
+
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{group___misc_ga30fb1a6913174dfcea5079391f655be2}{tx\+Set\+Windows\+Hook()}, \doxylink{group___drawing_ga6dfb121b4a1116f987baeb515713cbbf}{tx\+Bit\+Blt()}, \doxylink{group___drawing_ga4d6f780cdef622df0fda71d0b3cfee52}{tx\+Alpha\+Blend()}
+\end{DoxySeeAlso}
+@usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_t_x_lib_8h}{TXLib.h}}"{}}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{bool}\ MySwapBuffers\ (HDC\ dest,\ \textcolor{keywordtype}{int}\ xDest,\ \textcolor{keywordtype}{int}\ yDest,\ \textcolor{keywordtype}{int}\ wDest,\ \textcolor{keywordtype}{int}\ hDest,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ HDC\ src,\ \ \textcolor{keywordtype}{int}\ xSrc,\ \ \textcolor{keywordtype}{int}\ ySrc,\ \ \textcolor{keywordtype}{int}\ wSrc,\ \ \textcolor{keywordtype}{int}\ hSrc,\ DWORD\ rOp)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{group___drawing_ga4d6f780cdef622df0fda71d0b3cfee52}{txAlphaBlend}}\ (dest,\ xDest,\ yDest,\ wSrc-\/xSrc,\ hSrc-\/ySrc,\ src,\ xSrc,\ ySrc,\ 0.01);}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}}()}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{group___technical_gad85278fd5caaf0ce42e307d6ce8d79c5}{\_txSwapBuffers}}\ =\ MySwapBuffers;\ \ \textcolor{comment}{//\ That's\ it}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{group___drawing_gafce21ce98474d5559f316b3d47cdbfab}{txCreateWindow}}\ (800,\ 600);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{group___drawing_gad21ad5660a5423f31c2c8e77329758b2}{txSetFillColor}}\ (\mbox{\hyperlink{group___drawing_gad737ddf597e37fe699dc87c3f7f2a748}{TX\_NULL}});}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{group___drawing_ga18a0418f3c06463e958077cddf2a4864}{txRectangle}}\ (10,\ 10,\ \mbox{\hyperlink{group___drawing_gab79782d80f6c61587d02f0633aa2f198}{txGetExtentX}}()\ -\/\ 10,\ \mbox{\hyperlink{group___drawing_gaa9bb7fd84e0b9f59c96be89d70c74321}{txGetExtentY}}()\ -\/\ 10);}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ x\ =\ 50;\ x\ <=\ \mbox{\hyperlink{group___drawing_gab79782d80f6c61587d02f0633aa2f198}{txGetExtentX}}()\ -\/\ 50;\ x\ +=\ 20)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{group___drawing_gaa14e9c2a46cf713efaa1f850074d8adc}{txCircle}}\ (x,\ \mbox{\hyperlink{group___drawing_gaa9bb7fd84e0b9f59c96be89d70c74321}{txGetExtentY}}()/2,\ 10);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \mbox{\hyperlink{group___drawing_ga6c293f0b0f71efebdeeb0b56a97ba50c}{txSleep}}\ (100);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \mbox{\hyperlink{group___drawing_ga6c293f0b0f71efebdeeb0b56a97ba50c}{txSleep}}\ (3000);}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+ 
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05544}{5544}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga181143543b3883cf8570f80da3ad7fcc}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_txWatchdogTimeout@{\_txWatchdogTimeout}}
+\index{\_txWatchdogTimeout@{\_txWatchdogTimeout}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_txWatchdogTimeout}{\_txWatchdogTimeout}}
+{\footnotesize\ttfamily \label{group___technical_ga181143543b3883cf8570f80da3ad7fcc} 
+int \+\_\+tx\+Watchdog\+Timeout = 10\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{group___technical_ga7859e95fc4faec435abe372989f4f8ac}{\+\_\+\+TX\+\_\+\+TIMEOUT}}}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \doxylink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main()} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} exit(), {\ucr} {\ucr}{\ucr}. 
+
+\begin{DoxyVerb}     ���� �������� ������ 0, �� ����� �� ������������.
+\end{DoxyVerb}
+
+
+\begin{DoxyNote}{Note}
+{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} TXLib {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} (watchdog thread), {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} \+\_\+tx\+Watchdog\+Timeout {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}, {\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{group___technical_ga2c0a4fe0612f109c5c88d6d55a061db5}{\+\_\+\+TX\+\_\+\+WAITABLE\+\_\+\+PARENTS}, \doxylink{group___technical_gaab281ee20ea6be5eae34d0e15bf03dcf}{\+\_\+\+TX\+\_\+\+NOINIT} 
+\end{DoxySeeAlso}
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05651}{5651}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_ga4ddb32d7a8a676537014da7aea7bf273}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_txWindowStyle@{\_txWindowStyle}}
+\index{\_txWindowStyle@{\_txWindowStyle}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_txWindowStyle}{\_txWindowStyle}}
+{\footnotesize\ttfamily \label{group___technical_ga4ddb32d7a8a676537014da7aea7bf273} 
+int \+\_\+tx\+Window\+Style = WS\+\_\+\+POPUP \texorpdfstring{$\vert$}{|} WS\+\_\+\+BORDER \texorpdfstring{$\vert$}{|} WS\+\_\+\+CAPTION \texorpdfstring{$\vert$}{|} WS\+\_\+\+SYSMENU}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+
+\begin{DoxyNote}{Note}
+
+\begin{DoxyItemize}
+\item {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\bfseries{{\ucr}{\ucr}}} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}.
+\end{DoxyItemize}
+\end{DoxyNote}
+@usage 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group___technical_ga4ddb32d7a8a676537014da7aea7bf273}{\_txWindowStyle}}\ \&=\ \string~WS\_CAPTION;\ \textcolor{comment}{//\ FullScreen:\ {\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr},\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\DoxyCodeLine{\mbox{\hyperlink{group___drawing_gafce21ce98474d5559f316b3d47cdbfab}{txCreateWindow}}\ (GetSystemMetrics\ (SM\_CXSCREEN),\ GetSystemMetrics\ (SM\_CYSCREEN));}
+\DoxyCodeLine{}
+\DoxyCodeLine{printf\ (\textcolor{stringliteral}{"{}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}\ {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}\ Alt+F4\(\backslash\)n"{}});}
+
+\end{DoxyCode}
+ 
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05419}{5419}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+
+\Hypertarget{group___technical_gaf2070fcdbd473d328f17f130623db80a}\index{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}!\_txWindowUpdateInterval@{\_txWindowUpdateInterval}}
+\index{\_txWindowUpdateInterval@{\_txWindowUpdateInterval}!{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}@{{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}}}
+\doxysubsubsection{\texorpdfstring{\_txWindowUpdateInterval}{\_txWindowUpdateInterval}}
+{\footnotesize\ttfamily \label{group___technical_gaf2070fcdbd473d328f17f130623db80a} 
+unsigned \+\_\+tx\+Window\+Update\+Interval = 25}
+
+
+
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} ({\ucr}{\ucr}) 
+
+\begin{DoxyNote}{Note}
+{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\bfseries{{\ucr}{\ucr}}} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr} {\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}{\ucr}. 
+\end{DoxyNote}
+
+
+Definition at line \mbox{\hyperlink{_t_x_lib_8h_source_l05460}{5460}} of file \mbox{\hyperlink{_t_x_lib_8h_source}{TXLib.\+h}}.
+

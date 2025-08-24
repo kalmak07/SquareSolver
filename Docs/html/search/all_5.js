@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['green_0',['GREEN',['../consts_8h.html#a225b8f79702c03082fd73b092bb44bf7aa60bd322f93178d68184e30e162571ca',1,'consts.h']]]
+  ['edit_0',['EDIT',['../group___dialogs.html#gga077745aacfb8431d6529e20ad67d1674a2ca2e6cc3897a6960816076f3237bc9c',1,'txDialog']]],
+  ['end_1',['END',['../group___dialogs.html#gga077745aacfb8431d6529e20ad67d1674adc6f24fd6915a3f2786a1b7045406924',1,'txDialog']]],
+  ['eps_2',['eps',['../consts_8h.html#a3d8c24629d725b9ef8c238cf27c9b158',1,'consts.h']]],
+  ['errinput_3',['errInput',['../consts_8h.html#a4dfde99194d0a2a07eb912a8149a4c73',1,'consts.h']]]
 ];

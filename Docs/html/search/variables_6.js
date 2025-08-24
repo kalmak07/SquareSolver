@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['x1res_0',['x1Res',['../structtest_data.html#ac592c9d423384ec4e809f6b21d31f10e',1,'testData']]],
-  ['x2res_1',['x2Res',['../structtest_data.html#aac19b3c906248df32fac3de69b928eea',1,'testData']]]
+  ['id_0',['id',['../structtx_dialog_1_1_layout.html#a7b7a6396b2c82ad46c6d8b2bf141a8dd',1,'txDialog::Layout']]],
+  ['isfile_1',['isFile',['../struct_program_flags.html#a002a2a64f4efdb283983d95f46f92596',1,'ProgramFlags']]]
 ];
