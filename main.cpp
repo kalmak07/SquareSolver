@@ -1,18 +1,25 @@
 #include "MySqrEquation.h"
-#include "consts.h"
 
+int main(int argc, char *argv[]) {
+    struct ProgramFlags programFlags;
 
+    flagDefinition(argc, argv, &programFlags);
 
-int main(void) {
+    signal(SIGINT, signalHandler);  // Ctrl+C
+    signal(SIGTERM, signalHandler); // Завершение процесса
+    atexit(restoreColor);
 
-    //atexit(restoreColor);
-
-    COLORED_PRINT(YELLOW, ("quadratic equation solver v0.23\n"));
+    if (programFlags.showHelp) showHelp();
 
     #ifdef _DEBUG
-        TestSolver();
+        if (programFlags.runTests) {
+            if (programFlags.isFile) COLORED_PRINT(BLUE, ("Write unit tests in file\n"));
+            else COLORED_PRINT(BLUE, ("Write unit tests in console\n"));
+            runTests(programFlags.isFile);
+        }
     #endif
 
+    COLORED_PRINT(YELLOW, ("quadratic equation solver v0.23\n"));
     COLORED_PRINT(WHITE, ("------------------------------\n"));
     COLORED_PRINT(WHITE, ("indicate coefficients A, B, C:\n"));
 

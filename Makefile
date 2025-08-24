@@ -26,7 +26,7 @@ else
 endif
 
 TARGET = $(PROJECT_NAME)
-SRCS = main.cpp input.cpp solveRoot.cpp UnitTestSolver.cpp MySqrEquation.h consts.h
+SRCS = main.cpp input.cpp solveRoot.cpp UnitTestSolver.cpp MySqrEquation.h consts.h tests.cpp programFlags.cpp
 OBJS = $(SRCS:.c=.o)
 
 $(TARGET): $(OBJS)

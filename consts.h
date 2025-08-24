@@ -25,7 +25,7 @@ enum ConsoleColors{
     GREEN         = 10,  // Зелёный
     CYAN          = 11,  // Бирюзовый
     RED           = 12,  // Красный
-    MAGENTA       = 13,  // Пурпурный
+    MAGENTA       = 13,  // Фиолетовый
     YELLOW        = 14,  // Жёлтый
     WHITE         = 15,  // Белый
 
@@ -46,6 +46,12 @@ enum ConsoleColors{
     BG_MAGENTA       = 13 << 4,  // Пурпурный фон
     BG_YELLOW        = 14 << 4,  // Жёлтый фон
     BG_WHITE         = 15 << 4   // Белый фон
+};
+
+struct ProgramFlags{
+    bool runTests = false;
+    bool isFile = false;
+    bool showHelp = false;
 };
 
 const int attempts = 10;

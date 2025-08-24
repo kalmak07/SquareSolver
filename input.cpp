@@ -1,6 +1,21 @@
 #include "MySqrEquation.h"
 
 /**
+ * @brief This func processes signals and when completed prog, changes console color on stoc
+ *
+ * @param[in] signal system signal
+ *
+ * @note This func processes signals and when completed prog, changes console color on stoc.
+ * @warning Don`t work good. Testing only on windows 11
+ */
+
+void signalHandler(int signal) {
+    printf("sig");
+    restoreColor();
+    exit(signal);
+}
+
+/**
  * @brief Return stock color
  *
  * @note This func return stock color in windows terminal
@@ -56,7 +71,7 @@ bool input(double * a, double * b, double * c, int attempt) {
 
     for (attempt = attempt; attempt > 0; attempt = attempt - 1) {
         if (scanf("%lf %lf %lf", a, b, c) != 3) {
-            Sleep(1);
+            //restoreColor();
             COLORED_PRINT(RED, ("invalid values, attempts left %i\n", attempt)); //ERROR!!!
         }
         else return true;
