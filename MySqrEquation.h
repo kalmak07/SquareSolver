@@ -5,8 +5,13 @@
 #include <stdio.h>
 #include <assert.h>
 #include <windows.h>
-#include <signal.h>
 #include "consts.h"
+
+#define COLORED_PRINT(color, message) do { \
+    setColor(color, BG_BLACK); \
+    printf message; \
+    restoreColor(); \
+} while(0)
 
 bool isZero(double x);
 bool isRavno(double a, double b);
@@ -18,7 +23,7 @@ void setColor(short textColor, short bgColor);
 void clearInputBuffer();
 void TestSolver();
 
-void signalHandler(int signal);
 void restoreColor();
+void signalHandler(int signal);
 
 #endif

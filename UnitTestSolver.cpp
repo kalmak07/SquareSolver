@@ -36,24 +36,18 @@ void TestSolver() {
         if (!(isRavno(countRootTest, Tests[i].countRes) &&
         isRavno(x1Test, Tests[i].x1Res) &&
         isRavno(x2Test, Tests[i].x2Res))) {
-            setColor(RED, BG_BLACK);
-
-            printf("Error in test #%hi, name test: %s\n", Tests[i].testNumber, Tests[i].testName);
-            printf("Input: A: %lf B: %lf C: %lf\n", Tests[i].aTest, Tests[i].bTest, Tests[i].cTest);
-            printf("Ouput: CountRoots: %lg x1: %lf, x2: %lf, Expected output: CountRoots: %hi x1: %lf, x2: %lf\n", countRootTest, x1Test, x2Test, Tests[i].countRes, Tests[i].x1Res, Tests[i].x2Res);
-            printf("----------------------------------------------------------\n");
+            COLORED_PRINT(RED, ("Error in test #%hi, name test: %s\n", Tests[i].testNumber, Tests[i].testName));
+            COLORED_PRINT(RED, ("Input: A: %lf B: %lf C: %lf\n", Tests[i].aTest, Tests[i].bTest, Tests[i].cTest));
+            COLORED_PRINT(RED, ("Ouput: CountRoots: %lg x1: %lf, x2: %lf, Expected output: CountRoots: %hi x1: %lf, x2: %lf\n", countRootTest, x1Test, x2Test, Tests[i].countRes, Tests[i].x1Res, Tests[i].x2Res));
+            COLORED_PRINT(RED, ("----------------------------------------------------------\n"));
             errUnitTest = true;
             countGoodTests --;
         }
 
     }
 
-    if (countGoodTests == countTests) setColor(GREEN, BG_BLACK);
-    else setColor(YELLOW, BG_BLACK);
-
-    printf("Ok %u/%u Unit tests\n", countGoodTests, countTests);
-
-    setColor(WHITE, BG_BLACK);
+    if (countGoodTests == countTests) COLORED_PRINT(GREEN, ("Ok %u/%u Unit tests\n", countGoodTests, countTests));
+    else COLORED_PRINT(YELLOW, ("Ok %u/%u Unit tests\n", countGoodTests, countTests));
 
     assert(!errUnitTest);
 

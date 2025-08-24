@@ -1,6 +1,16 @@
 #include "MySqrEquation.h"
 
 /**
+ * @brief Return stock color
+ *
+ * @note This func return stock color in windows terminal
+ */
+
+void restoreColor() {
+    setColor(WHITE, BG_BLACK);
+}
+
+/**
  * @brief This func changes color in windows terminal
  *
  * @param[in] textColor changes text color
@@ -46,17 +56,14 @@ bool input(double * a, double * b, double * c, int attempt) {
 
     for (attempt = attempt; attempt > 0; attempt = attempt - 1) {
         if (scanf("%lf %lf %lf", a, b, c) != 3) {
-            setColor(RED, BG_BLACK);
-            printf("invalid values, attempts left %i\n", attempt);
-            setColor(WHITE, BG_BLACK);
+            Sleep(1);
+            COLORED_PRINT(RED, ("invalid values, attempts left %i\n", attempt)); //ERROR!!!
         }
         else return true;
         clearInputBuffer();
     }
 
-    setColor(RED, BG_BLACK);
-    printf("the program is tired");
-    setColor(WHITE, BG_BLACK);
+    COLORED_PRINT(RED, ("the program is tired"));
 
     return false;
 }
@@ -75,27 +82,20 @@ bool input(double * a, double * b, double * c, int attempt) {
 void conclusion(short count, double x1, double x2) {
     switch (count) {
         case noRoot:
-            setColor(YELLOW, BG_BLACK);
-            printf("No roots\n");
+            COLORED_PRINT(YELLOW, ("No roots\n"));
             break;
         case oneRoot:
-            setColor(GREEN, BG_BLACK);
-            printf("One root:\n x1 = x2 = %lf\n", x1);
+            COLORED_PRINT(GREEN, ("One root:\n x1 = x2 = %lf\n", x1));
             break;
         case twoRoot:
-            setColor(GREEN, BG_BLACK);
-            printf("Two roots:\n x1 = %lf\n x2 = %lf\n", x1, x2);
+            COLORED_PRINT(GREEN, ("Two roots:\n x1 = %lf\n x2 = %lf\n", x1, x2));
             break;
         case infRoot:
-            setColor(YELLOW, BG_BLACK);
-            printf("Inf roots");
+            COLORED_PRINT(YELLOW, ("Inf roots"));
             break;
         default:
             setColor(RED, BG_BLACK);
-            printf("Xz");
+            COLORED_PRINT(RED, ("Xz"));
             break;
     }
-
-    setColor(WHITE, BG_BLACK);
-
 }
