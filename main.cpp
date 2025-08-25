@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
 
     if (input(&a, &b, &c, attempts)) {
         short result = solveRoot(a, b, c, &x1, &x2);
-        conclusion(result, x1, x2);
+        conclusion(result, x1, x2, &programFlags);
     }
 
     return 0;

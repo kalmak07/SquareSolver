@@ -52,6 +52,7 @@ struct ProgramFlags{
     bool runTests = false;
     bool isFile = false;
     bool showHelp = false;
+    bool accuracy = false;
 };
 
 const int attempts = 10;

@@ -8,7 +8,7 @@
  * @param[out] stractFlag struct, where are stored flags
  *
  * @note this func definition flags and stored flags
- * @warning This func definition only -h, -t, -f flags
+ * @warning This func definition only -h, -t, -f, -a flags
  */
 
 void flagDefinition(int argc, char * argv[], struct ProgramFlags * stractFlag) {
@@ -23,6 +23,9 @@ void flagDefinition(int argc, char * argv[], struct ProgramFlags * stractFlag) {
             case 'f':
                 stractFlag->isFile = true;
                 break;
+            case 'a':
+                stractFlag->accuracy = true;
+                break;
             default:
                 COLORED_PRINT(RED, ("unknown flag"));
         }
@@ -32,7 +35,7 @@ void flagDefinition(int argc, char * argv[], struct ProgramFlags * stractFlag) {
 /**
  * @brief this func write help about starts flags
  *
- * @note This func write only about -h, -t, -f
+ * @note This func write only about -h, -t, -f -a
  */
 
 void showHelp() {
@@ -41,6 +44,7 @@ void showHelp() {
     COLORED_PRINT(MAGENTA, ("-h - show help\n"));
     COLORED_PRINT(MAGENTA, ("-t - run all unit tests. Required for -f\n"));
     COLORED_PRINT(MAGENTA, ("-f - write all unit tests in csv table\n"));
+    COLORED_PRINT(MAGENTA, ("-a - use accuracy up to 8 digits\n"));
     COLORED_PRINT(MAGENTA, ("----------------------------------------\n"));
 }
 

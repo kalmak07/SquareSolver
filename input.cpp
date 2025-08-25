@@ -94,16 +94,18 @@ bool input(double * a, double * b, double * c, int attempt) {
  * @warning Check count on correspondence with enum Roots.
  */
 
-void conclusion(short count, double x1, double x2) {
+void conclusion(short count, double x1, double x2, struct ProgramFlags * stractFlag) {
     switch (count) {
         case noRoot:
             COLORED_PRINT(YELLOW, ("No roots\n"));
             break;
         case oneRoot:
-            COLORED_PRINT(GREEN, ("One root:\n x1 = x2 = %lf\n", x1));
+            if (stractFlag->accuracy) COLORED_PRINT(GREEN, ("One root:\n x1 = x2 = %.8lf\n", x1));
+            else COLORED_PRINT(GREEN, ("One root:\n x1 = x2 = %lf\n", x1));
             break;
         case twoRoot:
-            COLORED_PRINT(GREEN, ("Two roots:\n x1 = %lf\n x2 = %lf\n", x1, x2));
+            if (stractFlag->accuracy) COLORED_PRINT(GREEN, ("Two roots:\n x1 = %.8lf\n x2 = %.8lf\n", x1, x2));
+            else COLORED_PRINT(GREEN, ("Two roots:\n x1 = %lf\n x2 = %lf\n", x1, x2));
             break;
         case infRoot:
             COLORED_PRINT(YELLOW, ("Inf roots"));

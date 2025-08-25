@@ -28,7 +28,7 @@ bool TestSolver(bool isFile, FILE * fp);
 
 bool input(double * a, double * b, double * c, int attempt);
 void clearInputBuffer();
-void conclusion(short count, double x1, double x2);
+void conclusion(short count, double x1, double x2, struct ProgramFlags * stractFlag);
 
 void setColor(short textColor, short bgColor);
 void restoreColor();
