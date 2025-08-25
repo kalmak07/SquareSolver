@@ -1,9 +1,6 @@
 #include "MySqrEquation.h"
 
 int main(int argc, char *argv[]) {
-
-    MEGA_ASSERT((12 == 12));
-
     struct ProgramFlags programFlags;
 
     flagDefinition(argc, argv, &programFlags);
@@ -20,7 +17,10 @@ int main(int argc, char *argv[]) {
             else COLORED_PRINT(BLUE, ("Write unit tests in console\n"));
             runTests(programFlags.isFile);
         }
+        if (programFlags.logger) editIsLog(true);
     #endif
+
+    MEGA_ASSERT((12 == 12));
 
     COLORED_PRINT(YELLOW, ("quadratic equation solver v0.3.0\n"));
     COLORED_PRINT(WHITE, ("------------------------------\n"));

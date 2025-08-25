@@ -1,5 +1,14 @@
+MODE = extend
+
 PROJECT_NAME = myApp.exe
 VERSION = 0.3.0
+
+PROGRAM = myApp.exe
+
+SRC_FILES = $(wildcard *.cpp)
+HDR_FILES = $(wildcard *.h)
+ALL_FILES = $(SRC_FILES) $(HDR_FILES)
+TXT_FILES = $(ALL_FILES:.cpp=.txt) $(HDR_FILES:.h=.txt)
 
 CC = g++
 CFLAGS = -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equal -Winline \
@@ -8,7 +17,7 @@ CFLAGS = -Wshadow -Winit-self -Wredundant-decls -Wcast-align -Wundef -Wfloat-equ
 -Wempty-body -Wformat-security -Wformat=2 -Wignored-qualifiers -Wlogical-op \
 -Wno-missing-field-initializers -Wnon-virtual-dtor -Woverloaded-virtual -Wpointer-arith \
 -Wsign-promo -Wstack-usage=8192 -Wstrict-aliasing -Wstrict-null-sentinel -Wtype-limits \
--Wwrite-strings -Werror=vla -D_EJUDGE_CLIENT_SIDE
+-Wwrite-strings -Werror=vla -D_EJUDGE_CLIENT_SIDE #-DEXTENDED_DEBUG_MODE=$(EXTENDED_DEBUG_MODE) #-std=c99
 LDFLAGS = -static-libgcc -static-libstdc++ -mconsole
 
 # Флаги для Windows API
@@ -17,12 +26,17 @@ ifeq ($(OS),Windows_NT)
     LDFLAGS += -luser32 -lgdi32
 endif
 
-ifeq ($(BUILD),release)
-#    CFLAGS += -O2 -DNDEBUG
+
+ifeq ($(MODE),release)
     BUILD_TYPE = Release
+	CFLAGS += -DEXTENDED_DEBUG_MODE=0
+else ifeq ($(MODE),debug)
+    CFLAGS += -D_DEBUG -DEXTENDED_DEBUG_MODE=0
+	BUILD_TYPE = Debug
 else
-    CFLAGS += -D_DEBUG
-    BUILD_TYPE = Debug
+	CFLAGS += -DEXTENDED_DEBUG_MODE=1
+	CFLAGS += -D_DEBUG
+	BUILD_TYPE = Debug
 endif
 
 TARGET = $(PROJECT_NAME)
@@ -32,14 +46,22 @@ OBJS = $(SRCS:.c=.o)
 $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -o $(TARGET) $(OBJS) $(LDFLAGS)
 
+%.txt: %.cpp
+	cat $< >> $@
+
+%.txt: %.h
+	cat $< >> $@
+
+extend: $(PROGRAM) $(TXT_FILES)
+
 debug:
-	$(MAKE) BUILD=debug
+	$(MAKE) MODE=debug
 
 release:
-	$(MAKE) BUILD=release
+	$(MAKE) MODE=release
 
 clean:
-	rm *.o *.exe 2>nul || exit 0
+	rm *.o *.exe *.txt 2>nul || exit 0
 
 run: $(TARGET)
 	$(TARGET)

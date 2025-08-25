@@ -1,17 +1,20 @@
 #ifndef HEDDER_H
 #define HEDDER_H
 
-file(READ "source.cpp" FILE_CONTENT);
-configure_file("template.h.in" "generated.h");
-
 #include <cmath>
 #include <stdio.h>
 #include <assert.h>
 #include <windows.h>
 #include <signal.h>
 
+#include <cstring>
+
 //#include "TXLib.h"
 #include "consts.h"
+
+#ifndef EXTENDED_DEBUG_MODE
+#define EXTENDED_DEBUG_MODE 1
+#endif
 
 #define COLORED_PRINT(color, message) \
 do { \
@@ -22,11 +25,16 @@ do { \
 
 #define MEGA_ASSERT(trigger) \
 do { \
-    if (trigger) { printf("This is trigger%s", #trigger);\
-    printf("[%s:%d]\n", __FILE__, __LINE__); }\
+    if (trigger) { printf("This is trigger%s\n", #trigger);\
+    printf("[%s:%d]\n", __FILE__, __LINE__); \
+    printf("in Func: %s", __PRETTY_FUNCTION__); \
+    saveLog("MEGA_ASSERT"); \
+    }\
 } while(0)
 
-
+void editIsLog(bool localIsLog);
+bool getIsLog();
+void saveLog(const char * massage);
 
 void flagDefinition(int argc, char * argv[], struct ProgramFlags * stractFlag);
 void showHelp();
