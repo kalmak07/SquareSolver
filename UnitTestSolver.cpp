@@ -15,10 +15,20 @@ struct testData {
 
 struct testData Tests[] {
     {"infRoots",    0,  0, 0,  0,  infRoot,    0,  0},
-    {"1",   1,    0, 0,  1,  noRoot,     0,  0},
-    {"1",   2,    1e-20,  1e-20,  1e-20,  infRoot,    0,  0},
-    {"1",   3,    0,  2,  1,  oneRoot,    -0.5,  0},
-    {"123",   4,    -0.00001321,  -1,  3,  twoRoot,    -75703.22698180,  2.99988112}
+    {"neravno",   1,    0, 0,  1,  noRoot,     0,  0},
+    {"Ultra ultra small",   2,    1e-20,  1e-20,  1e-20,  infRoot,    0,  0},
+    {"liner",   3,    0,  2,  1,  oneRoot,    -0.5,  0},
+    {"normal",   4,    -0.00001321,  -1,  3,  twoRoot,    -75703.22698180,  2.99988112},
+    {"Ultra small",   5,    -0.000000001,  0.000000001,  1,  noRoot,    0,  0},
+    {"Ultra small",   6,    -0.000000001,  0.000000002,  0,  infRoot,    0,  0},
+    {"1",   7,    1,  0,  0,  oneRoot,    1,  0}, //неверный
+    {"Ultra big",   8,    -122,  12345678.12345678,  10,  twoRoot,    -0.00000081,  101194.08297996},
+    {"big",   9,    123.12345678,  -122,  10,  twoRoot,    0.90070205,  0.09017332},
+    {"1",   10,    0,  2,  1,  oneRoot,    -0.5,  2},//неверный
+    {"Ultra small",   11,    0,  0,  0.000000001,  infRoot,    0,  0},
+    {"1",   12,    122,  2,  1,  oneRoot,    -0.5,  0},//неверный
+    {"1",   13,    0,  597,  1,  oneRoot,    -0.5,  0},//неверный
+    {"oll minus",   14,    -12,  -53,  -45,  twoRoot,    -3.26981160,  -1.14685507},
 };
 
 /**
@@ -51,8 +61,8 @@ bool TestSolver(bool isFile, FILE * fp) {
             if (!isFile) {
                 COLORED_PRINT(RED, ("Error in test #%hi, name test: %s\n", Tests[i].testNumber, Tests[i].testName));
                 COLORED_PRINT(RED, ("Input: A: %lf B: %lf C: %lf\n", Tests[i].aTest, Tests[i].bTest, Tests[i].cTest));
-                COLORED_PRINT(RED, ("----------------------------------------------------------\n"));
                 COLORED_PRINT(RED, ("Ouput: CountRoots: %lg x1: %.8lf, x2: %.8lf, Expected output: CountRoots: %hi x1: %.8lf, x2: %.8lf\n", countRootTest, x1Test, x2Test, Tests[i].countRes, Tests[i].x1Res, Tests[i].x2Res));
+                COLORED_PRINT(RED, ("----------------------------------------------------------\n"));
             }
             errUnitTest = true;
             countGoodTests --;

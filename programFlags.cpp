@@ -36,8 +36,11 @@ void flagDefinition(int argc, char * argv[], struct ProgramFlags * stractFlag) {
  */
 
 void showHelp() {
-    COLORED_PRINT(CYAN, ("Flag list"));
-    COLORED_PRINT(MAGENTA, ("-t - run all unit tests. Required for -f"));
-    COLORED_PRINT(MAGENTA, ("-f - write all unit tests in csv table"));
+    COLORED_PRINT(MAGENTA, ("----------------------------------------\n"));
+    COLORED_PRINT(CYAN, ("Flag list\n"));
+    COLORED_PRINT(MAGENTA, ("-h - show help\n"));
+    COLORED_PRINT(MAGENTA, ("-t - run all unit tests. Required for -f\n"));
+    COLORED_PRINT(MAGENTA, ("-f - write all unit tests in csv table\n"));
+    COLORED_PRINT(MAGENTA, ("----------------------------------------\n"));
 }
 
