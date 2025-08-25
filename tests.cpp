@@ -10,19 +10,21 @@
 
 void runTests(bool  isFile) {
 
-    FILE *fp;
+    FILE *fSolver;
 
     if (isFile) {
 
-        fp = fopen("testsSolver.csv", "w");
+        fSolver = fopen("testsSolver.csv", "w");
 
-        assert(fp != NULL);
+        assert(fSolver != NULL);
 
-        fprintf(fp, "testNumber, status, testName, aIn, bIn, cIn, \
+        fprintf(fSolver, "testNumber, status, testName, aIn, bIn, cIn, \
          expCountRes, CountRes, expX1Res, X1Res, expX2Res, X2Res\n");
 
     }
 
-    TestSolver(isFile, fp);
+    TestSolver(isFile, fSolver);
+
+    //fclose(fSolver);
 
 }

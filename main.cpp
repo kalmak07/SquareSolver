@@ -1,6 +1,9 @@
 #include "MySqrEquation.h"
 
 int main(int argc, char *argv[]) {
+
+    MEGA_ASSERT((12 == 12));
+
     struct ProgramFlags programFlags;
 
     flagDefinition(argc, argv, &programFlags);
