@@ -37,62 +37,56 @@ void saveLog(const char * massage) {
  * @warning This func definition only -h, -t, -f, -a flags
  */
 
+const char * dictFlag[] = {"-h", "--HELP", "-t", "--TEST", "-f", "--FILE", "-a", "--ACCURACY", "-l", "--LOG"};
+
 void flagDefinition(int argc, char * argv[], struct ProgramFlags * stractFlag) {
+    int flugNumber;
+
     for (int i = 1; i < argc; i++) {
-        if (argv[i][0] != '-') {
-            continue;
-        }
+        if (argv[i][0] != '-') continue;
 
-        if (argv[i][0] != '-') {
-            continue;
-        }
-
-        if (argv[i][1] == '-') {
-            if (strcmp(argv[i], "--help") == 0) {
-                stractFlag->showHelp = true;
-            }
-            else if (strcmp(argv[i], "--test") == 0) {
-                stractFlag->runTests = true;
-            }
-            else if (strcmp(argv[i], "--file") == 0) {
-                stractFlag->isFile = true;
-            }
-            else if (strcmp(argv[i], "--accuracy") == 0) {
-                stractFlag->accuracy = true;
-            }
-            else if (strcmp(argv[i], "--log") == 0) {
-                stractFlag->logger = true;
-            }
-            else {
-                COLORED_PRINT(RED, ("unknown flag\n"));
-            }
-        } else {
-            if (argv[i][0] == '-') {
-                switch (argv[i][1]) {
-                    case '-':
-                        if (strcmp(argv[i], "--HELP")) break;
-                    case 'h':
-                        stractFlag->showHelp = true;
-                        break;
-                    case 't':
-                        stractFlag->runTests = true;
-                        break;
-                    case 'f':
-                        stractFlag->isFile = true;
-                        break;
-                    case 'a':
-                        stractFlag->accuracy = true;
-                        break;
-                    case 'l':
-                        stractFlag->logger = true;
-                        break;
-                    default:
-                        COLORED_PRINT(RED, ("unknown flag\n"));
-                }
-            }
+        if (checkDictFlag(argv[i], &flugNumber)) {
+            i += flagByNumber(flugNumber, argv[i], stractFlag) - 1;
         }
     }
 }
+
+bool checkDictFlag(char sFlag[], int * fl) {
+
+    for (int i = 0; i < sizeof(sFlag) / sizeof(sFlag[0]); i++) {
+        if (strcmp(sFlag, dictFlag)) {
+            *fl = i / 2;
+            return true;
+        }
+    }
+
+    return false
+}
+
+int flagByNumber(int fl, int argc, char argv[], struct ProgramFlags * stractFlag) {
+    switch (fl) {
+        case HELP:
+            stractFlag->showHelp = true;
+            break;
+        case RUN_TESTS:
+            stractFlag->runTests = true;
+            break;
+        case IS_FILE:
+            stractFlag->isFile = true;
+            break;
+        case ACCURACY:
+            stractFlag->accuracy = true;
+            break;
+        case LOGGER:
+            stractFlag->logger = true;
+            break;
+        default:
+            COLORED_PRINT(RED, ("unknown flag\n"));
+    return 1;
+    }
+}
+
+
 
 /**
  * @brief this func write help about starts flags

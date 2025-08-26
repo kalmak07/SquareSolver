@@ -36,6 +36,8 @@ void editIsLog(bool localIsLog);
 bool getIsLog();
 void saveLog(const char * massage);
 
+bool checkDictFlag(char sFlag[], int * fl);
+int flagByNumber(int fl, int argc, char argv[], struct ProgramFlags * stractFlag);
 void flagDefinition(int argc, char * argv[], struct ProgramFlags * stractFlag);
 void showHelp();
 

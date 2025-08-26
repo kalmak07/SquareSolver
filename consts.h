@@ -48,6 +48,16 @@ enum ConsoleColors{
     BG_WHITE         = 15 << 4   // Белый фон
 };
 
+enum FLAGS{
+    HELP = 0,
+    IS_FILE = 1,
+    RUN_TESTS = 2,
+    SHOW_HELP = 3,
+    ACCURACY = 4,
+    LOGGER = 5,
+    COUNTS = 6
+};
+
 struct ProgramFlags{
     bool runTests = false;
     bool isFile = false;
