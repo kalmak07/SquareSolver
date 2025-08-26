@@ -49,13 +49,12 @@ enum ConsoleColors{
 };
 
 enum FLAGS{
-    HELP = 0,
-    IS_FILE = 1,
-    RUN_TESTS = 2,
-    SHOW_HELP = 3,
-    ACCURACY = 4,
-    LOGGER = 5,
-    COUNTS = 6
+    SHOW_HELP = 0,
+    RUN_TESTS = 1,
+    IS_FILE = 2,
+    ACCURACY = 3,
+    LOGGER = 4,
+    COUNTS = 5
 };
 
 struct ProgramFlags{

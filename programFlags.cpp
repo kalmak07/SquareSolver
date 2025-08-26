@@ -42,30 +42,32 @@ const char * dictFlag[] = {"-h", "--HELP", "-t", "--TEST", "-f", "--FILE", "-a",
 void flagDefinition(int argc, char * argv[], struct ProgramFlags * stractFlag) {
     int flugNumber;
 
-    for (int i = 1; i < argc; i++) {
+    for (int i = 0; i < argc; i++) {
         if (argv[i][0] != '-') continue;
 
+
         if (checkDictFlag(argv[i], &flugNumber)) {
-            i += flagByNumber(flugNumber, argv[i], stractFlag) - 1;
+            i += flagByNumber(flugNumber, argc, argv[i], stractFlag) - 1;
         }
     }
 }
 
 bool checkDictFlag(char sFlag[], int * fl) {
 
-    for (int i = 0; i < sizeof(sFlag) / sizeof(sFlag[0]); i++) {
-        if (strcmp(sFlag, dictFlag)) {
-            *fl = i / 2;
+    for (int j = 0; j < 10; j++) {
+
+    if (!(strcmp(sFlag, dictFlag[j]))) {
+            *fl = j / 2;
             return true;
         }
     }
 
-    return false
+    return false;
 }
 
 int flagByNumber(int fl, int argc, char argv[], struct ProgramFlags * stractFlag) {
     switch (fl) {
-        case HELP:
+        case SHOW_HELP:
             stractFlag->showHelp = true;
             break;
         case RUN_TESTS:
@@ -82,8 +84,8 @@ int flagByNumber(int fl, int argc, char argv[], struct ProgramFlags * stractFlag
             break;
         default:
             COLORED_PRINT(RED, ("unknown flag\n"));
-    return 1;
     }
+    return 1;
 }
 
 
@@ -101,7 +103,7 @@ void showHelp() {
     COLORED_PRINT(MAGENTA, ("-t - run all unit tests. Required for -f\n     Work only in debug mode\n\n"));
     COLORED_PRINT(MAGENTA, ("-f - write all unit tests in csv table\n     Work only in debug mode\n\n"));
     COLORED_PRINT(MAGENTA, ("-a - use accuracy up to 8 digits\n\n"));
-    COLORED_PRINT(MAGENTA, ("-l - includes logging\n     Work only in debug mode\n\n\n\n"));
+    COLORED_PRINT(MAGENTA, ("-l - includes logging\n     Work only in debug mode\n"));
     COLORED_PRINT(MAGENTA, ("----------------------------------------\n"));
 }
 
