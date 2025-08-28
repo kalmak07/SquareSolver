@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
         if (programFlags.logger) editIsLog(true);
     #endif
 
-    COLORED_PRINT(YELLOW, ("quadratic equation solver v0.3.0\n"));
+    COLORED_PRINT(YELLOW, ("quadratic equation solver v0.4.2\n"));
     COLORED_PRINT(WHITE, ("------------------------------\n"));
 
     if (programFlags.counts) {
