@@ -10,7 +10,7 @@
  */
 
 void signalHandler(int signal) {
-    printf("sig");
+    printf("sig\n");
     restoreColor();
     exit(signal);
 }

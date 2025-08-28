@@ -51,9 +51,9 @@ bool TestSolver(bool isFile, FILE * fp) {
         double x1Test = 0, x2Test = 0, countRootTest = 0;
 
         countRootTest = solveRoot(Tests[i].aTest,
-                                Tests[i].bTest,
-                                Tests[i].cTest,
-                                &x1Test, &x2Test);
+                                  Tests[i].bTest,
+                                  Tests[i].cTest,
+                                  &x1Test, &x2Test);
 
         if (!(isRavno(countRootTest, Tests[i].countRes) &&
         isRavno(x1Test, Tests[i].x1Res) &&

@@ -41,14 +41,14 @@ const char * dictFlag[] = {"-h", "--HELP", "-t", "--TEST", "-f", "--FILE", \
     "-a", "--ACCURACY", "-l", "--LOG", "-c", "--COUNT", "-i", "--INPUT"};
 
 void flagDefinition(int argc, char * argv[], struct ProgramFlags * stractFlag) {
-    int flugNumber;
+    int flagNumber = -1;
 
     for (int i = 0; i < argc; i++) {
         if (argv[i][0] != '-') continue;
 
 
-        if (checkDictFlag(argv[i], &flugNumber)) {
-            i += flagByNumber(flugNumber, i, argc, argv, stractFlag) - 1;
+        if (checkDictFlag(argv[i], &flagNumber)) {
+            i += flagByNumber(flagNumber, i, argc, argv, stractFlag) - 1;
         }
     }
 }
