@@ -1,6 +1,8 @@
 #ifndef CONSTS_H
 #define CONSTS_H
 
+#include "MySqrEquation.h"
+
 enum Roots {
     noRoot = 0,
     oneRoot = 1,
@@ -59,10 +61,16 @@ enum FLAGS{
 
 struct ProgramFlags{
     bool runTests = false;
-    bool isFile = false;
+    bool isFileTestOut = false;
+    bool isFileTestIn = false;
     bool showHelp = false;
     bool accuracy = false;
     bool logger = false;
+    bool isFileLog = false;
+    bool counts = false;
+    double A = NAN;
+    double B = NAN;
+    double C = NAN;
 };
 
 const int attempts = 10;

@@ -2,12 +2,18 @@
 #define HEDDER_H
 
 #include <cmath>
+#include <stdlib.h>
+//math.h
 #include <stdio.h>
 #include <assert.h>
 #include <windows.h>
 #include <signal.h>
 
-#include <cstring>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+//#include <cstring>
 
 //#include "TXLib.h"
 #include "consts.h"
@@ -37,7 +43,7 @@ bool getIsLog();
 void saveLog(const char * massage);
 
 bool checkDictFlag(char sFlag[], int * fl);
-int flagByNumber(int fl, int argc, char argv[], struct ProgramFlags * stractFlag);
+int flagByNumber(int fl, int argNow, int argC, char * argv[], struct ProgramFlags * stractFlag);
 void flagDefinition(int argc, char * argv[], struct ProgramFlags * stractFlag);
 void showHelp();
 

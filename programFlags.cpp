@@ -37,7 +37,8 @@ void saveLog(const char * massage) {
  * @warning This func definition only -h, -t, -f, -a flags
  */
 
-const char * dictFlag[] = {"-h", "--HELP", "-t", "--TEST", "-f", "--FILE", "-a", "--ACCURACY", "-l", "--LOG"};
+const char * dictFlag[] = {"-h", "--HELP", "-t", "--TEST", "-f", "--FILE", \
+    "-a", "--ACCURACY", "-l", "--LOG", "-c", "--COUNT", "-i", "--INPUT"};
 
 void flagDefinition(int argc, char * argv[], struct ProgramFlags * stractFlag) {
     int flugNumber;
@@ -47,14 +48,14 @@ void flagDefinition(int argc, char * argv[], struct ProgramFlags * stractFlag) {
 
 
         if (checkDictFlag(argv[i], &flugNumber)) {
-            i += flagByNumber(flugNumber, argc, argv[i], stractFlag) - 1;
+            i += flagByNumber(flugNumber, i, argc, argv, stractFlag) - 1;
         }
     }
 }
 
 bool checkDictFlag(char sFlag[], int * fl) {
 
-    for (int j = 0; j < 10; j++) {
+    for (unsigned int j = 0; j < (sizeof(dictFlag) / sizeof(dictFlag[0])); j++) {
 
     if (!(strcmp(sFlag, dictFlag[j]))) {
             *fl = j / 2;
@@ -65,30 +66,53 @@ bool checkDictFlag(char sFlag[], int * fl) {
     return false;
 }
 
-int flagByNumber(int fl, int argc, char argv[], struct ProgramFlags * stractFlag) {
+int flagByNumber(int fl, int argNow, int argC, char * argv[], struct ProgramFlags * stractFlag) {
+
     switch (fl) {
         case SHOW_HELP:
             stractFlag->showHelp = true;
             break;
         case RUN_TESTS:
             stractFlag->runTests = true;
-            break;
-        case IS_FILE:
-            stractFlag->isFile = true;
+            if (argNow < (argC - 1)) {
+                int fNum;
+                checkDictFlag(argv[argNow + 1], &fNum);
+
+                if (fNum == IS_FILE) {
+                        stractFlag->isFileTestOut = true;
+                        return 2;
+                }
+            }
             break;
         case ACCURACY:
             stractFlag->accuracy = true;
             break;
         case LOGGER:
             stractFlag->logger = true;
+            if (argNow < (argC - 1)) {
+                int fNum;
+                checkDictFlag(argv[argNow + 1], &fNum);
+
+                if (fNum == IS_FILE) {
+                        stractFlag->isFileLog = true;
+                        return 2;
+                }
+            }
+            break;
+        case COUNTS:
+            stractFlag->counts = true;
+
+            stractFlag->A = atof(argv[argNow + 1]);
+            stractFlag->B = atof(argv[argNow + 2]);
+            stractFlag->C = atof(argv[argNow + 3]);
+
+            return 4;
             break;
         default:
             COLORED_PRINT(RED, ("unknown flag\n"));
     }
     return 1;
 }
-
-
 
 /**
  * @brief this func write help about starts flags
