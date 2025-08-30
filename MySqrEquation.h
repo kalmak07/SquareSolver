@@ -38,7 +38,7 @@ do { \
     }\
 } while(0)
 
-void editIsLog(bool localIsLog);
+void setIsLog(bool localIsLog);
 bool getIsLog();
 void saveLog(const char * massage);
 

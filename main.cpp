@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
             else COLORED_PRINT(BLUE, ("Write unit tests in console\n"));
             runTests(programFlags.isFileTestOut);
         }
-        if (programFlags.logger) editIsLog(true);
+        if (programFlags.logger) setIsLog(true);
     #endif
 
     COLORED_PRINT(YELLOW, ("quadratic equation solver v0.4.2\n"));

@@ -25,6 +25,6 @@ void runTests(bool  isFile) {
 
     TestSolver(isFile, fSolver);
 
-    //fclose(fSolver);
+    fclose(fSolver);
 
 }

@@ -6,7 +6,7 @@ bool getIsLog() {
     return isLog;
 }
 
-void editIsLog(bool localIsLog) {
+void setIsLog(bool localIsLog) {
     isLog = localIsLog;
 }
 
